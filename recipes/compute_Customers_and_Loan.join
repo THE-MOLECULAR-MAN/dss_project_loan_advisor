@@ -1,0 +1,127 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "id",
+      "table": 0
+    },
+    {
+      "name": "Status",
+      "table": 0
+    },
+    {
+      "name": "Date_Of_Birth_parsed",
+      "table": 0
+    },
+    {
+      "name": "Age",
+      "table": 0
+    },
+    {
+      "name": "Monthly_Income",
+      "table": 0
+    },
+    {
+      "name": "State",
+      "table": 0
+    },
+    {
+      "name": "Interest_Rate",
+      "table": 0
+    },
+    {
+      "name": "FICO_Range",
+      "table": 0
+    },
+    {
+      "name": "Default",
+      "table": 0
+    },
+    {
+      "name": "Amount_Requested",
+      "table": 1
+    },
+    {
+      "name": "Loan_Purpose",
+      "table": 1
+    },
+    {
+      "name": "Loan_Length",
+      "table": 1
+    },
+    {
+      "name": "Home_Ownership",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "Customer_Info_prepared",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "Loan_Requests_prepared",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
