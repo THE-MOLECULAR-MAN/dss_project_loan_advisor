@@ -18,8 +18,8 @@
   "quickTestQuery": {
     "input": {
       "filter": {
-        "column": "\u003cCOLUMN_NAME\u003e",
-        "value": "\u003cVALUE\u003e",
+        "column": "id",
+        "value": "99592",
         "operator": "EQUALS"
       }
     },
