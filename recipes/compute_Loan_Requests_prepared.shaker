@@ -29,8 +29,74 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "mainColor": "#2ab1ac",
+      "name": "AI steps for Remove and words or spaces from Loan_Length so that it\u0027s just and integer",
+      "metaType": "GROUP",
+      "disabled": false,
+      "comment": "Steps can only be regenerated when this group is in last position",
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "mapping": [
+              {
+                "from": "[^0-9]",
+                "to": ""
+              }
+            ],
+            "normalization": "EXACT",
+            "columns": [
+              "Loan_Length"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "PATTERN"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#d4e7e4"
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "MORTGAG",
+            "to": "MORTGAGE"
+          },
+          {
+            "from": "ORTGAGE",
+            "to": "MORTGAGE"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "Home_Ownership"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +123,13 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Amount_Requested": 135,
+    "Home_Ownership": 120,
+    "Loan_Purpose": 141,
+    "Loan_Length": 100,
+    "id": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
