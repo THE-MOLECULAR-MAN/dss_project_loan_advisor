@@ -6,60 +6,93 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "id",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "Status",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Date_Of_Birth_parsed",
+      "type": "date",
       "table": 0
     },
     {
       "name": "Age",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "Monthly_Income",
+      "type": "double",
       "table": 0
     },
     {
       "name": "State",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Interest_Rate",
+      "type": "double",
       "table": 0
     },
     {
       "name": "FICO_Range",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Default",
+      "type": "double",
       "table": 0
     },
     {
       "name": "Amount_Requested",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "Loan_Purpose",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Loan_Length",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Home_Ownership",
+      "type": "string",
       "table": 1
     }
   ],
@@ -103,7 +136,7 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -113,7 +146,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -123,5 +156,73 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "id",
+            "type": "bigint"
+          },
+          {
+            "name": "Status",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "Date_Of_Birth_parsed",
+            "type": "date"
+          },
+          {
+            "name": "Age",
+            "type": "bigint"
+          },
+          {
+            "name": "Monthly_Income",
+            "type": "double"
+          },
+          {
+            "name": "State",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "Interest_Rate",
+            "type": "double"
+          },
+          {
+            "name": "FICO_Range",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "Default",
+            "type": "double"
+          },
+          {
+            "name": "Amount_Requested",
+            "type": "bigint"
+          },
+          {
+            "name": "Loan_Purpose",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "Loan_Length",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "Home_Ownership",
+            "type": "string",
+            "maxLength": 16777216
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
