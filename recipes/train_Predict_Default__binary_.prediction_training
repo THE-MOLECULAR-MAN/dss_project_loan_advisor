@@ -141,7 +141,7 @@
     "algorithm": "RANDOM_FOREST_CLASSIFICATION",
     "gridLength": 2
   },
-  "generatingModelId": "A-FINAIADVISOR-WFJfqHPS-1NrACyR1-s2-pp1-m1",
+  "generatingModelId": "A-FINAIADVISOR-WFJfqHPS-1NrACyR1-s3-pp1-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -333,7 +333,7 @@
         "min_samples": 10,
         "impact_method": "M_ESTIMATOR",
         "missing_impute_with": "MODE",
-        "role": "INPUT",
+        "role": "REJECT",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "customHandlingCode": "",
@@ -365,7 +365,7 @@
       "Debt_to_Income_Ratio": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "INPUT",
+        "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -941,7 +941,7 @@
   },
   "operationMode": "TRAIN_SPLITTED_ONLY",
   "partSource": "ACTIVE_VERSION",
-  "modelVersionNamePrefix": "Random forest (s2)",
+  "modelVersionNamePrefix": "Random forest (s3)",
   "assertionsParams": {
     "assertions": []
   },
