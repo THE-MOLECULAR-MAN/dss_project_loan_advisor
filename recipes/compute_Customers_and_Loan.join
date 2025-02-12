@@ -71,6 +71,16 @@
       "table": 0
     },
     {
+      "name": "FICO_max",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "FICO_min",
+      "type": "bigint",
+      "table": 0
+    },
+    {
       "name": "Default",
       "type": "double",
       "table": 0
@@ -195,6 +205,14 @@
             "name": "FICO_Range",
             "type": "string",
             "maxLength": 16777216
+          },
+          {
+            "name": "FICO_max",
+            "type": "bigint"
+          },
+          {
+            "name": "FICO_min",
+            "type": "bigint"
           },
           {
             "name": "Default",
