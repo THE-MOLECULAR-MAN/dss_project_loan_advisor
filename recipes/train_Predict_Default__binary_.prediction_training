@@ -77,7 +77,7 @@
         "randomMode": "RANGE",
         "values": [
           6,
-          13
+          14
         ],
         "limit": {
           "min": 1
@@ -141,7 +141,7 @@
     "algorithm": "RANDOM_FOREST_CLASSIFICATION",
     "gridLength": 2
   },
-  "generatingModelId": "A-FINAIADVISOR-WFJfqHPS-1NrACyR1-s1-pp1-m1",
+  "generatingModelId": "A-FINAIADVISOR-WFJfqHPS-1NrACyR1-s2-pp1-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -333,7 +333,7 @@
         "min_samples": 10,
         "impact_method": "M_ESTIMATOR",
         "missing_impute_with": "MODE",
-        "role": "REJECT",
+        "role": "INPUT",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "customHandlingCode": "",
@@ -362,6 +362,30 @@
         "category_handling": "DUMMIFY",
         "frequency_default_mode": "EXPLICIT"
       },
+      "Debt_to_Income_Ratio": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "datetime_cyclical_periods": [],
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "keep_regular": false,
+        "numerical_handling": "REGULAR",
+        "monotonic": "NONE",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
       "Date_Of_Birth_parsed": {
         "rescaling": "AVGSTD",
         "role": "REJECT",
@@ -371,10 +395,10 @@
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [
-          "YEAR",
           "WEEK",
-          "MONTH",
-          "QUARTER"
+          "YEAR",
+          "QUARTER",
+          "MONTH"
         ],
         "customProcessorWantsMatrix": false,
         "quantile_bin_nb_bins": 4,
@@ -682,6 +706,10 @@
         "type": "bigint"
       },
       {
+        "name": "Debt_to_Income_Ratio",
+        "type": "double"
+      },
+      {
         "name": "Loan_Purpose",
         "type": "string"
       },
@@ -698,6 +726,7 @@
   },
   "needsInputDataFolder": false,
   "script": {
+    "contextProjectKey": "FINAIADVISOR",
     "columnsSelection": {
       "mode": "ALL"
     },
@@ -727,6 +756,7 @@
       "autoRefreshSample": false
     },
     "explorationFilters": [],
+    "columnOrder": [],
     "columnUseScientificNotationByName": {},
     "exploreUIParams": {},
     "steps": [],
@@ -911,7 +941,7 @@
   },
   "operationMode": "TRAIN_SPLITTED_ONLY",
   "partSource": "ACTIVE_VERSION",
-  "modelVersionNamePrefix": "Random forest (s1)",
+  "modelVersionNamePrefix": "Random forest (s2)",
   "assertionsParams": {
     "assertions": []
   },
