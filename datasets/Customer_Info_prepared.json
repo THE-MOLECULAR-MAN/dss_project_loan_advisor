@@ -69,6 +69,8 @@
       {"name":"State","type":"string","maxLength":16777216},
       {"name":"Interest_Rate","type":"double"},
       {"name":"FICO_Range","type":"string","maxLength":16777216},
+      {"name":"FICO_max","type":"bigint"},
+      {"name":"FICO_min","type":"bigint"},
       {"name":"Default","type":"double"}
     ],
     "userModified": true
