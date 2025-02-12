@@ -4,6 +4,7 @@
   "rebuildBehavior": "EXPLICIT",
   "vectorStoreType": "CHROMA",
   "embeddingLLMId": "openai:OpenAI:text-embedding-3-small",
+  "sourceIdColumn": "file",
   "envSelection": {
     "envMode": "EXPLICIT_ENV",
     "envName": "py39_rag"
