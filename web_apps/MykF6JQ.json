@@ -74,8 +74,10 @@
     "filter_logged_sources": false,
     "n_top_sources_to_log": -1,
     "display_source_chunks": true,
-    "enable_llm_citations": false,
-    "knowledge_sources_filters": [],
+    "enable_llm_citations": true,
+    "knowledge_sources_filters": [
+      "file"
+    ],
     "knowledge_enable_auto_filtering": false,
     "sql_retrieval_suggested_joins": [],
     "show_db_advanced_settings": false,
@@ -83,7 +85,7 @@
     "db_query_examples": {},
     "hard_sql_limit": 50,
     "display_sql_query": false,
-    "enable_answers_api": false,
+    "enable_answers_api": true,
     "web_app_title": "Ask directly questions to your document corpus",
     "web_app_subheading": "Answers are sourced from the processed documents, delivered in natural language and accompanied by the most relevant references.",
     "web_app_input_placeholder": "Ask your question",
@@ -174,10 +176,14 @@
     "knowledge_bank_custom_name": "",
     "knowledge_bank_description": "This knowledge bank contains information about our credit score and loan policies.",
     "knowledge_bank_prompt": "You should be able to answer questions about our credit score and loan policies.",
-    "knowledge_sources_context_metadata": [],
-    "knowledge_sources_displayed_metas": [],
+    "knowledge_sources_context_metadata": [
+      "file"
+    ],
+    "knowledge_sources_displayed_metas": [
+      "file"
+    ],
     "knowledge_source_url": false,
-    "knowledge_source_title": false,
+    "knowledge_source_title": "file",
     "knowledge_source_thumbnail": false,
     "sql_retrieval_custom_name": "",
     "custom_theme_name": "",
@@ -188,10 +194,12 @@
     "upload_folder": "I8NEaa0q",
     "general_feedback_dataset": "general_feedback",
     "title_llm_id": "agent:DULMxTik",
-    "json_decision_llm_id": "agent:DULMxTik"
+    "json_decision_llm_id": "agent:DULMxTik",
+    "message_dataset": "messages_history",
+    "answers_description": "The purpose of this webapp"
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:cjyZ1JGRlMGm5vJPG2eTJzGlMmXCr73VxUGk9snAjOfyHZdMJKpJw+NQZOklZqsl+PekeYa6PfJP/FzLMGbH0pMeYrTPrkaVOF6gKb2SKE21vu0ubVWK",
+  "apiKey": "e:AES:X2:b+s4w9ESpm8ELzxDYT8USSHVz2fDF/sdhX1FeMxa16FDIOld5SURbctNcioBGqMU2ZG2FZYLhPUgKUXt0JhpJk8xuXx8bdMtPqoTDrAD1k2qXJFNNpJr",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
