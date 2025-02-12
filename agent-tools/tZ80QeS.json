@@ -1,7 +1,20 @@
 {
   "name": "Predict_Loan_Default",
   "type": "ClassicalPredictionModelPredict",
+  "params": {
+    "smRef": "19qX6AHu"
+  },
+  "quickTestQuery": {
+    "input": {
+      "record": {
+        "\u003cFEATURE1_NAME\u003e": "\u003cFEATURE1_VALUE\u003e",
+        "\u003cFEATURE2_NAME\u003e": "\u003cFEATURE2_VALUE\u003e"
+      }
+    },
+    "context": {}
+  },
   "dkuProperties": [],
+  "additionalDescriptionForLLM": "Use this model to predict whether or not a customer will default on their request loan.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
