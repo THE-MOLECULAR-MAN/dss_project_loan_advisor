@@ -1,7 +1,48 @@
 {
   "name": "Data Prep",
   "color": "#8C2DA7",
-  "items": [],
+  "items": [
+    {
+      "objectId": "Loan_Requests",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "Customer_Info",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Loan_Requests_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_Customer_Info_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Loan_Requests_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "Customer_Info_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Customers_and_Loan",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Customers_and_Loan",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Customers_and_Loan_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Customers_and_Loan_prepared",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
