@@ -29,8 +29,71 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "mainColor": "#2ab1ac",
+      "name": "AI steps for Parse Date_Of_Birth and create a column Age that tells me the time in years between now and Date_Of_Birth",
+      "metaType": "GROUP",
+      "disabled": false,
+      "comment": "Steps can only be regenerated when this group is in last position",
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateParser",
+          "params": {
+            "outCol": "Date_Of_Birth_parsed",
+            "formats": [
+              "yyyy-dd-MM"
+            ],
+            "columns": [
+              "Date_Of_Birth"
+            ],
+            "timezone_id": "UTC",
+            "appliesTo": "SINGLE_COLUMN",
+            "lang": "auto"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateDifference",
+          "params": {
+            "output": "Age",
+            "outputUnit": "YEARS",
+            "input1": "Date_Of_Birth_parsed",
+            "compareTo": "NOW",
+            "reverse": false
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#d4e7e4"
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Date_Of_Birth"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +120,18 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Status": 100,
+    "Monthly_Income": 134,
+    "State": 100,
+    "Interest_Rate": 134,
+    "id": 100,
+    "FICO_Range": 120,
+    "Date_Of_Birth": 141,
+    "Default": 134,
+    "Date_Of_Birth_parsed": 190,
+    "Age": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
