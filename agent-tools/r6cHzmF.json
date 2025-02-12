@@ -17,7 +17,8 @@
       }
     },
     "knowledgeBankRef": "IAAGe7oy",
-    "allMetadataInContext": true
+    "allMetadataInContext": true,
+    "titleMetadata": "file"
   },
   "quickTestQuery": {
     "input": {
