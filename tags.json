@@ -1,10 +1,58 @@
 {
   "tags": {
-    "Answers": {},
+    "Execution:Snowflake:SQL": {
+      "color": "#7a18f0"
+    },
+    "Answers": {
+      "color": "#28aadd"
+    },
+    "Security:Highly Confidential": {
+      "color": "#123883"
+    },
+    "Execution:Snowflake": {
+      "color": "#a088bd"
+    },
+    "Execution:Dataiku": {
+      "color": "#0ae6f5"
+    },
+    "Execution:Snowflake:UDF": {
+      "color": "#0c5af7"
+    },
+    "tools": {
+      "color": "#de1ea5"
+    },
+    "agents": {
+      "color": "#123883"
+    },
+    "Security:Confidential": {
+      "color": "#FFD83D"
+    },
+    "Security:Public": {
+      "color": "#94be8e"
+    },
+    "Execution:Kubernetes": {
+      "color": "#08cfb2"
+    },
+    "Execution:Snowflake:Spark": {
+      "color": "#FFD83D"
+    },
+    "Execution:Kubernetes:Spark": {
+      "color": "#3a0870"
+    },
+    "Security:Internal Use Only": {
+      "color": "#0f6d82"
+    },
+    "data preparation:data cleansing": {
+      "color": "#28aadd"
+    },
     "imported": {
       "color": "#263238"
     },
-    "tools": {},
-    "agents": {}
+    "data preparation:data prep": {
+      "color": "#d66b9b"
+    },
+    "Execution:Snowflake:Snowpark": {
+      "color": "#0cf54d"
+    }
   }
 }
