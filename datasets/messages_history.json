@@ -61,8 +61,24 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"message_id","type":"string","maxLength":16777216},
+      {"name":"user","type":"string","maxLength":16777216},
+      {"name":"platform","type":"string","maxLength":16777216},
+      {"name":"llm_name","type":"string","maxLength":16777216},
+      {"name":"query","type":"string","maxLength":16777216},
+      {"name":"answer","type":"string","maxLength":16777216},
+      {"name":"filters","type":"string","maxLength":16777216},
+      {"name":"sources","type":"string","maxLength":16777216},
+      {"name":"created_at","type":"string","maxLength":16777216},
+      {"name":"llm_context","type":"string","maxLength":16777216},
+      {"name":"generated_media","type":"string","maxLength":16777216},
+      {"name":"feedback","type":"string","maxLength":16777216},
+      {"name":"conversation_id","type":"string","maxLength":16777216},
+      {"name":"state","type":"string","maxLength":16777216},
+      {"name":"history","type":"string","maxLength":16777216}
+    ],
+    "userModified": false
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
