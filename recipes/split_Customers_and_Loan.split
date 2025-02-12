@@ -3,14 +3,14 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": -1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
@@ -18,22 +18,24 @@
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "FILTERS",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": ""
     }
   ],
   "rangeSplits": [
@@ -91,7 +93,82 @@
       "filter": {
         "uiData": {
           "mode": "\u0026\u0026",
-          "conditions": []
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "Default",
+              "col": "Status",
+              "$showList": false,
+              "num": 0,
+              "items": [],
+              "operator": "not empty string"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "id",
+                "type": "bigint"
+              },
+              {
+                "name": "Status",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "Date_Of_Birth_parsed",
+                "type": "date"
+              },
+              {
+                "name": "Age",
+                "type": "bigint"
+              },
+              {
+                "name": "Monthly_Income",
+                "type": "double"
+              },
+              {
+                "name": "State",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "Interest_Rate",
+                "type": "double"
+              },
+              {
+                "name": "FICO_Range",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "Default",
+                "type": "double"
+              },
+              {
+                "name": "Amount_Requested",
+                "type": "bigint"
+              },
+              {
+                "name": "Loan_Purpose",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "Loan_Length",
+                "type": "string",
+                "maxLength": 16777216
+              },
+              {
+                "name": "Home_Ownership",
+                "type": "string",
+                "maxLength": 16777216
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
