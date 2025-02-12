@@ -74,6 +74,7 @@
       {"name":"FICO_min","type":"bigint"},
       {"name":"Default","type":"double"},
       {"name":"Amount_Requested","type":"bigint"},
+      {"name":"Debt_to_Income_Ratio","type":"double"},
       {"name":"Loan_Purpose","type":"string","maxLength":16777216},
       {"name":"Loan_Length","type":"string","maxLength":16777216},
       {"name":"Home_Ownership","type":"string","maxLength":16777216}
