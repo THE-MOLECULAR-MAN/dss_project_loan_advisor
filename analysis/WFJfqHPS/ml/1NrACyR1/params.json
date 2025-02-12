@@ -254,7 +254,7 @@
           "MONTH",
           "QUARTER"
         ],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
