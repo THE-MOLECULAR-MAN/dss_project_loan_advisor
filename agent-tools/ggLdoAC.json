@@ -2,7 +2,7 @@
   "name": "Customer_Lookup",
   "type": "DatasetRowLookup",
   "params": {
-    "datasetRef": "Customers_and_Loan_prepared",
+    "datasetRef": "Labeled_scored_stacked",
     "usableLookupColumns": [
       "id"
     ],
@@ -21,7 +21,8 @@
       "Age",
       "Monthly_Income",
       "State",
-      "id"
+      "id",
+      "prediction"
     ],
     "retrievalMode": "SINGLE_RECORD"
   },
@@ -36,7 +37,7 @@
     "context": {}
   },
   "dkuProperties": [],
-  "additionalDescriptionForLLM": "This tool should be used to provide information about a customer when it\u0027s provided with the customer id.",
+  "additionalDescriptionForLLM": "This tool should be used to provide information about a customer when it\u0027s provided with the customer id. Status tells us whether the loan is approved or pending.  Prediction tells us 1 when the loan is predicted to default, 0 when the loan is predicted to not default.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
