@@ -68,7 +68,7 @@
         "messages": [
           {
             "role": "user",
-            "content": "Put your query here"
+            "content": "My customer\u0027s id is 99592. Can you tell me whether their loan application has been approved?"
           }
         ],
         "context": {}
