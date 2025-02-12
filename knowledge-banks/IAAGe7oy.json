@@ -17,7 +17,7 @@
   },
   "llmsExposedWith": [
     {
-      "ragModelId": "quickly-icky-popcorn",
+      "ragModelId": "loan_credit_score_policies",
       "llmId": "openai:OpenAI:gpt-4o-mini",
       "maxDocuments": 4,
       "useMMR": false,
