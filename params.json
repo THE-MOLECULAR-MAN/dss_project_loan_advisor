@@ -206,10 +206,11 @@
   },
   "shortDesc": "The project *FinAI Advisor* was created by Administrator on Feb 12th 2025",
   "tags": [
-    "agents",
-    "tools",
     "Answers",
-    "imported"
+    "imported",
+    "tools",
+    "agents",
+    "owner:Erin Davis"
   ],
   "customFields": {},
   "checklists": {
