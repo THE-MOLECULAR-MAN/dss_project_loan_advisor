@@ -302,7 +302,7 @@
           "QUARTER",
           "MONTH"
         ],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
