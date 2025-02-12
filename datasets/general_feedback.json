@@ -61,8 +61,14 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"date","type":"string","maxLength":16777216},
+      {"name":"user","type":"string","maxLength":16777216},
+      {"name":"message","type":"string","maxLength":16777216},
+      {"name":"knowledgebank","type":"string","maxLength":16777216},
+      {"name":"llm","type":"string","maxLength":16777216}
+    ],
+    "userModified": false
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
