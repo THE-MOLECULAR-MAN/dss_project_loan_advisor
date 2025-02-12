@@ -86,8 +86,8 @@
     "hard_sql_limit": 50,
     "display_sql_query": false,
     "enable_answers_api": true,
-    "web_app_title": "Ask directly questions to your document corpus",
-    "web_app_subheading": "Answers are sourced from the processed documents, delivered in natural language and accompanied by the most relevant references.",
+    "web_app_title": "Tell us your customer\u0027s id or give me information that can help me determine whether this prospective loan applicant is likely to default.",
+    "web_app_subheading": "Answers are sourced from the processed documents, data and models and delivered in natural language and accompanied by the most relevant references.",
     "web_app_input_placeholder": "Ask your question",
     "example_questions": [
       "What are the primary causes of the recent increase in global temperatures?",
@@ -196,10 +196,10 @@
     "title_llm_id": "agent:DULMxTik",
     "json_decision_llm_id": "agent:DULMxTik",
     "message_dataset": "messages_history",
-    "answers_description": "The purpose of this webapp"
+    "answers_description": "The purpose of this webapp is 3-fold:\n1. act as an expert on our loan and credit scoring policies \n2. act as an expert as to whether or not a loan applicant should be approved or is already approved.  \n3. be able to predict whether a prospective loan applicant (someone who doesn\u0027t already exist in our system) should be approved for a loan.\n\nThe webapp should be able to lookup customers based on their id and use that information to tell the asker whether the customer has already been approved or if their loan is pending they can use the prediction column to determine whether the loan is likely to be approved or not.   If this is not an existing customer asking about the status of a loan, the webapp should use conversational skills and\nask for the relevant information to assess whether the prospective customers details adhere to our policies and if so use a predictive model to determine whether they are likely to be approved or denied."
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:b+s4w9ESpm8ELzxDYT8USSHVz2fDF/sdhX1FeMxa16FDIOld5SURbctNcioBGqMU2ZG2FZYLhPUgKUXt0JhpJk8xuXx8bdMtPqoTDrAD1k2qXJFNNpJr",
+  "apiKey": "e:AES:X2:eMYXx0h7PBGUlavqGoDqNWxYTFrO3AX1wfBdPfv6gUOFEFV3e08ZgfHf9ImUvEA+3UHFPhBEpKFlBBO2E0qLn+84roq8Np1aZvFR1bSWVaLeWuHIOEJu",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
