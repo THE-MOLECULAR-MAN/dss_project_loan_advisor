@@ -47,10 +47,11 @@
     "schema": "ERIND",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
+    "writeDescriptionsAsSQLComment": false,
     "noDropOnSchemaMismatch": true,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "readColsWithUnknownTzAsDates": false,
-    "readSQLDateColsAsDSSDates": true,
+    "datetimenotzReadMode": "AS_STRING",
+    "dateonlyReadMode": "AS_DATE",
     "variablesExpansionLoopConfig": {
       "enabled": false,
       "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
@@ -73,6 +74,7 @@
       {"name":"FICO_min","type":"bigint"},
       {"name":"Default","type":"double"},
       {"name":"Amount_Requested","type":"bigint"},
+      {"name":"Debt_to_Income_Ratio","type":"double"},
       {"name":"Loan_Purpose","type":"string","maxLength":16777216},
       {"name":"Loan_Length","type":"bigint"},
       {"name":"Home_Ownership","type":"string","maxLength":16777216},
@@ -82,6 +84,7 @@
     ],
     "userModified": true
   },
+  "typeSystemVersion": "V1",
   "dkuProperties": [],
   "metrics": {
     "probes": [
