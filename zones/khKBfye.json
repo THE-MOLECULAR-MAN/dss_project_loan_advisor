@@ -28,7 +28,12 @@
     }
   ],
   "shared": [],
-  "position": {},
+  "position": {
+    "x": 2402.0,
+    "y": -611.5,
+    "width": 785.0,
+    "height": 363.0
+  },
   "tags": [],
   "customFields": {},
   "checklists": {

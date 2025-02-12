@@ -20,7 +20,10 @@
     }
   ],
   "shared": [],
-  "position": {},
+  "position": {
+    "width": 424.0,
+    "height": 424.0
+  },
   "tags": [],
   "customFields": {},
   "checklists": {
