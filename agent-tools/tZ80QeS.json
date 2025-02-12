@@ -7,8 +7,22 @@
   "quickTestQuery": {
     "input": {
       "record": {
-        "\u003cFEATURE1_NAME\u003e": "\u003cFEATURE1_VALUE\u003e",
-        "\u003cFEATURE2_NAME\u003e": "\u003cFEATURE2_VALUE\u003e"
+        "id": 99592,
+        "Status": "accepted",
+        "Date_Of_Birth_parsed": "1983-03-07T00:00:00.000Z",
+        "Age": 41,
+        "Monthly_Income": 4583.33,
+        "State": "TX",
+        "Interest_Rate": 12.12,
+        "FICO_Range": "715-719",
+        "FICO_max": 719,
+        "FICO_min": 715,
+        "Default": 0,
+        "Amount_Requested": 19200,
+        "Debt_to_Income_Ratio": 0.3490911629753913,
+        "Loan_Purpose": "debt_consolidation",
+        "Loan_Length": "36",
+        "Home_Ownership": "MORTGAGE"
       }
     },
     "context": {}
