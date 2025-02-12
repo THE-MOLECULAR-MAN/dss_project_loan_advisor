@@ -5,6 +5,9 @@
   "vectorStoreType": "CHROMA",
   "embeddingLLMId": "openai:OpenAI:text-embedding-3-small",
   "sourceIdColumn": "file",
+  "metadataColumnsSchema": [
+    {"name":"file","type":"string","maxLength":16777216}
+  ],
   "envSelection": {
     "envMode": "EXPLICIT_ENV",
     "envName": "py39_rag"
