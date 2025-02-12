@@ -61,7 +61,28 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"id","type":"bigint"},
+      {"name":"Status","type":"string","maxLength":16777216},
+      {"name":"Date_Of_Birth_parsed","type":"date"},
+      {"name":"Age","type":"bigint"},
+      {"name":"Monthly_Income","type":"double"},
+      {"name":"State","type":"string","maxLength":16777216},
+      {"name":"Interest_Rate","type":"double"},
+      {"name":"FICO_Range","type":"string","maxLength":16777216},
+      {"name":"FICO_max","type":"bigint"},
+      {"name":"FICO_min","type":"bigint"},
+      {"name":"Default","type":"double"},
+      {"name":"Amount_Requested","type":"bigint"},
+      {"name":"Debt_to_Income_Ratio","type":"double"},
+      {"name":"Loan_Purpose","type":"string","maxLength":16777216},
+      {"name":"Loan_Length","type":"bigint"},
+      {"name":"Home_Ownership","type":"string","maxLength":16777216},
+      {"name":"proba_0.0","type":"double"},
+      {"name":"proba_1.0","type":"double"},
+      {"name":"prediction","type":"string","maxLength":16777216},
+      {"name":"prediction_correct","type":"boolean"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
