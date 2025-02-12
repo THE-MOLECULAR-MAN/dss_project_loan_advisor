@@ -145,6 +145,14 @@
                 "maxLength": 16777216
               },
               {
+                "name": "FICO_max",
+                "type": "bigint"
+              },
+              {
+                "name": "FICO_min",
+                "type": "bigint"
+              },
+              {
                 "name": "Default",
                 "type": "double"
               },

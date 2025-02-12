@@ -13,7 +13,7 @@
     "main": {
       "items": [
         {
-          "ref": "Customers_and_Loan",
+          "ref": "Customers_and_Loan_prepared",
           "deps": []
         }
       ]
