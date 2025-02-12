@@ -1,0 +1,17 @@
+{
+  "name": "Predict_Loan_Default",
+  "type": "ClassicalPredictionModelPredict",
+  "dkuProperties": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1739374127841
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
