@@ -1,7 +1,32 @@
 {
   "name": "Customer_Lookup",
   "type": "DatasetRowLookup",
+  "params": {
+    "datasetRef": "Customers_and_Loan_prepared",
+    "usableLookupColumns": [
+      "id"
+    ],
+    "returnedColumns": [
+      "Status",
+      "Interest_Rate",
+      "Amount_Requested",
+      "Loan_Purpose",
+      "Loan_Length"
+    ],
+    "retrievalMode": "SINGLE_RECORD"
+  },
+  "quickTestQuery": {
+    "input": {
+      "filter": {
+        "column": "\u003cCOLUMN_NAME\u003e",
+        "value": "\u003cVALUE\u003e",
+        "operator": "EQUALS"
+      }
+    },
+    "context": {}
+  },
   "dkuProperties": [],
+  "additionalDescriptionForLLM": "This tool should be used to provide information about a customer when it\u0027s provided with the customer id.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
