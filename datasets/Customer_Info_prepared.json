@@ -63,7 +63,8 @@
     "columns": [
       {"name":"id","type":"bigint"},
       {"name":"Status","type":"string","maxLength":16777216},
-      {"name":"Date_Of_Birth","type":"string","maxLength":16777216},
+      {"name":"Date_Of_Birth_parsed","type":"date"},
+      {"name":"Age","type":"bigint"},
       {"name":"Monthly_Income","type":"double"},
       {"name":"State","type":"string","maxLength":16777216},
       {"name":"Interest_Rate","type":"double"},
