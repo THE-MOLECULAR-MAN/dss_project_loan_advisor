@@ -3,7 +3,7 @@
   "retrieverType": "VECTOR_STORE_BACKED",
   "rebuildBehavior": "EXPLICIT",
   "vectorStoreType": "CHROMA",
-  "embeddingLLMId": "openai:OpenAI:text-embedding-3-small",
+  "embeddingLLMId": "openai:SE-open-ai:text-embedding-3-small",
   "sourceIdColumn": "file",
   "metadataColumnsSchema": [
     {"name":"file","type":"string","maxLength":16777216}
@@ -18,7 +18,7 @@
   "llmsExposedWith": [
     {
       "ragModelId": "loan_credit_score_policies",
-      "llmId": "openai:OpenAI:gpt-4o-mini",
+      "llmId": "openai:SE-open-ai:gpt-4o-mini",
       "maxDocuments": 4,
       "useMMR": false,
       "useHybridSearch": false,

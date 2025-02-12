@@ -9,7 +9,7 @@
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
   "hasSetupSection": false,
-  "owner": "admin",
+  "owner": "edavis",
   "permissionsVersion": "V2",
   "permissions": [],
   "additionalDashboardUsers": {
@@ -141,7 +141,7 @@
     "dkuProperties": []
   },
   "name": "FinAI Advisor",
-  "projectStatus": "Sandbox",
+  "imgPattern": 6,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -205,7 +205,12 @@
     "lastModifiedOn": 1739368047308
   },
   "shortDesc": "The project *FinAI Advisor* was created by Administrator on Feb 12th 2025",
-  "tags": [],
+  "tags": [
+    "agents",
+    "tools",
+    "Answers",
+    "imported"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [

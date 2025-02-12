@@ -37,7 +37,7 @@
   },
   "tags": [],
   "params": {
-    "connection": "SEDEMO",
+    "connection": "SEDemo",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",

@@ -37,7 +37,7 @@
   },
   "tags": [],
   "params": {
-    "connection": "SEDEMO",
+    "connection": "SEDemo",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",
@@ -47,10 +47,11 @@
     "schema": "ERIND",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
+    "writeDescriptionsAsSQLComment": false,
     "noDropOnSchemaMismatch": true,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "readColsWithUnknownTzAsDates": false,
-    "readSQLDateColsAsDSSDates": true,
+    "datetimenotzReadMode": "AS_STRING",
+    "dateonlyReadMode": "AS_DATE",
     "variablesExpansionLoopConfig": {
       "enabled": false,
       "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
@@ -79,6 +80,7 @@
     ],
     "userModified": true
   },
+  "typeSystemVersion": "V1",
   "dkuProperties": [],
   "metrics": {
     "probes": [

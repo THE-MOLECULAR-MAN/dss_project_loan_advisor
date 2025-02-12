@@ -1,6 +1,5 @@
 {
   "name": "predict_loan_default",
-  "error": null,
   "endpoints": [
     {
       "modelRef": "19qX6AHu",
@@ -56,38 +55,25 @@
   ],
   "authMethod": "PUBLIC",
   "authRealm": {
-    "id": null,
     "queryKeys": []
   },
   "oauth2Config": {
-    "issuer": null,
     "keysFormat": "JWKS_URI",
-    "jwksUri": null,
     "jwkUriConnectTimeout": 500,
     "jwkUriReadTimeout": 500,
     "jwkUriSizeLimit": 51200,
     "disableSSLCertificatesCheck": false,
-    "jwksSet": null,
-    "audience": null,
-    "scope": null,
     "scopeClaimFormat": "STRING",
-    "scopeClaimKey": "scope",
-    "clientIdClaimKey": null,
-    "jwkSetParsed": null
+    "scopeClaimKey": "scope"
   },
   "deploymentMonitoring": [],
-  "releaseNotes": null,
-  "versionTag": null,
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1739374196116,
-    "extendedProperties": null
+    "lastModifiedOn": 1739374196116
   },
-  "description": null,
-  "shortDesc": null,
   "tags": [],
   "customFields": {},
   "checklists": {
