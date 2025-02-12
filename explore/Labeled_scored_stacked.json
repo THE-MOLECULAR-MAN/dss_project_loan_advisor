@@ -1,0 +1,213 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "id",
+          "d": true
+        },
+        {
+          "name": "Status",
+          "d": true
+        },
+        {
+          "name": "Date_Of_Birth_parsed",
+          "d": true
+        },
+        {
+          "name": "Age",
+          "d": true
+        },
+        {
+          "name": "Monthly_Income",
+          "d": true
+        },
+        {
+          "name": "State",
+          "d": true
+        },
+        {
+          "name": "Interest_Rate",
+          "d": true
+        },
+        {
+          "name": "FICO_Range",
+          "d": true
+        },
+        {
+          "name": "FICO_max",
+          "d": true
+        },
+        {
+          "name": "FICO_min",
+          "d": true
+        },
+        {
+          "name": "Default",
+          "d": true
+        },
+        {
+          "name": "Amount_Requested",
+          "d": true
+        },
+        {
+          "name": "Debt_to_Income_Ratio",
+          "d": true
+        },
+        {
+          "name": "Loan_Purpose",
+          "d": true
+        },
+        {
+          "name": "Loan_Length",
+          "d": true
+        },
+        {
+          "name": "Home_Ownership",
+          "d": true
+        },
+        {
+          "name": "proba_0.0",
+          "d": true
+        },
+        {
+          "name": "proba_1.0",
+          "d": true
+        },
+        {
+          "name": "prediction",
+          "d": true
+        }
+      ]
+    },
+    "columnOrder": [],
+    "columnWidthsByName": {
+      "id": 100,
+      "Status": 100,
+      "Date_Of_Birth_parsed": 190,
+      "Age": 100,
+      "Monthly_Income": 134,
+      "State": 100,
+      "Interest_Rate": 134,
+      "FICO_Range": 120,
+      "FICO_max": 100,
+      "FICO_min": 100,
+      "Default": 134,
+      "Amount_Requested": 135,
+      "Debt_to_Income_Ratio": 190,
+      "Loan_Purpose": 141,
+      "Loan_Length": 100,
+      "Home_Ownership": 120,
+      "proba_0.0": 148,
+      "proba_1.0": 155,
+      "prediction": 134
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "individualColumnsRules": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "column": "Status",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "Status",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "pending": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "Status",
+          "selectedValues": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "Status",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "interactiveSearch": {
+    "savedQueries": []
+  },
+  "customMeasures": []
+}
