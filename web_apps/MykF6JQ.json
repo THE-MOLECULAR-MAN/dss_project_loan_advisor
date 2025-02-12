@@ -95,9 +95,9 @@
       "What do you need from me in order to assess whether a prospective customer will be a likely defaulter?"
     ],
     "disclaimer": "This application is powered by a Large Language Model. Review proposed outcomes in context with \u003cspan style\u003d\"color: #267cfb; text-decoration: underline\"\u003eResponsible AI\u003c/span\u003e considerations",
-    "use_custom_rebranding": false,
-    "custom_logo_file_name": "logo.png",
-    "custom_icon_file_name": "answer-icon.png",
+    "use_custom_rebranding": true,
+    "custom_logo_file_name": "flowfingroup_white_logo.png",
+    "custom_icon_file_name": "ffg-logo.png",
     "user_profile_languages": [
       {
         "from": "ar",
@@ -186,7 +186,7 @@
     "knowledge_source_title": "file",
     "knowledge_source_thumbnail": false,
     "sql_retrieval_custom_name": "",
-    "custom_theme_name": "",
+    "custom_theme_name": "flow-financial-theme",
     "sql_retrieval_table_list": [],
     "llm_id": "agent:DULMxTik",
     "logging_dataset": "conversation_history",
@@ -199,7 +199,7 @@
     "answers_description": "The purpose of this webapp is 3-fold:\n1. act as an expert on our loan and credit scoring policies \n2. act as an expert as to whether or not a loan applicant should be approved or is already approved.  \n3. be able to predict whether a prospective loan applicant (someone who doesn\u0027t already exist in our system) should be approved for a loan.\n\nThe webapp should be able to lookup customers based on their id and use that information to tell the asker whether the customer has already been approved or if their loan is pending they can use the prediction column to determine whether the loan is likely to be approved or not.   If this is not an existing customer asking about the status of a loan, the webapp should use conversational skills and\nask for the relevant information to assess whether the prospective customers details adhere to our policies and if so use a predictive model to determine whether they are likely to be approved or denied."
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:3UiOhZ+6hULX8BnX1X+oOomyMjRJeVe7tSmXJDFe3R3voi+4yl74Pi3/LfyT9UlcHPKuxBl5PnsEe7rLO89Ul+nqjpF9WrpOxohlJse1F7D+giiCcrNu",
+  "apiKey": "e:AES:X2:ms9aHU+lRaUg7r4deJCwDy5cId5hLa6TYcg9f1tzVZeplYB76ZMZ+cdFVcPpp984oCWMZminLt9bhAwr3FiMengt39prD16cGC5uiwJbeK9DFOH+50hM",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
