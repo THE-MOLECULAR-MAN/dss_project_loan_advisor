@@ -25,6 +25,10 @@
         {
           "ref": "Labeled",
           "appendMode": false
+        },
+        {
+          "ref": "Unlabeled",
+          "appendMode": false
         }
       ]
     }
