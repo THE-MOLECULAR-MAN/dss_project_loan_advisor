@@ -44,7 +44,8 @@
       "toolsUsingAgentSettings": {
         "tools": [
           {
-            "toolRef": "ggLdoAC"
+            "toolRef": "ggLdoAC",
+            "additionalDescription": "Use this tool to get information on a customer based on their id.  The returned information should tell us whether their loan is already approved or if it\u0027s pending, the tool"
           },
           {
             "toolRef": "r6cHzmF"
@@ -54,6 +55,7 @@
           }
         ],
         "llmId": "retrievalaugmented:IAAGe7oy:loan_credit_score_policies",
+        "systemPromptAppend": "This agent should act as an expert on our loan and credit scoring policies as well as whether or not a loan applicant should be approved or is already approved.  The agent should be able to lookup customers based on their id and use that information to tell the asker whether the customer has already been approved or if their loan is pending they can use the",
         "containerExecSelection": {
           "containerMode": "INHERIT"
         },
