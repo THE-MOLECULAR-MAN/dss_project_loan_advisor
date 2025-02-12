@@ -19,7 +19,7 @@
     "runAs": "edavis",
     "infra": {
       "containerSelection": {
-        "containerMode": "INHERIT"
+        "containerMode": "NONE"
       },
       "overrideGlobalK8sExposition": false,
       "exposition": {
@@ -200,7 +200,7 @@
     "answers_description": "The purpose of this webapp is 3-fold:\n1. act as an expert on our loan and credit scoring policies \n2. act as an expert as to whether or not a loan applicant should be approved or is already approved.  \n3. be able to predict whether a prospective loan applicant (someone who doesn\u0027t already exist in our system) should be approved for a loan.\n\nThe webapp should be able to lookup customers based on their id and use that information to tell the asker whether the customer has already been approved or if their loan is pending they can use the prediction column to determine whether the loan is likely to be approved or not.   If this is not an existing customer asking about the status of a loan, the webapp should use conversational skills and\nask for the relevant information to assess whether the prospective customers details adhere to our policies and if so use a predictive model to determine whether they are likely to be approved or denied."
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:KREPzSh/tLXNyqEVy5pXMm5A2w2EAZnP60DZxmfEsBsuwnsGJ+GAcROOedSS21dQsKa3fDoZ+Z1A5MxuvhhrU5rVCCVLph1uYV12w+y0MCb157igl5j6",
+  "apiKey": "e:AES:X2:NgTZZMLCKg5+A2F6B00iXTyojJzMQhMPAYDYzy/s3BElRyumhnpOS0291kIYRuISHbbTbp7q8CMpiREOmmwbNiJw978YS39Eav8h18CoI/jCq1aLsnqx",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
