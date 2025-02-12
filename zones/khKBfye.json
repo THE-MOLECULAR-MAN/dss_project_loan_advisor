@@ -25,22 +25,6 @@
     {
       "objectId": "DULMxTik",
       "objectType": "SAVED_MODEL"
-    },
-    {
-      "objectId": "messages_history",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "conversation_history",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "general_feedback",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "user_profiles",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
