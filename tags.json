@@ -1,5 +1,8 @@
 {
   "tags": {
+    "owner:Erin Davis": {
+      "color": "#9060e0"
+    },
     "Execution:Snowflake:SQL": {
       "color": "#7a18f0"
     },
