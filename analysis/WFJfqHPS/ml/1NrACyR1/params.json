@@ -250,12 +250,36 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Debt_to_Income_Ratio": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
         },
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
@@ -273,12 +297,12 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [
-          "YEAR",
           "WEEK",
-          "MONTH",
-          "QUARTER"
+          "YEAR",
+          "QUARTER",
+          "MONTH"
         ],
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -471,30 +495,6 @@
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
-      },
-      "Debt_to_Income_Ratio": {
-        "generate_derivative": false,
-        "numerical_handling": "REGULAR",
-        "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
-        "impute_constant_value": 0.0,
-        "keep_regular": false,
-        "rescaling": "AVGSTD",
-        "monotonic": "NONE",
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "datetime_cyclical_periods": [],
-        "role": "INPUT",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "DoubleMeaning"
-        },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
       }
     },
     "feature_generation": {
@@ -670,7 +670,7 @@
         },
         "values": [
           6,
-          13
+          14
         ],
         "range": {
           "min": 6,
@@ -2111,7 +2111,7 @@
       "early_stopping_rounds": 4,
       "tweedie_variance_power": 1.5,
       "allow_sparse_matrices": false,
-      "enabled": true
+      "enabled": false
     },
     "deep_neural_network_regression": {
       "learning_rate": {
