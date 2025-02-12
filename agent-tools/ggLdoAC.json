@@ -11,7 +11,17 @@
       "Interest_Rate",
       "Amount_Requested",
       "Loan_Purpose",
-      "Loan_Length"
+      "Loan_Length",
+      "FICO_Range",
+      "FICO_max",
+      "FICO_min",
+      "Debt_to_Income_Ratio",
+      "Home_Ownership",
+      "Date_Of_Birth_parsed",
+      "Age",
+      "Monthly_Income",
+      "State",
+      "id"
     ],
     "retrievalMode": "SINGLE_RECORD"
   },
