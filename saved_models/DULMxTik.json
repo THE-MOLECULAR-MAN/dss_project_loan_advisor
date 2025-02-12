@@ -42,8 +42,18 @@
         "maxParallelRequestsPerProcess": 4
       },
       "toolsUsingAgentSettings": {
-        "tools": [],
-        "llmId": "retrievalaugmented:1YTr36Lc:boldly-little-robin",
+        "tools": [
+          {
+            "toolRef": "ggLdoAC"
+          },
+          {
+            "toolRef": "r6cHzmF"
+          },
+          {
+            "toolRef": "tZ80QeS"
+          }
+        ],
+        "llmId": "retrievalaugmented:IAAGe7oy:loan_credit_score_policies",
         "containerExecSelection": {
           "containerMode": "INHERIT"
         },
