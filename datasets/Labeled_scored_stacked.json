@@ -80,8 +80,7 @@
       {"name":"Home_Ownership","type":"string","maxLength":16777216},
       {"name":"proba_0.0","type":"double"},
       {"name":"proba_1.0","type":"double"},
-      {"name":"prediction","type":"string","maxLength":16777216},
-      {"name":"prediction_correct","type":"boolean"}
+      {"name":"prediction","type":"string","maxLength":16777216}
     ],
     "userModified": true
   },
