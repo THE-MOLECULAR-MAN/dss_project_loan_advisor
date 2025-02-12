@@ -43,6 +43,7 @@
       },
       "toolsUsingAgentSettings": {
         "tools": [],
+        "llmId": "retrievalaugmented:1YTr36Lc:boldly-little-robin",
         "containerExecSelection": {
           "containerMode": "INHERIT"
         },
