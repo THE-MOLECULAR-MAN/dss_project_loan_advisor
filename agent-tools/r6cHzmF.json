@@ -13,12 +13,25 @@
     "filter": {
       "uiData": {
         "mode": "\u0026\u0026",
-        "conditions": []
-      }
+        "conditions": [
+          {
+            "num": 0,
+            "items": [],
+            "input": "file",
+            "operator": "contains",
+            "$$hashKey": "object:1017",
+            "$showList": false
+          }
+        ],
+        "$filterOptions": "rules",
+        "$latestOperator": "\u0026\u0026"
+      },
+      "$status": {}
     },
     "knowledgeBankRef": "IAAGe7oy",
     "allMetadataInContext": true,
-    "titleMetadata": "file"
+    "titleMetadata": "file",
+    "performFiltering": false
   },
   "quickTestQuery": {
     "input": {
