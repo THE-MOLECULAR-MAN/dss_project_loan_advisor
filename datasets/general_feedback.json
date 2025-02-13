@@ -1,5 +1,5 @@
 {
-  "type": "Snowflake",
+  "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
   "checklists": {
@@ -37,18 +37,17 @@
   },
   "tags": [],
   "params": {
-    "connection": "Snowflake-AWS",
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "Postgres-local",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "catalog": "SEDEMO",
-    "table": "${projectKey}_GENERAL_FEEDBACK",
-    "schema": "ERIND",
+    "table": "${projectKey}_general_feedback",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
-    "writeDescriptionsAsSQLComment": true,
-    "noDropOnSchemaMismatch": true,
+    "writeDescriptionsAsSQLComment": false,
+    "noDropOnSchemaMismatch": false,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "datetimenotzReadMode": "AS_IS",
     "dateonlyReadMode": "AS_IS",
@@ -62,13 +61,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"date","type":"string","maxLength":16777216},
-      {"name":"user","type":"string","maxLength":16777216},
-      {"name":"message","type":"string","maxLength":16777216},
-      {"name":"knowledgebank","type":"string","maxLength":16777216},
-      {"name":"llm","type":"string","maxLength":16777216}
+      {"name":"date","type":"string"},
+      {"name":"user","type":"string"},
+      {"name":"message","type":"string"},
+      {"name":"knowledgebank","type":"string"},
+      {"name":"llm","type":"string"}
     ],
-    "userModified": false
+    "userModified": true
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],

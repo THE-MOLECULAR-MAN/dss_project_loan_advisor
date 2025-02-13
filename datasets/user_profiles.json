@@ -1,5 +1,5 @@
 {
-  "type": "Snowflake",
+  "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
   "checklists": {
@@ -37,18 +37,17 @@
   },
   "tags": [],
   "params": {
-    "connection": "Snowflake-AWS",
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "Postgres-local",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "catalog": "SEDEMO",
-    "table": "${projectKey}_USER_PROFILES",
-    "schema": "ERIND",
+    "table": "${projectKey}_user_profiles",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
-    "writeDescriptionsAsSQLComment": true,
-    "noDropOnSchemaMismatch": true,
+    "writeDescriptionsAsSQLComment": false,
+    "noDropOnSchemaMismatch": false,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "datetimenotzReadMode": "AS_IS",
     "dateonlyReadMode": "AS_IS",
@@ -62,11 +61,11 @@
   },
   "schema": {
     "columns": [
-      {"name":"user","type":"string","maxLength":16777216},
-      {"name":"profile","type":"string","maxLength":16777216},
+      {"name":"user","type":"string"},
+      {"name":"profile","type":"string"},
       {"name":"last_updated","type":"datetimenotz"}
     ],
-    "userModified": false
+    "userModified": true
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
