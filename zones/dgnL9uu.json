@@ -49,6 +49,10 @@
     {
       "objectId": "Customer_Info_file",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Customer_Info",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
