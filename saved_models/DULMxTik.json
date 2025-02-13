@@ -68,7 +68,7 @@
         "messages": [
           {
             "role": "user",
-            "content": "I\u0027m looking to apply to a loan, what do you need from me to tell me whether I\u0027m likely to be approved?"
+            "content": "Can you tell me about our loan approval policies?"
           }
         ],
         "context": {}
