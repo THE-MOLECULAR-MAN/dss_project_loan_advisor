@@ -61,7 +61,7 @@
     "max_n_upload_files": 5,
     "allow_doc_as_image": true,
     "docs_per_page_as_image": 5,
-    "retrieval_mode": "kb",
+    "retrieval_mode": "no_retriever",
     "knowledge_bank_id": "IAAGe7oy",
     "activate_knowledge_bank": false,
     "enable_smart_usage_of_kb": true,
@@ -194,13 +194,13 @@
     "user_profile_dataset": "user_profiles",
     "upload_folder": "I8NEaa0q",
     "general_feedback_dataset": "general_feedback",
-    "title_llm_id": "agent:DULMxTik",
-    "json_decision_llm_id": "agent:DULMxTik",
+    "title_llm_id": "openai:SE-open-ai:gpt-4o-mini",
+    "json_decision_llm_id": "openai:SE-open-ai:gpt-4o-mini",
     "message_dataset": "messages_history",
     "answers_description": "The purpose of this webapp is 3-fold:\n1. act as an expert on our loan and credit scoring policies \n2. act as an expert as to whether or not a loan applicant should be approved or is already approved.  \n3. be able to predict whether a prospective loan applicant (someone who doesn\u0027t already exist in our system) should be approved for a loan.\n\nThe webapp should be able to lookup customers based on their id and use that information to tell the asker whether the customer has already been approved or if their loan is pending they can use the prediction column to determine whether the loan is likely to be approved or not.   If this is not an existing customer asking about the status of a loan, the webapp should use conversational skills and\nask for the relevant information to assess whether the prospective customers details adhere to our policies and if so use a predictive model to determine whether they are likely to be approved or denied."
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:kgKWpxPql1I4r0ffNl19Oy8poXn9snZWpKIuGXmMMKOpIdco87a62IFTerJw+0MNWjRJ8PtBCENQRbz2KGZwU/RuXn/o5ZkcEHb/pCHYQPqzriuJ3jZV",
+  "apiKey": "e:AES:X2:dLwuohrNGKaoROSeb3GSR7HdBtvFG8lDVNkvqkRzXCWz3HmM/ff+BbuCWvewOq/GGzSthbAWcqVADzoXVurH9is1HA6+S6yBJojw62+jG0B20r0NkCPD",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
