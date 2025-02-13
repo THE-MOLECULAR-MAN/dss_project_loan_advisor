@@ -37,7 +37,7 @@
   },
   "tags": [],
   "params": {
-    "connection": "SEDemo",
+    "connection": "Snowflake-AWS",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",
