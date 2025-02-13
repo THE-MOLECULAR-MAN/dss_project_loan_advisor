@@ -53,6 +53,10 @@
     {
       "objectId": "compute_Customer_Info",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_Loan_Requests",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
