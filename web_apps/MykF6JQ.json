@@ -92,7 +92,7 @@
     "web_app_input_placeholder": "Ask your question",
     "example_questions": [
       "Can you tell me about our loan approval policies?",
-      "Can you tell me about our credit scoring policies?",
+      "My customer\u0027s id is 99592. Can you tell me whether their loan application has been approved?",
       "What do you need from me in order to assess whether a prospective customer will be a likely defaulter?"
     ],
     "disclaimer": "This application is powered by a Large Language Model. Review proposed outcomes in context with \u003cspan style\u003d\"color: #267cfb; text-decoration: underline\"\u003eResponsible AI\u003c/span\u003e considerations",
@@ -200,7 +200,7 @@
     "answers_description": "The purpose of this webapp is 3-fold:\n1. act as an expert on our loan and credit scoring policies \n2. act as an expert as to whether or not a loan applicant should be approved or is already approved.  \n3. be able to predict whether a prospective loan applicant (someone who doesn\u0027t already exist in our system) should be approved for a loan.\n\nThe webapp should be able to lookup customers based on their id and use that information to tell the asker whether the customer has already been approved or if their loan is pending they can use the prediction column to determine whether the loan is likely to be approved or not.   If this is not an existing customer asking about the status of a loan, the webapp should use conversational skills and\nask for the relevant information to assess whether the prospective customers details adhere to our policies and if so use a predictive model to determine whether they are likely to be approved or denied."
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:dLwuohrNGKaoROSeb3GSR7HdBtvFG8lDVNkvqkRzXCWz3HmM/ff+BbuCWvewOq/GGzSthbAWcqVADzoXVurH9is1HA6+S6yBJojw62+jG0B20r0NkCPD",
+  "apiKey": "e:AES:X2:H5P5GsA3HzJuaJhlzolOUcb/e+Fw8xO68Ns+jZbhU9qff4ngrabaEyLCfrj02Pq8p1aJC2mJkUqsVkFq5JiTEb37GhYLvO4NWJLSH7Vgbi7fgjLvfVh0",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
