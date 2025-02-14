@@ -41,9 +41,12 @@
     },
     "forceAuthentication": false
   },
-  "config": {},
+  "config": {
+    "llm_responses_dataset": "conversation_history",
+    "llm_responses_column": "llm_context"
+  },
   "name": "Agent Traces Explorer",
-  "apiKey": "e:AES:X2:L7tTYZYFv1SMrpN2E/CZT+D7H9A6jMreIpRhXijA8V2JjXq6IDiaEXZdEH6yMoHHaJQi5lbvrEFt2EiOTUopf9pWzjlcnrjx0Kmmw4+75NX8EoiqRmwh",
+  "apiKey": "e:AES:X2:0z6MunFRACYtKd2ExJs3q0EFWS1WhMHFl+FsSiOTJialKFDP04T8NwTwNxkTPsVZjPAth1CYh+iveBWFspaaRjnzAhvk62JvAWUASgOXv33QdhSppI5O",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
