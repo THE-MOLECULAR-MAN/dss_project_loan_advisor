@@ -1,0 +1,60 @@
+{
+  "type": "webapp_traces-explorer_traces-explorer",
+  "hasLegacyBackendURL": false,
+  "params": {
+    "backendEnabled": true,
+    "enableJavascriptModules": true,
+    "autoStartBackend": false,
+    "hideJSSecurityPanel": true,
+    "envSelection": {
+      "envMode": "INHERIT"
+    },
+    "nbProcesses": 1,
+    "backendAPIAccessEnabled": false,
+    "libraries": [
+      "jquery",
+      "dataiku",
+      "font_awesome"
+    ],
+    "infra": {
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "overrideGlobalK8sExposition": false,
+      "exposition": {
+        "type": "local_process",
+        "params": {}
+      },
+      "scaling": {
+        "initialReplicas": 1,
+        "progressDeadlineSeconds": 600,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaMetrics": [],
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0,
+        "hpaAnnotations": []
+      },
+      "deploymentModifier": {
+        "config": {}
+      }
+    },
+    "forceAuthentication": false
+  },
+  "config": {},
+  "name": "Agent Traces Explorer",
+  "apiKey": "e:AES:X2:L7tTYZYFv1SMrpN2E/CZT+D7H9A6jMreIpRhXijA8V2JjXq6IDiaEXZdEH6yMoHHaJQi5lbvrEFt2EiOTUopf9pWzjlcnrjx0Kmmw4+75NX8EoiqRmwh",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1739555247332
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "customFields": {},
+  "isVirtual": false
+}
