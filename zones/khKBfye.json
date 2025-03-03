@@ -25,6 +25,18 @@
     {
       "objectId": "DULMxTik",
       "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "compute_LoanPolicies_embedded",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "2hTj4tcC",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "YhJPD3ow",
+      "objectType": "RETRIEVABLE_KNOWLEDGE"
     }
   ],
   "shared": [],
