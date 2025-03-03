@@ -32,7 +32,7 @@
     "allMetadataInContext": true,
     "titleMetadata": "file",
     "performFiltering": false,
-    "enforceDocumentLevelSecurity": true
+    "enforceDocumentLevelSecurity": false
   },
   "quickTestQuery": {
     "input": {
