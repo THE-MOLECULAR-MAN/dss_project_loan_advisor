@@ -1,0 +1,38 @@
+{
+  "analyzedDataset": "FINAIADVISOR.Labeled_scored_stacked",
+  "connection": "Snowflake-AWS",
+  "name": "notebook editor for compute_customer_counts",
+  "recipeId": "compute_customer_counts",
+  "cells": [
+    {
+      "id": "PwMzGjVMADip",
+      "type": "QUERY",
+      "name": "Created from \u0027compute_customer_counts\u0027 recipe on Mon, 3 Mar 2025 18:53:34 GMT",
+      "code": "SELECT *\n  FROM \"SEDEMO\".\"ERIND\".\"FINAIADVISOR_LABELED_SCORED_STACKED\"",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
+  "automationLocal": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1741028014434
+  },
+  "tags": [
+    "recipe-editor"
+  ],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

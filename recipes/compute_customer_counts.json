@@ -13,6 +13,7 @@
       "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
       "replacements": []
     },
+    "sqlNotebookId": "sG9sIUS",
     "skipPrerunValidate": false
   },
   "customMeta": {
