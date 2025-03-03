@@ -2,6 +2,7 @@
   "type": "Snowflake",
   "managed": true,
   "featureGroup": false,
+  "shortDesc": "This is used for the Customer Lookup tool, based on Customer ID",
   "checklists": {
     "checklists": []
   },
