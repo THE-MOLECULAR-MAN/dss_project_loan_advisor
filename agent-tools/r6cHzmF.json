@@ -31,7 +31,8 @@
     "knowledgeBankRef": "YhJPD3ow",
     "allMetadataInContext": true,
     "titleMetadata": "file",
-    "performFiltering": false
+    "performFiltering": false,
+    "enforceDocumentLevelSecurity": true
   },
   "quickTestQuery": {
     "input": {
