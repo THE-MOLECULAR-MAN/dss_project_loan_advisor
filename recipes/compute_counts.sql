@@ -7,7 +7,7 @@ SELECT
 FROM
     "SEDEMO"."ERIND"."FINAIADVISOR_LABELED_SCORED_STACKED"
 WHERE
-    "State" = 'California'
+    "State" = 'CA'
 GROUP BY
     "Loan_Purpose"
 ORDER BY
