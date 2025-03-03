@@ -2,7 +2,7 @@
   "name": "LoanPolicies_embedded",
   "retrieverType": "VECTOR_STORE_BACKED",
   "rebuildBehavior": "EXPLICIT",
-  "vectorStoreType": "FAISS",
+  "vectorStoreType": "CHROMA",
   "embeddingLLMId": "openai:SE-open-ai:text-embedding-3-small",
   "envSelection": {
     "envMode": "EXPLICIT_ENV",
