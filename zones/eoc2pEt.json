@@ -1,7 +1,24 @@
 {
   "name": "GenAI pre 13.4",
   "color": "#087ABF",
-  "items": [],
+  "items": [
+    {
+      "objectId": "Loan_Policies",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "IAAGe7oy",
+      "objectType": "RETRIEVABLE_KNOWLEDGE"
+    },
+    {
+      "objectId": "compute_Loan_Policies",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_Loan_Policies_embedded",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {
     "x": 3195.1922536422767,
