@@ -5,10 +5,10 @@
         "mode": "SQL",
         "id": "uKWEj9ZqmFzb",
         "runOn": 1741028049501,
-        "runIn": -1,
+        "runIn": 944,
         "runBy": "admin",
         "connection": "Snowflake-AWS",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "Rb67qdnj",
         "hash": "d2d34300d857c4ade95c9c84a5ae98d9",
         "querySettings": {
