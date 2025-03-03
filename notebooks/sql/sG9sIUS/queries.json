@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "ps35gq6cz9r": [
+      {
+        "mode": "SQL",
+        "id": "uKWEj9ZqmFzb",
+        "runOn": 1741028049501,
+        "runIn": -1,
+        "runBy": "admin",
+        "connection": "Snowflake-AWS",
+        "state": "RUNNING",
+        "futureId": "Rb67qdnj",
+        "hash": "d2d34300d857c4ade95c9c84a5ae98d9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "-- To get the count of customers by loan purpose for the state of California (CA), we need to query the \n-- table that contains both customer and loan information. The most suitable table for this is \n-- `FINAIADVISOR_CUSTOMERS_AND_LOAN` as it contains both customer details and loan purpose. We will \n-- filter the results for the state of California and group the results by `Loan_Purpose` to get the \n-- count of customers for each purpose.\nSELECT\n    \"Loan_Purpose\",\n    COUNT(*) AS \"Customer_Count\"\nFROM\n    \"SEDEMO\".\"ERIND\".\"FINAIADVISOR_CUSTOMERS_AND_LOAN\"\nWHERE\n    \"State\" \u003d \u0027CA\u0027\nGROUP BY\n    \"Loan_Purpose\"\nORDER BY\n    \"Customer_Count\" DESC;",
+        "expandedSql": "-- To get the count of customers by loan purpose for the state of California (CA), we need to query the \n-- table that contains both customer and loan information. The most suitable table for this is \n-- `FINAIADVISOR_CUSTOMERS_AND_LOAN` as it contains both customer details and loan purpose. We will \n-- filter the results for the state of California and group the results by `Loan_Purpose` to get the \n-- count of customers for each purpose.\nSELECT\n    \"Loan_Purpose\",\n    COUNT(*) AS \"Customer_Count\"\nFROM\n    \"SEDEMO\".\"ERIND\".\"FINAIADVISOR_CUSTOMERS_AND_LOAN\"\nWHERE\n    \"State\" \u003d \u0027CA\u0027\nGROUP BY\n    \"Loan_Purpose\"\nORDER BY\n    \"Customer_Count\" DESC;"
+      }
+    ]
+  }
+}
