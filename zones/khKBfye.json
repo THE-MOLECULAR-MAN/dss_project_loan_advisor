@@ -25,14 +25,6 @@
     {
       "objectId": "IAAGe7oy",
       "objectType": "RETRIEVABLE_KNOWLEDGE"
-    },
-    {
-      "objectId": "compute_Loan_Policies_summarized",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "Loan_Policies_summarized",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
