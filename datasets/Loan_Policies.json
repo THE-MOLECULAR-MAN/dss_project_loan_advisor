@@ -61,11 +61,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"error_message","type":"string","maxLength":16777216},
-      {"name":"file","type":"string","maxLength":16777216},
-      {"name":"text","type":"string","maxLength":16777216}
-    ],
+    "columns": [],
     "userModified": false
   },
   "typeSystemVersion": "V2",
