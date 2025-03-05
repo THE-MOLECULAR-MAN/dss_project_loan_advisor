@@ -140,7 +140,7 @@
     },
     "dkuProperties": []
   },
-  "name": "FinAI Advisor",
+  "name": "FinAI Advisor Starter",
   "imgPattern": 6,
   "metrics": {
     "probes": [],
@@ -204,7 +204,7 @@
     },
     "lastModifiedOn": 1739368047308
   },
-  "shortDesc": "The project *FinAI Advisor* was created by Administrator on Feb 12th 2025",
+  "shortDesc": "The project *FinAI Advisor* was created by Administrator on Feb 12th 2025\nThe project *FINAIADVISORSTARTER* was copied from *FINAIADVISOR* by Administrator on Mar 05th 2025",
   "tags": [
     "Answers",
     "imported",
