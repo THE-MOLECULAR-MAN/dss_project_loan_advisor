@@ -15,6 +15,7 @@
     "Execution:Snowflake": {
       "color": "#a088bd"
     },
+    "recipe-editor": {},
     "Execution:Dataiku": {
       "color": "#0ae6f5"
     },
@@ -36,6 +37,9 @@
     "Execution:Kubernetes": {
       "color": "#08cfb2"
     },
+    "duplicated": {
+      "color": "#3A85AD"
+    },
     "Execution:Snowflake:Spark": {
       "color": "#FFD83D"
     },
@@ -56,7 +60,6 @@
     },
     "Execution:Snowflake:Snowpark": {
       "color": "#0cf54d"
-    },
-    "recipe-editor": {}
+    }
   }
 }

@@ -16,6 +16,7 @@
       "dataiku",
       "font_awesome"
     ],
+    "runAs": "admin",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -46,7 +47,7 @@
     "llm_responses_column": "llm_context"
   },
   "name": "Agent Traces Explorer",
-  "apiKey": "e:AES:X2:0z6MunFRACYtKd2ExJs3q0EFWS1WhMHFl+FsSiOTJialKFDP04T8NwTwNxkTPsVZjPAth1CYh+iveBWFspaaRjnzAhvk62JvAWUASgOXv33QdhSppI5O",
+  "apiKey": "e:AES:X2:7eN515kol6PH54vPmZBAL//svvSRHaiSPtiQyUdlz/LUPTlE3UZAwZO+7/Y//COYVXIMQioWH0QgXrofaVRdj0hCxXFRXw6ygpPaW3VGDhNACcj7F1yW",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
