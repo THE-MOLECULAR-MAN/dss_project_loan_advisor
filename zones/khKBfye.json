@@ -21,6 +21,14 @@
     {
       "objectId": "IAAGe7oy",
       "objectType": "RETRIEVABLE_KNOWLEDGE"
+    },
+    {
+      "objectId": "EQ2K36hg",
+      "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "19qX6AHu",
+      "objectType": "SAVED_MODEL"
     }
   ],
   "shared": [],
