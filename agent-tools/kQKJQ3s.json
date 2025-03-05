@@ -1,6 +1,18 @@
 {
   "name": "Predict_Loan_Deafult",
   "type": "ClassicalPredictionModelPredict",
+  "params": {
+    "smRef": "19qX6AHu"
+  },
+  "quickTestQuery": {
+    "input": {
+      "record": {
+        "\u003cFEATURE1_NAME\u003e": "\u003cFEATURE1_VALUE\u003e",
+        "\u003cFEATURE2_NAME\u003e": "\u003cFEATURE2_VALUE\u003e"
+      }
+    },
+    "context": {}
+  },
   "dkuProperties": [],
   "creationTag": {
     "versionNumber": 0,
