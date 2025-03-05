@@ -43,6 +43,7 @@
       },
       "toolsUsingAgentSettings": {
         "tools": [],
+        "llmId": "openai:SE-open-ai:gpt-4o-mini",
         "containerExecSelection": {
           "containerMode": "INHERIT"
         },
