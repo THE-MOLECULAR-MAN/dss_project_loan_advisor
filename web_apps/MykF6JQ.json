@@ -189,7 +189,7 @@
     "sql_retrieval_custom_name": "",
     "custom_theme_name": "flow-financial-theme",
     "sql_retrieval_table_list": [],
-    "llm_id": "agent:DULMxTik",
+    "llm_id": "agent:o4aZjVc5",
     "logging_dataset": "conversation_history",
     "user_profile_dataset": "user_profiles",
     "upload_folder": "I8NEaa0q",
@@ -200,7 +200,7 @@
     "answers_description": "The purpose of this webapp is 3-fold:\n1. act as an expert on our loan and credit scoring policies \n2. act as an expert as to whether or not a loan applicant should be approved or is already approved.  \n3. be able to predict whether a prospective loan applicant (someone who doesn\u0027t already exist in our system) should be approved for a loan.\n\nThe webapp should be able to lookup customers based on their id and use that information to tell the asker whether the customer has already been approved or if their loan is pending they can use the prediction column to determine whether the loan is likely to be approved or not.   If this is not an existing customer asking about the status of a loan, the webapp should use conversational skills and\nask for the relevant information to assess whether the prospective customers details adhere to our policies and if so use a predictive model to determine whether they are likely to be approved or denied."
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:IEB9lcW/Iog4nIXfTuqIPQDkSUdfuf8EhoFx5z/csM1nJA/3614RVJDEsLldv9ba2no2/iwjLTSjPBWMU6Cv1XBao5v3024fjFYDEfi1tNF+XpXHPsLY",
+  "apiKey": "e:AES:X2:qfL1DCqOb46PnrKZNuRn+Cwky+Ai3nGoR4pLuSQE/i0db1PPzZqyl5qMn0vDNZqoE83G8diXY3NitpHnM18oIB0gXnM6Mn6VSTdM66SybBFHjUccaPI5",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
