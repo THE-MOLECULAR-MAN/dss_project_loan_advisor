@@ -3,16 +3,8 @@
   "color": "#087ABF",
   "items": [
     {
-      "objectId": "compute_LoanPolicies_embedded",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "2hTj4tcC",
       "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "YhJPD3ow",
-      "objectType": "RETRIEVABLE_KNOWLEDGE"
     }
   ],
   "shared": [],
