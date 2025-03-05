@@ -14,6 +14,7 @@
     "context": {}
   },
   "dkuProperties": [],
+  "additionalDescriptionForLLM": "Use this model to predict whether or not a customer will default on their request loan.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
