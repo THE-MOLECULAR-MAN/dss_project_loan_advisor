@@ -3483,8 +3483,8 @@
     "customMeasures": [],
     "labels": []
   },
-  "lastTrainIndex": 1,
-  "lastTrainJobId": "",
+  "lastTrainIndex": 2,
+  "lastTrainJobId": "Build_Predict_Default__binary__2025-03-06T12-09-25.621",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
