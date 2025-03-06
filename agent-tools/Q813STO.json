@@ -5,7 +5,8 @@
     "datasetRef": "Labeled_scored_stacked",
     "usableLookupColumns": [
       "id"
-    ]
+    ],
+    "retrievalMode": "SINGLE_RECORD"
   },
   "quickTestQuery": {
     "input": {
