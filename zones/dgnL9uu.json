@@ -57,6 +57,14 @@
     {
       "objectId": "compute_Loan_Requests",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_Loan_Requests_file_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Loan_Requests_file_copy",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
