@@ -44,7 +44,7 @@
     "normalizeDoubles": true,
     "catalog": "SEDEMO",
     "table": "${projectKey}_CUSTOMERS_AND_LOAN",
-    "schema": "ERIND",
+    "schema": "MIKEW",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": false,
