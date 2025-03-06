@@ -44,7 +44,7 @@
     "normalizeDoubles": true,
     "catalog": "SEDEMO",
     "table": "${projectKey}_LOAN_POLICIES",
-    "schema": "ERIND",
+    "schema": "MIKEW",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": true,
@@ -66,7 +66,7 @@
       {"name":"file","type":"string","maxLength":16777216},
       {"name":"text","type":"string","maxLength":16777216}
     ],
-    "userModified": false
+    "userModified": true
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
