@@ -44,7 +44,7 @@
     "normalizeDoubles": true,
     "catalog": "SEDEMO",
     "table": "${projectKey}_LABELED_SCORED",
-    "schema": "ERIND",
+    "schema": "MIKEW",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": true,
