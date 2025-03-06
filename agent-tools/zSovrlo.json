@@ -21,9 +21,12 @@
     "titleMetadata": "file"
   },
   "quickTestQuery": {
-    "input": {
-      "searchQuery": "Ask your question here"
-    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "I’m looking to apply to a loan, what do you need from me to tell me whether I’m likely to be approved?"
+      }
+    ],
     "context": {}
   },
   "dkuProperties": [],
