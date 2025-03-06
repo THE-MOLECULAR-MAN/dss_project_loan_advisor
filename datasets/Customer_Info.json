@@ -44,7 +44,7 @@
     "normalizeDoubles": true,
     "catalog": "SEDEMO",
     "table": "${projectKey}_CUSTOMER_INFO_COPY",
-    "schema": "ERIND",
+    "schema": "MIKEW",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": false,
