@@ -1,7 +1,34 @@
 {
   "name": "Predict_Loan_Deafult",
   "type": "ClassicalPredictionModelPredict",
+  "params": {
+    "smRef": "19qX6AHu"
+  },
+  "quickTestQuery": {
+    "input": {
+      "record": {
+        "id": 99592,
+        "Status": "accepted",
+        "Date_Of_Birth_parsed": "1983-03-07T00:00:00.000Z",
+        "Age": 41,
+        "Monthly_Income": 4583.33,
+        "State": "TX",
+        "Interest_Rate": 12.12,
+        "FICO_Range": "515-519",
+        "FICO_max": 519,
+        "FICO_min": 515,
+        "Default": 0,
+        "Amount_Requested": 19200,
+        "Debt_to_Income_Ratio": 1.3490911629753912,
+        "Loan_Purpose": "credit_card",
+        "Loan_Length": "36",
+        "Home_Ownership": "MORTGAGE"
+      }
+    },
+    "context": {}
+  },
   "dkuProperties": [],
+  "additionalDescriptionForLLM": "Use this model to predict whether or not a customer will default on their request loan.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
