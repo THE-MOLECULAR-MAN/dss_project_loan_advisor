@@ -1,0 +1,17 @@
+{
+  "name": "Predict_Loan_Deafult",
+  "type": "ClassicalPredictionModelPredict",
+  "dkuProperties": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1741622505400
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
