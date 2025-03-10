@@ -7,14 +7,6 @@
       "objectType": "MANAGED_FOLDER"
     },
     {
-      "objectId": "compute_Loan_Policies",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "Loan_Policies",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_LoanPolicies_embedded",
       "objectType": "RECIPE"
     },
