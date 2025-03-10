@@ -71,7 +71,7 @@
     "web_app_input_placeholder": "Ask your question...",
     "example_questions": [
       "Can you tell me about our loan approval policies?",
-      "Can you tell me about our credit scoring policies?",
+      "Shall I approve loan for the customer 53041?",
       "What do you need from me in order to assess whether a prospective customer will be a likely defaulter?"
     ],
     "disclaimer": "This application is powered by a Large Language Model. Review proposed outcomes in context with \u003cspan style\u003d\"color: #267cfb; text-decoration: underline\"\u003eResponsible AI\u003c/span\u003e considerations",
@@ -166,7 +166,7 @@
     "user_profile_dataset": "user_profiles"
   },
   "name": "Loan Advisor App",
-  "apiKey": "e:AES:X2:/oNgqtrM/qRetmaGh7/H6nsXm5mS1OAX4l2bsB3p++TFirgw+9JbBtqE7zcXzSH6gdVJ6vor+5DOSUafAcXIsi4l8KqE9guo7C6LE8nvfk9s6yFTCzSU",
+  "apiKey": "e:AES:X2:o6wG6Tr0vKBkQHG3MHtE3MZmk0EPEiZls9sCxDr0J9zV907hzFAGNaSwtqAMCcE20FW9PB0sYEskspmEpY3Ot95dQ2FBPM2F2tWLhDnpbZ1CvFbEiOPo",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
