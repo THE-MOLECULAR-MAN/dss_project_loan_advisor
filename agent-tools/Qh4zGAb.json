@@ -1,0 +1,17 @@
+{
+  "name": "Text2SQL",
+  "type": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
+  "dkuProperties": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1741622357433
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
