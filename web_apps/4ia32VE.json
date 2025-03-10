@@ -42,7 +42,13 @@
     "forceAuthentication": false
   },
   "config": {
-    "agents_descriptions": [],
+    "agents_descriptions": [
+      {
+        "$$hashKey": "object:36979",
+        "agent_id": "FINAIADVISORSTARTER:agent:hB5veDeD",
+        "agent_description": "This agent should:\n1. act as an expert on our loan and credit scoring policies. \n2. act as an expert on our loan applicants by being able to query a related dataset. \n3. be able to predict whether a prospective loan applicant or a loan applicant with a pending loan  should be approved for a loan by using a predictive model."
+      }
+    ],
     "show_advanced_logging_settings": false,
     "index_chat_history": false,
     "permanent_delete": true,
@@ -59,62 +65,84 @@
     "system_prompt": "The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.",
     "enable_image_generation": false,
     "max_images_per_user_per_week": 0,
-    "web_app_title": "Ask Anything – Let Agent Connect uncover the best answers tailored just for you!",
-    "web_app_subheading": "Answers are provided by Dataiku Agents, which leverage documents, datasets, and advanced tools to deliver precise and insightful information.",
+    "web_app_title": "Tell us your customer\u0027s id or give me information that can help me determine whether this prospective loan applicant is likely to default.",
+    "web_app_subheading": "Answers are sourced from the processed documents, data and models and delivered in natural language and accompanied by the most relevant references.",
     "web_app_input_placeholder": "Ask your question...",
     "example_questions": [
-      "What are the latest trends in the renewable energy sector?",
-      "Summarize the key policies in our company handbook",
-      "Explain the process for submitting an internal expense report"
+      "Can you tell me about our loan approval policies?",
+      "Can you tell me about our credit scoring policies?",
+      "What do you need from me in order to assess whether a prospective customer will be a likely defaulter?"
     ],
     "disclaimer": "This application is powered by a Large Language Model. Review proposed outcomes in context with \u003cspan style\u003d\"color: #267cfb; text-decoration: underline\"\u003eResponsible AI\u003c/span\u003e considerations",
-    "use_custom_rebranding": false,
-    "custom_logo_file_name": "logo.png",
-    "custom_icon_file_name": "answer-icon.png",
+    "use_custom_rebranding": true,
+    "custom_logo_file_name": "flowfingroup_white_logo.png",
+    "custom_icon_file_name": "ffg-logo.png",
     "user_profile_languages": [
       {
         "from": "ar",
-        "to": "Arabic"
+        "to": "Arabic",
+        "$touched.it.from": true,
+        "$touched.it.to": true
       },
       {
         "from": "zh",
-        "to": "Chinese"
+        "to": "Chinese",
+        "$touched.it.from": true,
+        "$touched.it.to": true
       },
       {
         "from": "en",
-        "to": "English"
+        "to": "English",
+        "$touched.it.from": true,
+        "$touched.it.to": true
       },
       {
         "from": "fr",
-        "to": "French"
+        "to": "French",
+        "$touched.it.from": true,
+        "$touched.it.to": true
       },
       {
         "from": "de",
-        "to": "German"
+        "to": "German",
+        "$touched.it.from": true,
+        "$touched.it.to": true
       },
       {
         "from": "it",
-        "to": "Italian"
+        "to": "Italian",
+        "$touched.it.from": true,
+        "$touched.it.to": true
       },
       {
         "from": "ja",
-        "to": "Japanese"
+        "to": "Japanese",
+        "$touched.it.from": true,
+        "$touched.it.to": true
       },
       {
         "from": "ko",
-        "to": "Korean"
+        "to": "Korean",
+        "$touched.it.from": true,
+        "$touched.it.to": true
       },
       {
         "from": "pt",
-        "to": "Portuguese"
+        "to": "Portuguese",
+        "$touched.it.from": true,
+        "$touched.it.to": true
       },
       {
         "from": "ru",
-        "to": "Russian"
+        "to": "Russian",
+        "$touched.it.from": true,
+        "$touched.it.to": true
       },
       {
         "from": "es",
-        "to": "Spanish"
+        "to": "Spanish",
+        "$touched.it.from": true,
+        "$touched.it.to": true
       }
     ],
     "user_profile_settings": [],
@@ -122,10 +150,22 @@
     "language": "en",
     "log_level": "INFO",
     "http_headers": [],
-    "max_thread_workers_number": 0
+    "max_thread_workers_number": 0,
+    "image_generation_system_prompt": "",
+    "custom_theme_name": "flow-financial-theme",
+    "projects_keys": [
+      "FINAIADVISORSTARTER"
+    ],
+    "answers_ids": [],
+    "agents_ids": [
+      "FINAIADVISORSTARTER:agent:hB5veDeD"
+    ],
+    "llm_id": "agent:hB5veDeD",
+    "logging_dataset": "conversation_history",
+    "user_profile_dataset": "user_profiles"
   },
   "name": "Loan Advisor App",
-  "apiKey": "e:AES:X2:R3+W5DIVDAgD5CsjC4n1RxVwds9gZ2UnN7Nwnpjtjjkm8ntBS6ut7wLlc2B0IU/7djTxt+DP8KTKI0bCVWIaWTyTjjSDWjiQzw2TQmOtUt84SsJOC+TH",
+  "apiKey": "e:AES:X2:1erfGnVXGXuZMwTL/T+xUKPIM1txzGbOjRKvsPwlC/lm4Scyot5889fZ9x++wAHodWtd3eBdUnm8DSeEfrJ544JzLVmXl5WMTB06hbqE+0eCrTDgfH8K",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
