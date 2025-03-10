@@ -73,7 +73,8 @@
       "Can you tell me about our loan approval policies?",
       "Shall I approve loan for the customer 53041?",
       "What do you need from me in order to assess whether a prospective customer will be a likely defaulter?",
-      "Tell me about customer 96536"
+      "Tell me about customer 96536",
+      "What is the average loan amount requested for applicants from CA?"
     ],
     "disclaimer": "This application is powered by a Large Language Model. Review proposed outcomes in context with \u003cspan style\u003d\"color: #267cfb; text-decoration: underline\"\u003eResponsible AI\u003c/span\u003e considerations",
     "use_custom_rebranding": true,
@@ -167,7 +168,7 @@
     "user_profile_dataset": "user_profiles"
   },
   "name": "Loan Advisor App",
-  "apiKey": "e:AES:X2:m5nj7vKxRQhMqwumwFIyzYyYKQonVIOLOcBYmo1ePTFTiC8WBeza6yx9YL6Q2mbnazxhX9674yPbN2NCvd6clkVFi/nkamrUd1Hvec0qbFXWymKDErXc",
+  "apiKey": "e:AES:X2:bSw6gT2Zi2FGhCg5329ShmDiVKiJf4r8WGlLzhsZ4g52qZOOv5a9YbCcNVu7zrNCO4f4lf/5LCOg1+G3MPhnhJ9SmCKTmm8t/l1uiBymIbLbZH/OvYVK",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
