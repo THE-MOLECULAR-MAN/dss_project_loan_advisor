@@ -70,5 +70,41 @@
     "key": "dkuaps-bPy2RN1FAg5EseAPvo7zKQsTFw4tohkA",
     "label": "Key for Web app Agent Traces Explorer(cghiClw)",
     "createdOn": 1739555247326
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "editPermissions": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "publishToDataCollections": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "onBehalf": "4ia32VE",
+    "expiresOn": 0,
+    "id": "bQGENx2oYSh8dz7N",
+    "key": "dkuaps-sWE89fq59D0bBLjfNo9UNFNBy55aCC5x",
+    "label": "Key for Web app Loan Advisor App(4ia32VE)",
+    "createdOn": 1741623577290
   }
 ]
