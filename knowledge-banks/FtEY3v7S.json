@@ -1,0 +1,29 @@
+{
+  "name": "LoanPolicies_embedded",
+  "retrieverType": "VECTOR_STORE_BACKED",
+  "rebuildBehavior": "EXPLICIT",
+  "vectorStoreType": "CHROMA",
+  "embeddingLLMId": "openai:SE-open-ai:text-embedding-3-small",
+  "envSelection": {
+    "envMode": "EXPLICIT_ENV",
+    "envName": "INTERNAL_retrieval_augmented_generation_v1"
+  },
+  "containerExecSelection": {
+    "containerMode": "INHERIT"
+  },
+  "managedFolderId": "FINAIADVISORSTARTER.k3nLwl8i",
+  "multimodalColumn": "DKU_MULTIMODAL_CONTENT",
+  "llmsExposedWith": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1741621811815
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

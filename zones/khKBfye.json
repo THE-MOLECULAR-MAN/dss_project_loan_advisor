@@ -21,6 +21,18 @@
     {
       "objectId": "IAAGe7oy",
       "objectType": "RETRIEVABLE_KNOWLEDGE"
+    },
+    {
+      "objectId": "compute_LoanPolicies_embedded",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "k3nLwl8i",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "FtEY3v7S",
+      "objectType": "RETRIEVABLE_KNOWLEDGE"
     }
   ],
   "shared": [],
