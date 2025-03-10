@@ -1,24 +1,7 @@
 {
   "name": "RAG",
   "color": "#D03713",
-  "items": [
-    {
-      "objectId": "I8NEaa0q",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "compute_LoanPolicies_embedded",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "k3nLwl8i",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "FtEY3v7S",
-      "objectType": "RETRIEVABLE_KNOWLEDGE"
-    }
-  ],
+  "items": [],
   "shared": [],
   "position": {
     "x": 2250.8442288024794,
