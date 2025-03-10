@@ -73,7 +73,7 @@
         "messages": [
           {
             "role": "user",
-            "content": "Tell me about our loan policies"
+            "content": "Tell me everything you can about customer 96536."
           }
         ],
         "context": {}
