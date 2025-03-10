@@ -185,7 +185,7 @@
     "sql_retrieval_custom_name": "",
     "custom_theme_name": "flow-financial-theme",
     "sql_retrieval_table_list": [],
-    "llm_id": "openai:SE-open-ai:gpt-4o-mini",
+    "llm_id": "agent:hB5veDeD",
     "logging_dataset": "conversation_history",
     "user_profile_dataset": "user_profiles",
     "upload_folder": "I8NEaa0q",
@@ -196,7 +196,7 @@
     "answers_description": "This agent should:\n1. act as an expert on our loan and credit scoring policies. \n2. act as an expert on our loan applicants by being able to query a related dataset. \n3. be able to predict whether a prospective loan applicant or a loan applicant with a pending loan  should be approved for a loan by using a predictive model."
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:UNlmHaVdXYp2j2TFuQzv1wB8Lth76xzAwrk4MxTU1rhmI1HyeziQBWZZbtgCC4ZU7rM74865942FsHw42o1e8HqAVdFQ7jevHW5U8d6i/4b7isDxupZU",
+  "apiKey": "e:AES:X2:8H87cz/SnMI4Ck1k7L1DfP40ZOwJWvr3f43Qo1uIuuCSQWWaakv8M6/nAPjyN9t+M9E+Gw0kAHCkf2wwW1Cmy1RNoOCj5z5Eq+hxxnOaOEf21g0iRqzH",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
