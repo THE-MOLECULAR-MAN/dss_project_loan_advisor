@@ -36,7 +36,7 @@
     "main": {
       "items": [
         {
-          "ref": "Unlabeled_scored",
+          "ref": "Default_unknown_scored",
           "appendMode": false
         }
       ]
