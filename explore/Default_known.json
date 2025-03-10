@@ -1,5 +1,4 @@
 {
-  "inputDatasetSmartName": "Default_known",
   "script": {
     "steps": [],
     "maxProcessedMemTableBytes": -1,
@@ -71,18 +70,8 @@
     "previewMode": "ALL_ROWS"
   },
   "charts": [],
-  "name": "Quick modeling of Default on Labeled",
-  "customMeasures": [],
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1739369327130
+  "interactiveSearch": {
+    "savedQueries": []
   },
-  "tags": [],
-  "customFields": {},
-  "checklists": {
-    "checklists": []
-  }
+  "customMeasures": []
 }
