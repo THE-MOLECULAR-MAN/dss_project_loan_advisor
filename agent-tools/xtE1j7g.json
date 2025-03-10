@@ -1,0 +1,17 @@
+{
+  "name": "KB_tool",
+  "type": "VectorStoreSearch",
+  "dkuProperties": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1741622445210
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
