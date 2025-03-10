@@ -18,7 +18,8 @@
     ],
     "infra": {
       "containerSelection": {
-        "containerMode": "INHERIT"
+        "containerMode": "EXPLICIT_CONTAINER",
+        "containerConf": "eks-default"
       },
       "overrideGlobalK8sExposition": false,
       "exposition": {
@@ -165,7 +166,7 @@
     "user_profile_dataset": "user_profiles"
   },
   "name": "Loan Advisor App",
-  "apiKey": "e:AES:X2:1erfGnVXGXuZMwTL/T+xUKPIM1txzGbOjRKvsPwlC/lm4Scyot5889fZ9x++wAHodWtd3eBdUnm8DSeEfrJ544JzLVmXl5WMTB06hbqE+0eCrTDgfH8K",
+  "apiKey": "e:AES:X2:8+IEqN9P932VNtJJcTEfDsMpL3DcqK5sOYpeeWmUHh4MoX/R8W8jIKNJo/wS69m3cP2dhc4/Bkh3DkP+LptmBxdz5Oaa7D0yfAx57abh1w5MxU1oK/gm",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
