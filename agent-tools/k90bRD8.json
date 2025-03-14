@@ -1,6 +1,29 @@
 {
   "name": "KB_tool",
   "type": "VectorStoreSearch",
+  "params": {
+    "maxDocuments": 4,
+    "useMMR": false,
+    "mmrK": 20,
+    "mmrDiversity": 0.25,
+    "useHybridSearch": false,
+    "useAdvancedReranking": false,
+    "rrfRankConstant": 60,
+    "rrfRankWindowSize": 4,
+    "filter": {
+      "uiData": {
+        "mode": "\u0026\u0026",
+        "conditions": []
+      }
+    },
+    "knowledgeBankRef": "FtEY3v7S"
+  },
+  "quickTestQuery": {
+    "input": {
+      "searchQuery": "Tell me about our loan policies"
+    },
+    "context": {}
+  },
   "dkuProperties": [],
   "creationTag": {
     "versionNumber": 0,
