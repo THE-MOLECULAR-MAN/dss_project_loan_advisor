@@ -1,0 +1,17 @@
+{
+  "name": "Customer_Lookup",
+  "type": "DatasetRowLookup",
+  "dkuProperties": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1741980488328
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
