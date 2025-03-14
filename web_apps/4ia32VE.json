@@ -46,7 +46,6 @@
     "agents_descriptions": [
       {
         "$$hashKey": "object:36979",
-        "agent_id": "FINAIADVISORSTARTER:agent:hB5veDeD",
         "agent_description": "This agent should:\n1. act as an expert on our loan and credit scoring policies. \n2. act as an expert on our loan applicants by being able to query a related dataset. \n3. be able to predict whether a prospective loan applicant or a loan applicant with a pending loan  should be approved for a loan by using a predictive model."
       }
     ],
@@ -161,14 +160,14 @@
     ],
     "answers_ids": [],
     "agents_ids": [
-      "FINAIADVISORSTARTER:agent:hB5veDeD"
+      "FINAIADVISORSTARTER:agent:l1a6cEWm"
     ],
-    "llm_id": "agent:hB5veDeD",
+    "llm_id": "agent:l1a6cEWm",
     "logging_dataset": "conversation_history",
     "user_profile_dataset": "user_profiles"
   },
   "name": "Loan Advisor App",
-  "apiKey": "e:AES:X2:bSw6gT2Zi2FGhCg5329ShmDiVKiJf4r8WGlLzhsZ4g52qZOOv5a9YbCcNVu7zrNCO4f4lf/5LCOg1+G3MPhnhJ9SmCKTmm8t/l1uiBymIbLbZH/OvYVK",
+  "apiKey": "e:AES:X2:GsiZi5InSB7uJ8wGHH8zpakG9oUUIyLqmkjH9NK1F8YlP38Xzc/njMe8bkzhKGWaguDDMS5QdxtbT1W+sBn19G2NEGD3WYAd4mGtR0yiJfKNWpgTNlON",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
