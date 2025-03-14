@@ -42,7 +42,24 @@
         "maxParallelRequestsPerProcess": 4
       },
       "toolsUsingAgentSettings": {
-        "tools": [],
+        "tools": [
+          {
+            "toolRef": "l4JUkVF",
+            "additionalDescription": "Use this tool to get information on a customer based on their id.  The returned information should tell us whether their loan is already approved or if it\u0027s pending, and any other demographic information we have on them."
+          },
+          {
+            "toolRef": "k90bRD8",
+            "additionalDescription": "Use this tool to see whether a prospective customer adheres to our loan and credit score policies.  You may need to ask the prospective customer for more information to ascertain adherence."
+          },
+          {
+            "toolRef": "efUCBOj",
+            "additionalDescription": "Use this tool to see whether a prospective customer or a customer with a pending application would be likely to default on a loan.  You will need to ask the prospective customer for the right information to score them with this model.  You should be able to look up a customer with a pending application and use the model to determine whether they are likely to default."
+          },
+          {
+            "toolRef": "7ECpori",
+            "additionalDescription": "Use this tool to get information on a customer based on their id.  The returned information should tell us whether their loan is already approved or if it\u0027s pending.  This tool should also be able to answer questions about the dataset that could be answered with SQL."
+          }
+        ],
         "llmId": "openai:SE-open-ai:gpt-4o-mini",
         "systemPromptAppend": "This agent should:\n1. act as an expert on our loan and credit scoring policies. \n2. act as an expert on our loan applicants by being able to query a related dataset. \n3. be able to predict whether a prospective loan applicant or a loan applicant with a pending loan  should be approved for a loan by using a predictive model.",
         "containerExecSelection": {
@@ -55,7 +72,7 @@
         "messages": [
           {
             "role": "user",
-            "content": "Put your query here"
+            "content": "Tell me everything you can about customer 96536."
           }
         ],
         "context": {}
