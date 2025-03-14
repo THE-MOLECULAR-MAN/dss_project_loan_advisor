@@ -46,6 +46,7 @@
     "agents_descriptions": [
       {
         "$$hashKey": "object:36979",
+        "agent_id": "FINAIADVISORSTARTER:agent:l1a6cEWm",
         "agent_description": "This agent should:\n1. act as an expert on our loan and credit scoring policies. \n2. act as an expert on our loan applicants by being able to query a related dataset. \n3. be able to predict whether a prospective loan applicant or a loan applicant with a pending loan  should be approved for a loan by using a predictive model."
       }
     ],
@@ -167,7 +168,7 @@
     "user_profile_dataset": "user_profiles"
   },
   "name": "Loan Advisor App",
-  "apiKey": "e:AES:X2:GsiZi5InSB7uJ8wGHH8zpakG9oUUIyLqmkjH9NK1F8YlP38Xzc/njMe8bkzhKGWaguDDMS5QdxtbT1W+sBn19G2NEGD3WYAd4mGtR0yiJfKNWpgTNlON",
+  "apiKey": "e:AES:X2:jbHwgqBcPBtx/90/saaQoa1TZb4ed7A5+N61UZ5NbHEmOlvwQvbl6Z2MxfCQsjc2pqtox9RJQQGEAHQXGGBqOUNpq3V9ADnztl18iZdLQ1Ajcb5Prhcs",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
