@@ -1,40 +1,45 @@
 {
-  "name": "KB_tool",
-  "type": "VectorStoreSearch",
-  "params": {
-    "maxDocuments": 4,
-    "useMMR": false,
-    "mmrK": 20,
-    "mmrDiversity": 0.25,
-    "useHybridSearch": false,
-    "useAdvancedReranking": false,
-    "rrfRankConstant": 60,
-    "rrfRankWindowSize": 4,
-    "filter": {
-      "uiData": {
-        "mode": "\u0026\u0026",
-        "conditions": []
-      }
+    "name": "KB_tool",
+    "type": "VectorStoreSearch",
+    "params": {
+        "maxDocuments": 4,
+        "useMMR": false,
+        "mmrK": 20,
+        "mmrDiversity": 0.25,
+        "useHybridSearch": false,
+        "useAdvancedReranking": false,
+        "rrfRankConstant": 60,
+        "rrfRankWindowSize": 4,
+        "filter": {
+            "uiData": {
+                "mode": "&&",
+                "conditions": []
+            }
+        },
+        "knowledgeBankRef": "FtEY3v7S",
+        "searchType": "SIMILARITY",
+        "sourcesSettings": {
+            "snippetFormat": "TEXT",
+            "metadataInSources": []
+        }
     },
-    "knowledgeBankRef": "FtEY3v7S"
-  },
-  "quickTestQuery": {
-    "input": {
-      "searchQuery": "Tell me about our loan policies"
+    "quickTestQuery": {
+        "input": {
+            "searchQuery": "Tell me about our loan policies"
+        },
+        "context": {}
     },
-    "context": {}
-  },
-  "dkuProperties": [],
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
+    "dkuProperties": [],
+    "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "admin"
+        },
+        "lastModifiedOn": 1741980573271
     },
-    "lastModifiedOn": 1741980573271
-  },
-  "tags": [],
-  "customFields": {},
-  "checklists": {
-    "checklists": []
-  }
+    "tags": [],
+    "customFields": {},
+    "checklists": {
+        "checklists": []
+    }
 }
