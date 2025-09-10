@@ -3825,9 +3825,10 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "CLASS_REBALANCE_TARGET_NB_APPROX",
       "maxRecords": 100000,
       "targetRatio": 0.02,
+      "column": "Default",
       "ascending": true,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1,
@@ -3839,7 +3840,7 @@
     "ssdSeed": 1337,
     "testOnLargerValues": true,
     "streamAll": false,
-    "kfold": true,
+    "kfold": false,
     "nFolds": 5,
     "instanceIdRefresher": 1,
     "subSamplingSeed": 1337
