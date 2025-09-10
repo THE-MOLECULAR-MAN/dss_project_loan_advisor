@@ -217,7 +217,7 @@
       },
       "FICO_Range": {
         "category_handling": "DUMMIFY",
-        "missing_handling": "NONE",
+        "missing_handling": "IMPUTE",
         "missing_impute_with": "MODE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
@@ -239,10 +239,10 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
@@ -291,7 +291,7 @@
           "WEEK",
           "MONTH"
         ],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
