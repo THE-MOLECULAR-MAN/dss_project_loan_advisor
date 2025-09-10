@@ -45,7 +45,7 @@
     "normalizeDoubles": true,
     "catalog": "SEDEMO",
     "table": "${projectKey}_LOAN_REQUESTS_PREPARED",
-    "schema": "MIKEW",
+    "schema": "",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": false,
