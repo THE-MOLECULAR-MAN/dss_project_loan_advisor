@@ -2550,28 +2550,7 @@
       "optimizer": "BFGS"
     },
     "custom_python": [],
-    "plugin_python": {
-      "CustomPyPredAlgo_generalized-linear-models_generalized-linear-models_binary-classification": {
-        "pluginId": "generalized-linear-models",
-        "pluginVersion": "1.1.1",
-        "elementId": "generalized-linear-models_binary-classification",
-        "name": "Generalized Linear Model Classification",
-        "params": {
-          "penalty": [
-            0.01
-          ],
-          "l1_ratio": [
-            0.5
-          ],
-          "family_name": "binomial",
-          "binomial_link": "logit",
-          "offset_mode": "BASIC"
-        },
-        "supportsSampleWeights": false,
-        "acceptsSparseMatrix": false,
-        "enabled": false
-      }
-    },
+    "plugin_python": {},
     "keras": {
       "epochs": 10,
       "batchSize": 32,
@@ -2605,6 +2584,21 @@
           "scaling": "LINEAR"
         }
       },
+      "enabled": false
+    },
+    "arima_timeseries": {
+      "p": 0,
+      "d": 0,
+      "q": 0,
+      "P": 0,
+      "D": 0,
+      "Q": 0,
+      "s": 7,
+      "trend": "n",
+      "trend_offset": 1,
+      "enforce_stationarity": true,
+      "enforce_invertibility": true,
+      "concentrate_scale": false,
       "enabled": false
     },
     "autoarima_timeseries": {
@@ -2707,6 +2701,58 @@
       "max_order": 5,
       "stationary": false,
       "maxiter": 50,
+      "enabled": false
+    },
+    "ets_timeseries": {
+      "trend": {
+        "values": {
+          "add": {
+            "enabled": false
+          },
+          "mul": {
+            "enabled": false
+          },
+          "none": {
+            "enabled": true
+          }
+        }
+      },
+      "damped_trend": {
+        "values": {
+          "false": {
+            "enabled": true
+          },
+          "true": {
+            "enabled": false
+          }
+        }
+      },
+      "seasonal": {
+        "values": {
+          "add": {
+            "enabled": false
+          },
+          "mul": {
+            "enabled": false
+          },
+          "none": {
+            "enabled": true
+          }
+        }
+      },
+      "error": {
+        "values": {
+          "add": {
+            "enabled": true
+          },
+          "mul": {
+            "enabled": false
+          }
+        }
+      },
+      "seasonal_periods": 7,
+      "include_unstable": false,
+      "seed": 1337,
       "enabled": false
     },
     "seasonal_loess_timeseries": {
@@ -3911,7 +3957,8 @@
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
       "individualColumnsRules": [],
-      "valueColoringMode": "HASH"
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
     },
     "sorting": [],
     "analysisColumnData": {},
@@ -3970,5 +4017,6 @@
   },
   "predictionDisplayCharts": [],
   "customMeasures": [],
+  "reusableDimensions": [],
   "labels": []
 }
