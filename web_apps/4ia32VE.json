@@ -4,7 +4,7 @@
   "params": {
     "backendEnabled": true,
     "enableJavascriptModules": true,
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "hideJSSecurityPanel": true,
     "hideWebAppConfig": false,
     "envSelection": {
@@ -20,7 +20,7 @@
     "runAs": "demo",
     "infra": {
       "containerSelection": {
-        "containerMode": "NONE",
+        "containerMode": "INHERIT",
         "containerConf": "eks-default"
       },
       "overrideGlobalK8sExposition": false,
@@ -173,10 +173,30 @@
     ],
     "llm_id": "agent:l1a6cEWm",
     "logging_dataset": "conversation_history",
-    "user_profile_dataset": "user_profiles"
+    "user_profile_dataset": "user_profiles",
+    "pdf_as_image_resize_ratio": 1,
+    "pptx_as_image_resize_ratio": 1,
+    "force_streaming_mode": false,
+    "force_multi_modal_mode": false,
+    "llm_temperature": -1,
+    "use_advanced_title_llm_settings": false,
+    "max_title_llm_tokens": 2048,
+    "title_llm_temperature": -1,
+    "use_advanced_decision_llm_settings": false,
+    "max_decision_llm_tokens": 2048,
+    "decision_llm_temperature": -1,
+    "skip_decision_chain": false,
+    "bypass_permission_check": false,
+    "display_agents_answers": false,
+    "display_source_chunks": true,
+    "display_sql_query": false,
+    "disable_ssl_verification": false,
+    "augmented_llms": [],
+    "aug_llms_descriptions": [],
+    "agents_customization": []
   },
   "name": "Loan Advisor App",
-  "apiKey": "e:AES:X2:eWnDI3XgLM69nXqxe+vDX5kddBHsVLbReQXsMHJ/7rUhqhUnYHclaFNXTUhNLRjaSM8hzxWEJVvIJ8CN4+uDQRfjjXAcW9Fl+BcBFVoEtiJSpthMfIiT",
+  "apiKey": "e:AES:X2:T1iJAHJonB9xFtGXH33rsUHfqNmF69B/9Q8tMuD0gP/4QA8XDxb2qVDt6cgGDN7yo8Yt+lFVyqhwIwce5OXGFBmzCIhT7TN8xGA6wpVeOvXSRvP52M39",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
