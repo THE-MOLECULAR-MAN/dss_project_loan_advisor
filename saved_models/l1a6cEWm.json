@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 1,
+        "versionNumber": 2,
         "lastModifiedBy": {
           "login": "demo"
         },
-        "lastModifiedOn": 1757543965357
+        "lastModifiedOn": 1757544008363
       },
       "creationTag": {
         "versionNumber": 0,
@@ -69,7 +69,7 @@
         "dkuProperties": [],
         "maxParallelRequestsPerProcess": 4,
         "containerExecSelection": {
-          "containerMode": "NONE",
+          "containerMode": "INHERIT",
           "containerConf": "eks-default"
         }
       },
