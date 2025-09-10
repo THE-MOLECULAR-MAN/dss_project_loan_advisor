@@ -68,7 +68,7 @@
     "max_n_upload_files": 5,
     "allow_doc_as_image": true,
     "docs_per_page_as_image": 5,
-    "retrieval_mode": "no_retriever",
+    "retrieval_mode": "db",
     "knowledge_bank_id": "FtEY3v7S",
     "activate_knowledge_bank": false,
     "enable_smart_usage_of_kb": true,
@@ -207,10 +207,11 @@
     "default_user_language": "English",
     "pdf_as_image_resize_ratio": 0.1,
     "pptx_as_image_resize_ratio": 0.1,
-    "undefined": ""
+    "undefined": "",
+    "sql_retrieval_connection": "Snowflake_Honker_Cloud_Personal3"
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:VM3FcCiE1P/DSeq0CnWOE0LnhU1rKJTJC////0RtWbY0Ur7cpprbOnAgK4q9/V2qMh7Mv6MVEzKBIUPlWSQVZY4l5Xoi0X6SnJw+f8vL7yCBACmFXEsL",
+  "apiKey": "e:AES:X2:cwI4YQxKYd2mLJASi1mc07dxmWwNW4p8YTOUBbnb9N01o5JrJ2joapGzcJApue6c6Fmq1cdGszsW0pYpi5s41eY6J7eSi27DxQ4Uhv0TMIILEhAgYIPE",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
