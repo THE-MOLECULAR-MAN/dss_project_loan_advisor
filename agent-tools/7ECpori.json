@@ -6,7 +6,7 @@
       "datasets": [
         "Customers_and_Loan_prepared"
       ],
-      "connection": "Snowflake-AWS",
+      "connection": "Snowflake_Honker_Cloud_Personal3",
       "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-4o-mini",
       "additionalInformation": "Use this tool to answers questions related to the CUSTOMERS_and_LOANS_prepared dataset by generating the right SQL to answer the question and returning the result of the SQL query in plain English.",
       "hard_sql_limit": 200,
