@@ -4,6 +4,9 @@
   "rebuildBehavior": "EXPLICIT",
   "vectorStoreType": "CHROMA",
   "embeddingLLMId": "openai:OpenAI_Dataiku_SE_Shared:text-embedding-3-small",
+  "metadataColumnsSchema": [
+    {"name":"dku_file_path","type":"string"}
+  ],
   "envSelection": {
     "envMode": "EXPLICIT_ENV",
     "envName": "INTERNAL_retrieval_augmented_generation_v1"
