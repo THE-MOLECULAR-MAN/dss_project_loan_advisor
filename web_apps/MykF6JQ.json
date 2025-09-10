@@ -189,7 +189,7 @@
     "sql_retrieval_custom_name": "",
     "custom_theme_name": "Default customization",
     "sql_retrieval_table_list": [],
-    "llm_id": "openai:OpenAI_Shared_SE:gpt-4.1",
+    "llm_id": "agent:l1a6cEWm",
     "logging_dataset": "conversation_history",
     "user_profile_dataset": "user_profiles",
     "upload_folder": "I8NEaa0q",
@@ -211,7 +211,7 @@
     "sql_retrieval_connection": "Snowflake_Honker_Cloud_Personal3"
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:1OWl0NNDCu8q9f6vlBmBU92j2ilB38Oo9O2NEBZXUJXF6BLjRsKdyo/MFO4C8d88EzDG2zLkPRI7nF8y6TzKZA2V5X0U1g/aEN83SnrWMH/ZyViY8PvR",
+  "apiKey": "e:AES:X2:AdjT84TWvFKeUD5NVatSqzwl2E6tSZsw5pAYmc6ScL4PmcWICf05VgMzQspSZbwpgVRZ7kvjYNpKvZ0wwjDdWnEIXkqv8ksLBNmNZCASmCvYoIuPq5kJ",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
