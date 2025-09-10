@@ -28,7 +28,7 @@
     "context": {}
   },
   "dkuProperties": [],
-  "additionalDescriptionForLLM": "Use this model to predict whether or not a customer will default on their request loan. The value for the column named \"proba_1.0\" predicts the probability on a scale of 0.0 to 1.0 that the customer will default on the loan. You may need to convert the value of proba_1.0 to a percentage (0-100%) by multiplying it by 100 before returning it. A proba_1.0 value equal to 1.0 means a total certainty (100%) chance of the customer defaulting.",
+  "additionalDescriptionForLLM": "Use this model to predict whether or not a customer will default on their request loan.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
