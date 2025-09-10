@@ -3840,7 +3840,7 @@
     "ssdSeed": 1337,
     "testOnLargerValues": true,
     "streamAll": false,
-    "kfold": false,
+    "kfold": true,
     "nFolds": 5,
     "instanceIdRefresher": 1,
     "subSamplingSeed": 1337
