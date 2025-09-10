@@ -1,8 +1,8 @@
 {
   "taskType": "PREDICTION",
-  "predictionType": "BINARY_CLASSIFICATION",
+  "predictionType": "REGRESSION",
   "weight": {
-    "weightMethod": "CLASS_WEIGHT"
+    "weightMethod": "NO_WEIGHTING"
   },
   "time": {
     "enabled": false,
@@ -46,18 +46,7 @@
     },
     "preprocessingFitSampleRatio": 1.0,
     "preprocessingFitSampleSeed": 1337,
-    "target_remapping": [
-      {
-        "sourceValue": "0.0",
-        "mappedValue": 0,
-        "sampleFreq": 1887
-      },
-      {
-        "sourceValue": "1.0",
-        "mappedValue": 1,
-        "sampleFreq": 353
-      }
-    ],
+    "target_remapping": [],
     "per_feature": {
       "Status": {
         "category_handling": "DUMMIFY",
@@ -250,7 +239,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -274,7 +263,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -297,12 +286,12 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [
-          "WEEK",
           "YEAR",
           "QUARTER",
+          "WEEK",
           "MONTH"
         ],
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -582,10 +571,185 @@
           "min": 1
         },
         "values": [
-          8
+          6,
+          14
         ],
         "range": {
           "min": 10,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_samples_leaf": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          4
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "selection_mode": "prop",
+      "max_features": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          5
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_feature_prop": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          1.0
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 0.7,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "allow_sparse_matrices": true,
+      "enabled": true
+    },
+    "random_forest_classification": {
+      "n_estimators": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          100
+        ],
+        "range": {
+          "min": 80,
+          "max": 200,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "n_jobs": 4,
+      "max_tree_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          8
+        ],
+        "range": {
+          "min": 6,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_samples_leaf": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "selection_mode": "sqrt",
+      "max_features": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          5
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_feature_prop": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.3
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 0.7,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "allow_sparse_matrices": true,
+      "enabled": false
+    },
+    "extra_trees": {
+      "n_estimators": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          100
+        ],
+        "range": {
+          "min": 50,
+          "max": 150,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "n_jobs": 4,
+      "max_tree_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          8
+        ],
+        "range": {
+          "min": 6,
           "max": 20,
           "nbValues": 3,
           "scaling": "LINEAR"
@@ -641,182 +805,7 @@
           "scaling": "LINEAR"
         }
       },
-      "allow_sparse_matrices": false,
-      "enabled": false
-    },
-    "random_forest_classification": {
-      "n_estimators": {
-        "gridMode": "EXPLICIT",
-        "randomMode": "RANGE",
-        "limit": {
-          "min": 1
-        },
-        "values": [
-          100
-        ],
-        "range": {
-          "min": 80,
-          "max": 200,
-          "nbValues": 3,
-          "scaling": "LINEAR"
-        }
-      },
-      "n_jobs": 4,
-      "max_tree_depth": {
-        "gridMode": "EXPLICIT",
-        "randomMode": "RANGE",
-        "limit": {
-          "min": 1
-        },
-        "values": [
-          6,
-          14
-        ],
-        "range": {
-          "min": 6,
-          "max": 20,
-          "nbValues": 3,
-          "scaling": "LINEAR"
-        }
-      },
-      "min_samples_leaf": {
-        "gridMode": "EXPLICIT",
-        "randomMode": "RANGE",
-        "limit": {
-          "min": 1
-        },
-        "values": [
-          1
-        ],
-        "range": {
-          "min": 1,
-          "max": 20,
-          "nbValues": 3,
-          "scaling": "LINEAR"
-        }
-      },
-      "selection_mode": "sqrt",
-      "max_features": {
-        "gridMode": "EXPLICIT",
-        "randomMode": "RANGE",
-        "limit": {
-          "min": 1
-        },
-        "values": [
-          5
-        ],
-        "range": {
-          "min": 1,
-          "max": 20,
-          "nbValues": 3,
-          "scaling": "LINEAR"
-        }
-      },
-      "max_feature_prop": {
-        "gridMode": "EXPLICIT",
-        "randomMode": "RANGE",
-        "limit": {
-          "min": 1.0E-23,
-          "max": 1.0
-        },
-        "values": [
-          0.3
-        ],
-        "range": {
-          "min": 0.1,
-          "max": 0.7,
-          "nbValues": 3,
-          "scaling": "LINEAR"
-        }
-      },
-      "allow_sparse_matrices": false,
-      "enabled": true
-    },
-    "extra_trees": {
-      "n_estimators": {
-        "gridMode": "EXPLICIT",
-        "randomMode": "RANGE",
-        "limit": {
-          "min": 1
-        },
-        "values": [
-          100
-        ],
-        "range": {
-          "min": 50,
-          "max": 150,
-          "nbValues": 3,
-          "scaling": "LINEAR"
-        }
-      },
-      "n_jobs": 4,
-      "max_tree_depth": {
-        "gridMode": "EXPLICIT",
-        "randomMode": "RANGE",
-        "limit": {
-          "min": 1
-        },
-        "values": [
-          8
-        ],
-        "range": {
-          "min": 6,
-          "max": 20,
-          "nbValues": 3,
-          "scaling": "LINEAR"
-        }
-      },
-      "min_samples_leaf": {
-        "gridMode": "EXPLICIT",
-        "randomMode": "RANGE",
-        "limit": {
-          "min": 1
-        },
-        "values": [
-          1
-        ],
-        "range": {
-          "min": 1,
-          "max": 20,
-          "nbValues": 3,
-          "scaling": "LINEAR"
-        }
-      },
-      "selection_mode": "sqrt",
-      "max_features": {
-        "gridMode": "EXPLICIT",
-        "randomMode": "RANGE",
-        "limit": {
-          "min": 1
-        },
-        "values": [
-          5
-        ],
-        "range": {
-          "min": 1,
-          "max": 20,
-          "nbValues": 3,
-          "scaling": "LINEAR"
-        }
-      },
-      "max_feature_prop": {
-        "gridMode": "EXPLICIT",
-        "randomMode": "RANGE",
-        "limit": {
-          "min": 1.0E-23,
-          "max": 1.0
-        },
-        "values": [
-          0.3
-        ],
-        "range": {
-          "min": 0.1,
-          "max": 0.7,
-          "nbValues": 3,
-          "scaling": "LINEAR"
-        }
-      },
-      "allow_sparse_matrices": false,
+      "allow_sparse_matrices": true,
       "enabled": false
     },
     "gbt_classification": {
@@ -929,7 +918,7 @@
           }
         }
       },
-      "allow_sparse_matrices": false,
+      "allow_sparse_matrices": true,
       "enabled": false
     },
     "gbt_regression": {
@@ -1045,7 +1034,7 @@
           }
         }
       },
-      "allow_sparse_matrices": false,
+      "allow_sparse_matrices": true,
       "enabled": false
     },
     "decision_tree_classification": {
@@ -1178,7 +1167,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -1374,7 +1363,7 @@
         }
       },
       "n_jobs": 2,
-      "enabled": true
+      "enabled": false
     },
     "neural_network": {
       "layer_sizes": {
@@ -1723,7 +1712,7 @@
       "subsample": 0.9,
       "subsample_freq": 1,
       "use_bagging": false,
-      "allow_sparse_matrices": false,
+      "allow_sparse_matrices": true,
       "enabled": false
     },
     "lightgbm_classification": {
@@ -1896,7 +1885,7 @@
       "subsample": 0.9,
       "subsample_freq": 1,
       "use_bagging": false,
-      "allow_sparse_matrices": false,
+      "allow_sparse_matrices": true,
       "enabled": false
     },
     "xgboost": {
@@ -1927,7 +1916,7 @@
           0.2
         ],
         "range": {
-          "min": 0.1,
+          "min": 0.01,
           "max": 0.5,
           "nbValues": 3,
           "scaling": "LINEAR"
@@ -1944,7 +1933,7 @@
         ],
         "range": {
           "min": 0.0,
-          "max": 1.0,
+          "max": 0.4,
           "nbValues": 3,
           "scaling": "LINEAR"
         }
@@ -2110,8 +2099,8 @@
       "enable_early_stopping": true,
       "early_stopping_rounds": 4,
       "tweedie_variance_power": 1.5,
-      "allow_sparse_matrices": false,
-      "enabled": true
+      "allow_sparse_matrices": true,
+      "enabled": false
     },
     "deep_neural_network_regression": {
       "learning_rate": {
@@ -3782,7 +3771,7 @@
       "randomized": true,
       "seed": 1337,
       "nIter": 0,
-      "nIterRandom": 5,
+      "nIterRandom": 3,
       "timeout": 0,
       "nJobs": 4,
       "distributed": false,
@@ -3792,9 +3781,8 @@
     },
     "metrics": {
       "customMetrics": [],
-      "evaluationMetric": "ROC_AUC",
+      "evaluationMetric": "R2",
       "classAveragingMethod": "MACRO",
-      "thresholdOptimizationMetric": "F1",
       "costMatrixWeights": {
         "tpGain": 1.0,
         "tnGain": 0.0,
