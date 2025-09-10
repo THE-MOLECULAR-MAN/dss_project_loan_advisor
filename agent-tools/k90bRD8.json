@@ -1,45 +1,46 @@
 {
-    "name": "KB_tool",
-    "type": "VectorStoreSearch",
-    "params": {
-        "maxDocuments": 4,
-        "useMMR": false,
-        "mmrK": 20,
-        "mmrDiversity": 0.25,
-        "useHybridSearch": false,
-        "useAdvancedReranking": false,
-        "rrfRankConstant": 60,
-        "rrfRankWindowSize": 4,
-        "filter": {
-            "uiData": {
-                "mode": "&&",
-                "conditions": []
-            }
-        },
-        "knowledgeBankRef": "FtEY3v7S",
-        "searchType": "SIMILARITY",
-        "sourcesSettings": {
-            "snippetFormat": "TEXT",
-            "metadataInSources": []
-        }
+  "name": "KB_tool",
+  "type": "VectorStoreSearch",
+  "params": {
+    "maxDocuments": 4,
+    "useMMR": false,
+    "mmrK": 20,
+    "mmrDiversity": 0.25,
+    "useHybridSearch": false,
+    "useAdvancedReranking": false,
+    "rrfRankConstant": 60,
+    "rrfRankWindowSize": 4,
+    "filter": {
+      "uiData": {
+        "mode": "\u0026\u0026",
+        "conditions": []
+      }
     },
-    "quickTestQuery": {
-        "input": {
-            "searchQuery": "Tell me about our loan policies"
-        },
-        "context": {}
+    "knowledgeBankRef": "FtEY3v7S",
+    "searchType": "SIMILARITY",
+    "sourcesSettings": {
+      "snippetFormat": "TEXT",
+      "metadataInSources": []
     },
-    "dkuProperties": [],
-    "creationTag": {
-        "versionNumber": 0,
-        "lastModifiedBy": {
-            "login": "admin"
-        },
-        "lastModifiedOn": 1741980573271
+    "similarityThreshold": 0.5
+  },
+  "quickTestQuery": {
+    "input": {
+      "searchQuery": "Tell me about our loan policies"
     },
-    "tags": [],
-    "customFields": {},
-    "checklists": {
-        "checklists": []
-    }
+    "context": {}
+  },
+  "dkuProperties": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1741980573271
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
 }
