@@ -8,7 +8,14 @@
       ],
       "connection": "Snowflake-AWS",
       "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-4o-mini",
-      "additionalInformation": "Use this tool to answers questions related to the CUSTOMERS_and_LOANS_prepared dataset by generating the right SQL to answer the question and returning the result of the SQL query in plain English."
+      "additionalInformation": "Use this tool to answers questions related to the CUSTOMERS_and_LOANS_prepared dataset by generating the right SQL to answer the question and returning the result of the SQL query in plain English.",
+      "hard_sql_limit": 200,
+      "return_value_mode": "AUTO",
+      "max_records_for_artifact": -1,
+      "sample_values_strategy": "NONE",
+      "sample_values_from_data_cardinality_cutoff": 30,
+      "include_column_names_in_descriptor": true,
+      "include_column_descriptions_in_descriptor": true
     },
     "containerExecSelection": {
       "containerMode": "INHERIT"
