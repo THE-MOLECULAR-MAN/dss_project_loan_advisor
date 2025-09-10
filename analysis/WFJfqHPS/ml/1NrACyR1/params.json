@@ -1,6 +1,6 @@
 {
   "taskType": "PREDICTION",
-  "predictionType": "MULTICLASS",
+  "predictionType": "BINARY_CLASSIFICATION",
   "weight": {
     "weightMethod": "CLASS_WEIGHT"
   },
@@ -1342,7 +1342,7 @@
       "enabled": false
     },
     "logistic_regression": {
-      "multi_class": "multinomial",
+      "multi_class": "ovr",
       "penalty": {
         "values": {
           "l1": {
@@ -3794,6 +3794,7 @@
       "customMetrics": [],
       "evaluationMetric": "ROC_AUC",
       "classAveragingMethod": "MACRO",
+      "thresholdOptimizationMetric": "F1",
       "costMatrixWeights": {
         "tpGain": 1.0,
         "tnGain": 0.0,
