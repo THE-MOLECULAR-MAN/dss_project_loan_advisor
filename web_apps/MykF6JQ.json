@@ -4,7 +4,7 @@
   "params": {
     "backendEnabled": true,
     "enableJavascriptModules": true,
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "hideJSSecurityPanel": true,
     "hideWebAppConfig": false,
     "envSelection": {
@@ -20,7 +20,7 @@
     "runAs": "demo",
     "infra": {
       "containerSelection": {
-        "containerMode": "NONE"
+        "containerMode": "INHERIT"
       },
       "overrideGlobalK8sExposition": false,
       "exposition": {
@@ -103,7 +103,7 @@
       "What is the average loan amount requested for applicants from CA?"
     ],
     "disclaimer": "This application is powered by a Large Language Model. Review proposed outcomes in context with \u003cspan style\u003d\"color: #267cfb; text-decoration: underline\"\u003eResponsible AI\u003c/span\u003e considerations",
-    "use_custom_rebranding": true,
+    "use_custom_rebranding": false,
     "custom_logo_file_name": "flowfingroup_white_logo.png",
     "custom_icon_file_name": "ffg-logo.png",
     "user_profile_languages": [
@@ -186,24 +186,31 @@
     "knowledge_bank_prompt": "You should be able to answer questions about our credit score and loan policies.",
     "knowledge_sources_context_metadata": [],
     "knowledge_sources_displayed_metas": [],
-    "knowledge_source_url": false,
-    "knowledge_source_title": false,
-    "knowledge_source_thumbnail": false,
     "sql_retrieval_custom_name": "",
-    "custom_theme_name": "flow-financial-theme",
+    "custom_theme_name": "Default customization",
     "sql_retrieval_table_list": [],
-    "llm_id": "agent:hB5veDeD",
+    "llm_id": "openai:OpenAI_Shared_SE:gpt-4.1",
     "logging_dataset": "conversation_history",
     "user_profile_dataset": "user_profiles",
     "upload_folder": "I8NEaa0q",
     "general_feedback_dataset": "general_feedback",
-    "title_llm_id": "openai:SE-open-ai:gpt-4o-mini",
-    "json_decision_llm_id": "openai:SE-open-ai:gpt-4o-mini",
     "message_dataset": "messages_history",
-    "answers_description": "This agent should:\n1. act as an expert on our loan and credit scoring policies. \n2. act as an expert on our loan applicants by being able to query a related dataset. \n3. be able to predict whether a prospective loan applicant or a loan applicant with a pending loan  should be approved for a loan by using a predictive model."
+    "answers_description": "This agent should:\n1. act as an expert on our loan and credit scoring policies. \n2. act as an expert on our loan applicants by being able to query a related dataset. \n3. be able to predict whether a prospective loan applicant or a loan applicant with a pending loan  should be approved for a loan by using a predictive model.",
+    "db_prompt": "",
+    "llm_temperature": -1,
+    "max_title_llm_tokens": 100,
+    "title_llm_temperature": -1,
+    "max_decision_llm_tokens": 2048,
+    "decision_llm_temperature": -1,
+    "use_advanced_title_llm_settings": false,
+    "use_advanced_decision_llm_settings": false,
+    "default_user_language": "English",
+    "pdf_as_image_resize_ratio": 0.1,
+    "pptx_as_image_resize_ratio": 0.1,
+    "undefined": ""
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:XEVTTnV8cEPXkfW08wWz6xU+Y3QqedwvrUSDV9JXcyjCAPMcFpURwdPG+VGgBz0JCVZ1+35zkOdsus7LrmToey/2bWiLt6po4mOjMcQRBTRZD2+GN3+W",
+  "apiKey": "e:AES:X2:VM3FcCiE1P/DSeq0CnWOE0LnhU1rKJTJC////0RtWbY0Ur7cpprbOnAgK4q9/V2qMh7Mv6MVEzKBIUPlWSQVZY4l5Xoi0X6SnJw+f8vL7yCBACmFXEsL",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
