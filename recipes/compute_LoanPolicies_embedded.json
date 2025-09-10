@@ -2,7 +2,8 @@
   "type": "embed_documents",
   "neverRecomputeExistingPartitions": false,
   "params": {
-    "defaultVlmId": "openai:SE-open-ai:gpt-4o-mini",
+    "extractionMode": "CUSTOM_RULES",
+    "defaultVlmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-4o-mini",
     "rules": [
       {
         "filter": {
@@ -43,7 +44,7 @@
           "splitUnit": "PAGE",
           "customNbPages": 1,
           "customPagesOverlap": 0,
-          "llmId": "openai:SE-open-ai:gpt-4o-mini",
+          "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-4o-mini",
           "useCustomPrompt": false,
           "customPrompt": "Generate a concise summary, up to 500 words, derived from the screenshot(s) of document page(s) provided. \nBegin with a brief overview and highlight crucial words, facts, or concepts to enhance both semantic and keyword searchability.\nOmit any references to the original source.\n"
         },
@@ -51,7 +52,8 @@
           "chunkSizeCharacters": 3000,
           "chunkOverlapCharacters": 120
         },
-        "storeInMultimodalColumn": "IMAGES"
+        "storeInMultimodalColumn": "IMAGES",
+        "reExtractUnmodifiedDocuments": false
       },
       {
         "filter": {
@@ -88,7 +90,8 @@
           "chunkSizeCharacters": 3000,
           "chunkOverlapCharacters": 120
         },
-        "storeInMultimodalColumn": "FULL_CONTENT"
+        "storeInMultimodalColumn": "FULL_CONTENT",
+        "reExtractUnmodifiedDocuments": false
       }
     ],
     "allOtherRule": {
@@ -101,7 +104,8 @@
         "chunkSizeCharacters": 3000,
         "chunkOverlapCharacters": 120
       },
-      "storeInMultimodalColumn": "FULL_CONTENT"
+      "storeInMultimodalColumn": "FULL_CONTENT",
+      "reExtractUnmodifiedDocuments": false
     }
   },
   "customMeta": {

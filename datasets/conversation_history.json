@@ -12,7 +12,8 @@
   "flowOptions": {
     "virtualizable": false,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
   },
   "readWriteOptions": {
     "preserveOrder": false,
@@ -38,7 +39,7 @@
   "tags": [],
   "params": {
     "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "Postgres-local",
+    "connection": "postgres_localhost",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",

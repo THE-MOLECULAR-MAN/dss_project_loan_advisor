@@ -2,16 +2,16 @@
   "name": "Text2SQL",
   "type": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
   "params": {
-    "containerExecSelection": {
-      "containerMode": "INHERIT"
-    },
     "config": {
       "datasets": [
         "Customers_and_Loan_prepared"
       ],
       "connection": "Snowflake-AWS",
-      "llmId": "openai:SE-open-ai:gpt-4o-mini",
+      "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-4o-mini",
       "additionalInformation": "Use this tool to answers questions related to the CUSTOMERS_and_LOANS_prepared dataset by generating the right SQL to answer the question and returning the result of the SQL query in plain English."
+    },
+    "containerExecSelection": {
+      "containerMode": "INHERIT"
     }
   },
   "quickTestQuery": {

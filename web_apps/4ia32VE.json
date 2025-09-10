@@ -6,6 +6,7 @@
     "enableJavascriptModules": true,
     "autoStartBackend": false,
     "hideJSSecurityPanel": true,
+    "hideWebAppConfig": false,
     "envSelection": {
       "envMode": "INHERIT"
     },
@@ -16,6 +17,7 @@
       "dataiku",
       "font_awesome"
     ],
+    "runAs": "demo",
     "infra": {
       "containerSelection": {
         "containerMode": "NONE",
@@ -31,10 +33,16 @@
         "progressDeadlineSeconds": 600,
         "hpa": false,
         "hpaTargetCPUPercent": 0,
+        "hpaTargetMemoryPercent": 0,
         "hpaMetrics": [],
         "hpaMinPods": 0,
         "hpaMaxPods": 0,
         "hpaAnnotations": []
+      },
+      "podDisruptionBudget": {
+        "enable": false,
+        "isMaxUnavailable": false,
+        "minAvailable": "50%"
       },
       "deploymentModifier": {
         "config": {}
@@ -168,7 +176,7 @@
     "user_profile_dataset": "user_profiles"
   },
   "name": "Loan Advisor App",
-  "apiKey": "e:AES:X2:jbHwgqBcPBtx/90/saaQoa1TZb4ed7A5+N61UZ5NbHEmOlvwQvbl6Z2MxfCQsjc2pqtox9RJQQGEAHQXGGBqOUNpq3V9ADnztl18iZdLQ1Ajcb5Prhcs",
+  "apiKey": "e:AES:X2:eWnDI3XgLM69nXqxe+vDX5kddBHsVLbReQXsMHJ/7rUhqhUnYHclaFNXTUhNLRjaSM8hzxWEJVvIJ8CN4+uDQRfjjXAcW9Fl+BcBFVoEtiJSpthMfIiT",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {

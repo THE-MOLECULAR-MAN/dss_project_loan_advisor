@@ -6,6 +6,7 @@
     "enableJavascriptModules": true,
     "autoStartBackend": false,
     "hideJSSecurityPanel": true,
+    "hideWebAppConfig": false,
     "envSelection": {
       "envMode": "INHERIT"
     },
@@ -16,7 +17,7 @@
       "dataiku",
       "font_awesome"
     ],
-    "runAs": "admin",
+    "runAs": "demo",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -31,10 +32,16 @@
         "progressDeadlineSeconds": 600,
         "hpa": false,
         "hpaTargetCPUPercent": 0,
+        "hpaTargetMemoryPercent": 0,
         "hpaMetrics": [],
         "hpaMinPods": 0,
         "hpaMaxPods": 0,
         "hpaAnnotations": []
+      },
+      "podDisruptionBudget": {
+        "enable": false,
+        "isMaxUnavailable": false,
+        "minAvailable": "50%"
       },
       "deploymentModifier": {
         "config": {}
@@ -47,7 +54,7 @@
     "llm_responses_column": "llm_context"
   },
   "name": "Agent Traces Explorer",
-  "apiKey": "e:AES:X2:7eN515kol6PH54vPmZBAL//svvSRHaiSPtiQyUdlz/LUPTlE3UZAwZO+7/Y//COYVXIMQioWH0QgXrofaVRdj0hCxXFRXw6ygpPaW3VGDhNACcj7F1yW",
+  "apiKey": "e:AES:X2:EO+fu6jP5Y4s28b2+ZhB/SVgEDRWi4c2i9ihpwJQCJjFQJPVu2DqRBdG4mihnspJEHrH604d9TTXg0408BGT2IMZtPft/A9lbynHMYDGuzAXv264s1bP",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {

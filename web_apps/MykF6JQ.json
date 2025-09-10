@@ -6,6 +6,7 @@
     "enableJavascriptModules": true,
     "autoStartBackend": false,
     "hideJSSecurityPanel": true,
+    "hideWebAppConfig": false,
     "envSelection": {
       "envMode": "INHERIT"
     },
@@ -16,7 +17,7 @@
       "dataiku",
       "font_awesome"
     ],
-    "runAs": "admin",
+    "runAs": "demo",
     "infra": {
       "containerSelection": {
         "containerMode": "NONE"
@@ -31,10 +32,16 @@
         "progressDeadlineSeconds": 600,
         "hpa": false,
         "hpaTargetCPUPercent": 0,
+        "hpaTargetMemoryPercent": 0,
         "hpaMetrics": [],
         "hpaMinPods": 0,
         "hpaMaxPods": 0,
         "hpaAnnotations": []
+      },
+      "podDisruptionBudget": {
+        "enable": false,
+        "isMaxUnavailable": false,
+        "minAvailable": "50%"
       },
       "deploymentModifier": {
         "config": {}
@@ -196,7 +203,7 @@
     "answers_description": "This agent should:\n1. act as an expert on our loan and credit scoring policies. \n2. act as an expert on our loan applicants by being able to query a related dataset. \n3. be able to predict whether a prospective loan applicant or a loan applicant with a pending loan  should be approved for a loan by using a predictive model."
   },
   "name": "Loan Advisor",
-  "apiKey": "e:AES:X2:1BJ0696LPIX7ZHXm1IkIYdKQFrLjU0iyDyaTBQA92rXbmSyZeCHsCPcVy/dHHhAGwsgPm+HJTv78gpgJ2UHTp0txdBykXpJXMDzVO3xF/mUSIWQFGOAj",
+  "apiKey": "e:AES:X2:XEVTTnV8cEPXkfW08wWz6xU+Y3QqedwvrUSDV9JXcyjCAPMcFpURwdPG+VGgBz0JCVZ1+35zkOdsus7LrmToey/2bWiLt6po4mOjMcQRBTRZD2+GN3+W",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
