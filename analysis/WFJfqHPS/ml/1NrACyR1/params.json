@@ -3899,7 +3899,7 @@
       }
     ]
   },
-  "name": "Predict Default",
+  "name": "Predict Default Probability",
   "backendType": "PY_MEMORY",
   "maxConcurrentModelTraining": 2,
   "gpuConfig": {
