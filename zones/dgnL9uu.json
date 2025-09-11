@@ -25,14 +25,6 @@
     {
       "objectId": "Customers_and_Loan",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_Customers_and_Loan_prepared",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "Customers_and_Loan_prepared",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],

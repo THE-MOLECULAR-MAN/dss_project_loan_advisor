@@ -1,7 +1,44 @@
 {
   "name": "Train model to predict loan defaulting",
   "color": "#F9BE40",
-  "items": [],
+  "items": [
+    {
+      "objectId": "Customers_and_Loan_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_Customers_and_Loan",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Default_known",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "Default_unknown",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "train_Predict_Default__binary_",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "19qX6AHu",
+      "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "score_Unlabeled",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Default_unknown_scored",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Customers_and_Loan_prepared",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
