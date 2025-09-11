@@ -98,9 +98,9 @@
     "example_questions": [
       "Can you tell me about our loan approval policies?",
       "Shall I approve loan for the customer 53041?",
+      "\u003cspan style\u003d\"color: rgb(68, 68, 68); font-size: 16px; white-space-collapse: preserve; background-color: rgba(245, 245, 245, 0.7);\"\u003eTell me everything about customer id: 99592\u003c/span\u003e",
       "My customer\u0027s id is 99592. Can you tell me whether their loan application has been approved?",
-      "What do you need from me in order to assess whether a prospective customer will be a likely defaulter?",
-      "\u003cspan style\u003d\"color: rgb(68, 68, 68); font-size: 16px; white-space-collapse: preserve; background-color: rgba(245, 245, 245, 0.7);\"\u003eTell me everything about customer id: 99592\u003c/span\u003e"
+      "What do you need from me in order to assess whether a prospective customer will be a likely defaulter?"
     ],
     "disclaimer": "This application is powered by a Large Language Model. Review proposed outcomes in context with \u003cspan style\u003d\"color: #267cfb; text-decoration: underline\"\u003eResponsible AI\u003c/span\u003e considerations",
     "use_custom_rebranding": false,
@@ -211,7 +211,7 @@
     "sql_retrieval_connection": "Snowflake_Honker_Cloud_Personal3"
   },
   "name": "Loan Advisor (migrated)",
-  "apiKey": "e:AES:X2:o2fNQWUeufEWC0UFSF+FvL/LdPK/Z3GKEJhyueg+ndWXivnum2KULwJUkXS5uW2yU5aZYLiz0kK4eLLtuO9v0gn+HL/SwI45zbz7KZuq0CSoXp7F9afx",
+  "apiKey": "e:AES:X2:X4Ux9EZRBn9+HE/ngYcnaLLVQ8dFWWjubuudWsHm4BgHMwk0YUzzow0+H3vOAGMmL2kTppT/4Jf9U5WMoEt5MWxrSVNG6eOpyeNEquRI7ycxqvFHV6B7",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
