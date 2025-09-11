@@ -1,7 +1,32 @@
 {
   "name": "Inputs",
   "color": "#087ABF",
-  "items": [],
+  "items": [
+    {
+      "objectId": "Loan_Requests_file",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "Customer_Info",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "Loan_Requests",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "Customer_Info_file",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Customer_Info",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_Loan_Requests",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {
     "x": 2178.1,

@@ -3,14 +3,6 @@
   "color": "#8C2DA7",
   "items": [
     {
-      "objectId": "Loan_Requests",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "Customer_Info",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_Loan_Requests_prepared",
       "objectType": "RECIPE"
     },
@@ -41,22 +33,6 @@
     {
       "objectId": "Customers_and_Loan_prepared",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "Loan_Requests_file",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "Customer_Info_file",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_Customer_Info",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_Loan_Requests",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
