@@ -12,7 +12,7 @@
       "hard_sql_limit": 200,
       "return_value_mode": "AUTO",
       "max_records_for_artifact": -1,
-      "sample_values_strategy": "NONE",
+      "sample_values_strategy": "FROM_DATA",
       "sample_values_from_data_cardinality_cutoff": 30,
       "include_column_names_in_descriptor": true,
       "include_column_descriptions_in_descriptor": true
