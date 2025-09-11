@@ -2,6 +2,8 @@
   "type": "Snowflake",
   "managed": true,
   "featureGroup": false,
+  "description": "The Loan_Requests dataset provides detailed information about individual loan applications. It includes key data points such as the requested loan amount, the purpose of the loan, the length of the loan, and the applicant\u0027s home ownership status. This dataset is particularly useful for financial institutions and analysts who are interested in understanding borrowing patterns, assessing risk, and making informed lending decisions. The dataset can be used to analyze trends in loan requests, such as the most common purposes for loans or the typical loan amounts requested. Additionally, it can help in identifying correlations between loan characteristics and home ownership status. The dataset\u0027s structure, with clear identifiers and categorical data, makes it suitable for both statistical analysis and machine learning applications, such as credit scoring models. Overall, this dataset is a valuable resource for gaining insights into consumer borrowing behavior and improving financial product offerings.",
+  "shortDesc": "Loan requests dataset with details on amount, purpose, and home ownership.",
   "checklists": {
     "checklists": []
   },
@@ -63,11 +65,11 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"bigint"},
-      {"name":"Amount_Requested","type":"bigint"},
-      {"name":"Loan_Purpose","type":"string","maxLength":16777216},
-      {"name":"Loan_Length","type":"string","maxLength":16777216},
-      {"name":"Home_Ownership","type":"string","maxLength":16777216}
+      {"name":"id","type":"bigint","comment":"Unique identifier for each loan request, integer format.","isColumnEdited":true},
+      {"name":"Amount_Requested","type":"bigint","comment":"Total loan amount requested by applicant, in integer format.","isColumnEdited":true},
+      {"name":"Loan_Purpose","type":"string","comment":"Reason for loan request, such as debt consolidation.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Loan_Length","type":"string","comment":"Duration of the loan, typically in months.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Home_Ownership","type":"string","comment":"Applicant\u0027s home ownership status, e.g., mortgage or rent.","isColumnEdited":true,"maxLength":16777216}
     ],
     "userModified": true
   },
