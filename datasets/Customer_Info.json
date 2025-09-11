@@ -2,6 +2,8 @@
   "type": "Snowflake",
   "managed": true,
   "featureGroup": false,
+  "description": "The Customer_Info dataset provides a comprehensive view of customer financial and demographic information, which can be used for various analytical purposes such as credit risk assessment, customer segmentation, and financial forecasting. The dataset includes key attributes such as customer ID, status, date of birth, monthly income, state of residence, interest rate, FICO score range, and default status. These attributes are crucial for understanding customer profiles and financial behaviors. For instance, the FICO score range and interest rate can help in evaluating creditworthiness, while the monthly income and default status can be used to assess financial stability. The dataset is particularly useful for financial institutions, credit agencies, and data analysts who need to analyze customer data for decision-making processes. The inclusion of state information allows for geographic analysis, which can be beneficial for regional market studies. Overall, this dataset is a valuable resource for gaining insights into customer financial patterns and behaviors.",
+  "shortDesc": "Customer financial dataset with income, credit, and demographic details.",
   "checklists": {
     "checklists": []
   },
@@ -63,14 +65,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"bigint"},
-      {"name":"Status","type":"string","maxLength":16777216},
-      {"name":"Date_Of_Birth","type":"string","maxLength":16777216},
-      {"name":"Monthly_Income","type":"double"},
-      {"name":"State","type":"string","maxLength":16777216},
-      {"name":"Interest_Rate","type":"double"},
-      {"name":"FICO_Range","type":"string","maxLength":16777216},
-      {"name":"Default","type":"double"}
+      {"name":"id","type":"bigint","comment":"Unique customer identifier, integer format, bigint type.","isColumnEdited":true},
+      {"name":"Status","type":"string","comment":"Customer application status, text format, string type.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Date_Of_Birth","type":"string","comment":"Customer\u0027s birth date, date format, string type.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Monthly_Income","type":"double","comment":"Customer\u0027s monthly income, decimal format, double type.","isColumnEdited":true},
+      {"name":"State","type":"string","comment":"Customer\u0027s US state of residence, text format, string type.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Interest_Rate","type":"double","comment":"Interest rate applicable, decimal format, double type.","isColumnEdited":true},
+      {"name":"FICO_Range","type":"string","comment":"Customer\u0027s FICO score range, text format, string type.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Default","type":"double","comment":"Default status indicator, decimal format, double type.","isColumnEdited":true}
     ],
     "userModified": true
   },
