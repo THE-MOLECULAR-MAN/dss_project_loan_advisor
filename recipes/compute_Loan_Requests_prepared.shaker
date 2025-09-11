@@ -1,6 +1,28 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "id"
+      },
+      {
+        "d": true,
+        "name": "Amount_Requested"
+      },
+      {
+        "d": true,
+        "name": "Loan_Purpose"
+      },
+      {
+        "d": true,
+        "name": "Loan_Length"
+      },
+      {
+        "d": true,
+        "name": "Home_Ownership"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -28,6 +50,7 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
+  "columnOrder": [],
   "columnUseScientificNotationByName": {},
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
@@ -49,6 +72,7 @@
           "type": "FindReplace",
           "params": {
             "output": "",
+            "useDatasetForMapping": false,
             "mapping": [
               {
                 "from": "[^0-9]",
@@ -66,7 +90,7 @@
           "alwaysShowComment": false
         }
       ],
-      "alwaysShowComment": false,
+      "alwaysShowComment": true,
       "secondaryColor": "#d4e7e4"
     },
     {
@@ -76,6 +100,7 @@
       "type": "FindReplace",
       "params": {
         "output": "",
+        "useDatasetForMapping": false,
         "mapping": [
           {
             "from": "MORTGAG",
@@ -135,6 +160,7 @@
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
+    "coloringGroups": [],
     "valueColoringMode": "HASH",
     "individualColumnsRules": []
   }
