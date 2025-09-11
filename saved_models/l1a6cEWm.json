@@ -4,7 +4,7 @@
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
   "cleanTemporaryVersionsPostJob": false,
-  "name": "Loan Advisor Agent",
+  "name": "Loan Advisor - Visual Agent",
   "activeVersion": "v1",
   "inlineVersions": [
     {
