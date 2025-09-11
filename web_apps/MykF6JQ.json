@@ -99,8 +99,7 @@
       "Can you tell me about our loan approval policies?",
       "Shall I approve loan for the customer 53041?",
       "My customer\u0027s id is 99592. Can you tell me whether their loan application has been approved?",
-      "What do you need from me in order to assess whether a prospective customer will be a likely defaulter?",
-      "What is the average loan amount requested for applicants from CA?"
+      "What do you need from me in order to assess whether a prospective customer will be a likely defaulter?"
     ],
     "disclaimer": "This application is powered by a Large Language Model. Review proposed outcomes in context with \u003cspan style\u003d\"color: #267cfb; text-decoration: underline\"\u003eResponsible AI\u003c/span\u003e considerations",
     "use_custom_rebranding": false,
@@ -211,7 +210,7 @@
     "sql_retrieval_connection": "Snowflake_Honker_Cloud_Personal3"
   },
   "name": "Loan Advisor (migrated)",
-  "apiKey": "e:AES:X2:AdjT84TWvFKeUD5NVatSqzwl2E6tSZsw5pAYmc6ScL4PmcWICf05VgMzQspSZbwpgVRZ7kvjYNpKvZ0wwjDdWnEIXkqv8ksLBNmNZCASmCvYoIuPq5kJ",
+  "apiKey": "e:AES:X2:LKDiAHTfCf6xOGc8S01wdZi+cAuikxAFigJu3MQvqDtRFRCDMnaTFRnnq/H8HDNjj3J9zxvrS8GRm8NTbi2nmidu7TMLModbqx8lF6wmzb5UQaj/6Ue2",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
