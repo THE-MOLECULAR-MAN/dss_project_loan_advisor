@@ -23,7 +23,10 @@
   },
   "quickTestQuery": {
     "input": {
-      "searchQuery": "Count the number of rows in the the table Customers_and_Loan_prepared"
+      "question": {
+        "type": "string",
+        "description": "Count the number of rows in the the table Customers_and_Loan_prepared"
+      }
     },
     "context": {}
   },
