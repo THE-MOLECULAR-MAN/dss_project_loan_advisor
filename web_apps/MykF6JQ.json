@@ -98,7 +98,7 @@
     "example_questions": [
       "Can you tell me about our loan approval policies?",
       "Shall I approve loan for the customer 53041?",
-      "\u003cspan style\u003d\"color: rgb(68, 68, 68); font-size: 16px; white-space-collapse: preserve; background-color: rgba(245, 245, 245, 0.7);\"\u003eTell me everything about customer id: 99592\u003c/span\u003e",
+      "Tell me everything about customer id: 99592",
       "My customer\u0027s id is 99592. Can you tell me whether their loan application has been approved?",
       "What do you need from me in order to assess whether a prospective customer will be a likely defaulter?"
     ],
@@ -211,7 +211,7 @@
     "sql_retrieval_connection": "Snowflake_Honker_Cloud_Personal3"
   },
   "name": "Loan Advisor (migrated)",
-  "apiKey": "e:AES:X2:X4Ux9EZRBn9+HE/ngYcnaLLVQ8dFWWjubuudWsHm4BgHMwk0YUzzow0+H3vOAGMmL2kTppT/4Jf9U5WMoEt5MWxrSVNG6eOpyeNEquRI7ycxqvFHV6B7",
+  "apiKey": "e:AES:X2:rmXKmdTsNXik3giBHXSbfvwkUAHUthQpdxW+Aq4znnUT54yKQhk8CoPp//7O40DcummkyqS+UGsVGPX30j71uX3xbpNv9TCDB++nMWLuPd4Uga1lWaY/",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
