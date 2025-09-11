@@ -218,6 +218,7 @@
     },
     "lastModifiedOn": 1739368047308
   },
+  "description": "This data processing flow is designed to manage, integrate, and analyze information related to loan requests, customer details, and user interactions with a web application. It begins with the \"Inputs\" flow zone, which handles two main datasets: \"Loan_Requests_file\" and \"Customer_Info_file.\" These datasets contain details about loan applications and customer information, respectively. The flow ensures that this data is synchronized and up-to-date, producing output datasets \"Loan_Requests\" and \"Customer_Info\" for further analysis.\n\nIn the \"Data Prep\" flow zone, the data is processed and integrated to create a comprehensive dataset, \"Customers_and_Loan.\" This involves calculating customer age, extracting FICO score ranges, and cleaning loan request data. A left join is performed to combine customer and loan request information, resulting in a holistic view of each customer and their loan request.\n\nThe \"Train model to predict loan defaulting\" flow zone focuses on developing a predictive model to assess the likelihood of loan defaults. It uses the comprehensive dataset to calculate additional features like the Debt-to-Income Ratio, splits the data into training and testing sets, and trains a model to predict default probabilities. The output includes original data with added columns for default probabilities and predictions, aiding financial institutions in risk assessment.\n\nThe \"Agents\" flow zone enhances datasets by embedding documents, transforming textual data into a format suitable for advanced data processing tasks. This results in a versatile dataset ready for machine learning or information retrieval applications.\n\nFinally, the \"Web App prompts \u0026 feedback\" flow zone manages and analyzes user interactions with a web application utilizing a language learning model (LLM). It captures user prompts, LLM responses, and feedback, maintaining detailed conversation histories and user profiles. This flow aims to improve user experience by systematically analyzing interactions and feedback, enabling continuous enhancement of the web app\u0027s capabilities and user satisfaction.\n\nDescription generated on 9/11/2025",
   "shortDesc": "The project *FinAI Advisor* was created by Administrator on Feb 12th 2025\nThe project *FINAIADVISORSTARTER* was copied from *FINAIADVISOR* by Administrator on Mar 05th 2025",
   "tags": [
     "Answers",
@@ -249,7 +250,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Import your [first dataset](projects/FINAIADVISOR/datasets/new/)",
             "createdOn": 1739368047309,
             "createdBy": "admin",
