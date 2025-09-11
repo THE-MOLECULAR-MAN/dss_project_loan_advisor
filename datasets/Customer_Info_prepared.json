@@ -2,6 +2,8 @@
   "type": "Snowflake",
   "managed": true,
   "featureGroup": false,
+  "description": "The Customer_Info_prepared dataset provides a comprehensive view of customer financial and demographic information, which is crucial for financial analysis and decision-making processes. This dataset includes key attributes such as customer ID, status, date of birth, age, monthly income, state of residence, interest rate, FICO score range, and default status. It is particularly useful for financial institutions and analysts who need to assess creditworthiness, understand customer demographics, and evaluate financial risk. The dataset\u0027s unique features include detailed FICO score information, which is essential for credit scoring models, and the inclusion of both demographic and financial data, allowing for a holistic view of each customer. The dataset can be used for various purposes, such as credit risk assessment, customer segmentation, and financial product targeting. By analyzing this data, businesses can make informed decisions about lending, marketing strategies, and customer relationship management. The dataset\u0027s structure, with clearly defined columns and sample values, ensures ease of use for data analysis and modeling.",
+  "shortDesc": "Customer financial dataset with demographics and credit details.",
   "checklists": {
     "checklists": []
   },
@@ -63,17 +65,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"bigint"},
-      {"name":"Status","type":"string","maxLength":16777216},
-      {"name":"Date_Of_Birth_parsed","type":"date"},
-      {"name":"Age","type":"bigint"},
-      {"name":"Monthly_Income","type":"double"},
-      {"name":"State","type":"string","maxLength":16777216},
-      {"name":"Interest_Rate","type":"double"},
-      {"name":"FICO_Range","type":"string","maxLength":16777216},
-      {"name":"FICO_max","type":"bigint"},
-      {"name":"FICO_min","type":"bigint"},
-      {"name":"Default","type":"double"}
+      {"name":"id","type":"bigint","comment":"Unique customer identifier, bigint integer.","isColumnEdited":true},
+      {"name":"Status","type":"string","comment":"Customer application status, string text.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Date_Of_Birth_parsed","type":"date","comment":"Customer\u0027s birth date, date format.","isColumnEdited":true},
+      {"name":"Age","type":"bigint","comment":"Customer\u0027s age in years, bigint integer.","isColumnEdited":true},
+      {"name":"Monthly_Income","type":"double","comment":"Customer\u0027s monthly income, double decimal.","isColumnEdited":true},
+      {"name":"State","type":"string","comment":"Customer\u0027s US state, string text.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Interest_Rate","type":"double","comment":"Interest rate on loans, double decimal.","isColumnEdited":true},
+      {"name":"FICO_Range","type":"string","comment":"Customer\u0027s FICO score range, string text.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"FICO_max","type":"bigint","comment":"Maximum FICO score, bigint integer.","isColumnEdited":true},
+      {"name":"FICO_min","type":"bigint","comment":"Minimum FICO score, bigint integer.","isColumnEdited":true},
+      {"name":"Default","type":"double","comment":"Default status indicator, double decimal.","isColumnEdited":true}
     ],
     "userModified": true
   },
