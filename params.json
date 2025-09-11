@@ -1,7 +1,18 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "Customers_and_Loan_prepared",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ",
+          "DISCOVER"
+        ]
+      }
+    ]
   },
   "exposedObjects": {
     "objects": []
