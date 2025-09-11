@@ -63,7 +63,7 @@
     "permanent_delete": true,
     "feedback_positive_choices": [],
     "feedback_negative_choices": [],
-    "allow_general_feedback": false,
+    "allow_general_feedback": true,
     "max_upload_size_mb": 15,
     "max_n_upload_files": 5,
     "allow_doc_as_image": true,
@@ -78,7 +78,7 @@
     "web_app_subheading": "Answers are sourced from the processed documents, data and models and delivered in natural language and accompanied by the most relevant references.",
     "web_app_input_placeholder": "Ask your question...",
     "example_questions": [
-      "Can you tell me about our loan approval policies?",
+      "Tell me about our loan approval policies",
       "Shall I approve loan for the customer 53041?",
       "What do you need from me in order to assess whether a prospective customer will be a likely defaulter?",
       "Tell me about customer 96536"
@@ -188,14 +188,15 @@
     "bypass_permission_check": false,
     "display_agents_answers": false,
     "display_source_chunks": true,
-    "display_sql_query": false,
+    "display_sql_query": true,
     "disable_ssl_verification": false,
     "augmented_llms": [],
     "aug_llms_descriptions": [],
-    "agents_customization": []
+    "agents_customization": [],
+    "general_feedback_dataset": "general_feedback"
   },
   "name": "Loan Advisor App",
-  "apiKey": "e:AES:X2:Y9u7cJ2STxJHhUvQjrUqmjG+CexqYH5FsU57V+PeA1SVSSQLPTQRIUQczQgpUwyQ1mue5ONlUDCgCBFZhGSyyfoHWM7zcDKa+m0ZNtJTOHN+dfFMqQBD",
+  "apiKey": "e:AES:X2:2OxGcWhAK08Vvf3yST7O21ChLWL0TRQZtGmjITHQ0H0OP+xkM4BVtccOw1uEPNKKh0qp1JY2LvwhGifn7uVa21HvqcgPtXkdEo+50p45npvOgC4u/G7l",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
