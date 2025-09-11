@@ -7,7 +7,7 @@
         "Customers_and_Loan_prepared"
       ],
       "connection": "Snowflake_Honker_Cloud_Personal3",
-      "llmId": "openai:OpenAI_Shared_SE:gpt-4.1",
+      "llmId": "openai:OpenAI_Shared_SE:gpt-4o",
       "additionalInformation": "Customer loan dataset with financial and demographic details.\n\nThe \u0027Customers_and_Loan_prepared\u0027 dataset provides a comprehensive view of customer profiles and their loan details. It includes demographic information such as age, date of birth, and state of residence, as well as financial data like monthly income, interest rates, and FICO scores. The dataset is particularly useful for financial institutions and analysts looking to assess creditworthiness, understand customer demographics, and evaluate loan performance. It includes key indicators such as debt-to-income ratio and loan purpose, which are critical for risk assessment and decision-making processes. The dataset\u0027s structure allows for detailed analysis of loan status, default rates, and the impact of various factors on loan acceptance. With its rich set of attributes, this dataset can be used for predictive modeling, customer segmentation, and financial forecasting. It is an invaluable resource for developing strategies to improve loan approval processes and enhance customer relationship management.",
       "hard_sql_limit": 200,
       "return_value_mode": "AUTO",
