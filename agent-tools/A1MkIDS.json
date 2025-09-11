@@ -1,0 +1,27 @@
+{
+  "name": "Text_to_SQL_2",
+  "type": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
+  "params": {
+    "config": {},
+    "containerExecSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "quickTestQuery": {
+    "input": {},
+    "context": {}
+  },
+  "dkuProperties": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1757596040697
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
