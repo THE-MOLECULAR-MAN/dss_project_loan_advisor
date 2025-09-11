@@ -1,0 +1,8 @@
+{
+  "metadataColumns": [],
+  "chunkOverlapCharacters": 120,
+  "chunkSizeCharacters": 3000,
+  "clearVectorStore": false,
+  "vectorStoreUpdateMethod": "OVERWRITE",
+  "documentSplittingMode": "CHARACTERS_BASED"
+}
