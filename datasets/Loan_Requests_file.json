@@ -2,6 +2,8 @@
   "type": "UploadedFiles",
   "managed": false,
   "featureGroup": false,
+  "description": "The Loan_Requests_file dataset provides detailed information on individual loan requests, capturing key aspects such as the requested amount, purpose of the loan, and the applicant\u0027s home ownership status. This dataset is particularly useful for financial institutions and analysts who are interested in understanding borrowing patterns, assessing risk, and tailoring financial products to meet customer needs. Each entry in the dataset is uniquely identified by an ID, ensuring that data can be accurately tracked and analyzed. The dataset includes a variety of loan purposes, from debt consolidation to home improvement, offering insights into consumer financial behavior. Additionally, the dataset records the length of the loan, which can be crucial for understanding repayment timelines and interest calculations. The home ownership status of applicants provides further context, potentially influencing loan approval decisions and interest rates. Overall, this dataset is a valuable resource for conducting financial analysis, developing predictive models for loan approval, and enhancing customer segmentation strategies.",
+  "shortDesc": "Loan requests dataset with details on amount, purpose, and home ownership.",
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -90,11 +92,11 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"bigint"},
-      {"name":"Amount_Requested","type":"bigint"},
-      {"name":"Loan_Purpose","type":"string"},
-      {"name":"Loan_Length","type":"string"},
-      {"name":"Home_Ownership","type":"string"}
+      {"name":"id","type":"bigint","comment":"Unique identifier for each loan request, integer format.","isColumnEdited":true},
+      {"name":"Amount_Requested","type":"bigint","comment":"Total loan amount requested, in integer format.","isColumnEdited":true},
+      {"name":"Loan_Purpose","type":"string","comment":"Purpose of the loan, described in text.","isColumnEdited":true},
+      {"name":"Loan_Length","type":"string","comment":"Duration of the loan, in months or years.","isColumnEdited":true},
+      {"name":"Home_Ownership","type":"string","comment":"Applicant\u0027s home ownership status, text format.","isColumnEdited":true}
     ],
     "userModified": true
   },
