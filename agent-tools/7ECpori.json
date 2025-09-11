@@ -31,6 +31,7 @@
     "context": {}
   },
   "dkuProperties": [],
+  "additionalDescriptionForLLM": "This tool answers questions related to the dataset named \"Customers_and_Loan_prepared\". This tool generates SQL to answer questions about customers and loans. It returns result of the SQL query in plain English. Use this tool when you need information about loans or customers.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
