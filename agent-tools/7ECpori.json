@@ -8,7 +8,7 @@
       ],
       "connection": "Snowflake_Honker_Cloud_Personal3",
       "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-4o",
-      "additionalInformation": "This tool answers questions related to the dataset named \"Customers_and_Loan_prepared\". This tool generates SQL to answer questions about customers and loans. It returns result of the SQL query in plain English. Use this tool when you need information about loans or customers.",
+      "additionalInformation": "This dataset named \"Customers_and_Loan_prepared\". This tool generates SQL to answer questions about customers and loans. It returns result of the SQL query in plain English. Use this tool when you need information about loans or customers.",
       "hard_sql_limit": 200,
       "return_value_mode": "AUTO",
       "max_records_for_artifact": -1,
