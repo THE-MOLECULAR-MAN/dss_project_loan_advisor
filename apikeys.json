@@ -106,41 +106,5 @@
     "key": "sha256:GyAefPGL:57750e0d7ea247fbb56368f3558e5a0945c04dc9732cd0e79196820b987cd998",
     "label": "Key for Web app Loan Advisor App(4ia32VE)",
     "createdOn": 1741623577290
-  },
-  {
-    "execSQLLike": false,
-    "localDatasets": [
-      {
-        "datasets": [],
-        "privileges": [
-          "READ_DATA",
-          "READ_METADATA",
-          "READ_SCHEMA"
-        ]
-      }
-    ],
-    "projectPrivileges": {
-      "admin": false,
-      "editPermissions": false,
-      "readProjectContent": false,
-      "writeProjectContent": false,
-      "exportDatasetsData": false,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "publishToDataCollections": false,
-      "shareToWorkspaces": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false,
-      "executeApp": false
-    },
-    "onBehalf": "qJ3cDPw",
-    "expiresOn": 0,
-    "id": "WhhGnRbAU4yknRug",
-    "key": "sha256:w4Swn29t:fd8b5f822436de2a192efdd18a20b74937c4c0afefd1bfd6e4c67b1800ae5c60",
-    "label": "Key for Web app ans1(qJ3cDPw)",
-    "createdOn": 1757597639857
   }
 ]
