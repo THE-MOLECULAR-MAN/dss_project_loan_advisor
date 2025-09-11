@@ -2,6 +2,8 @@
   "type": "Snowflake",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027Loan_Requests_prepared\u0027 dataset provides a comprehensive overview of individual loan requests, capturing essential details such as the requested amount, purpose of the loan, and the applicant\u0027s home ownership status. This dataset is particularly useful for financial institutions, analysts, and researchers interested in understanding borrowing patterns and assessing credit risk. Each entry in the dataset represents a unique loan request, identified by an \u0027id\u0027, and includes the \u0027Amount_Requested\u0027, which indicates the financial amount the applicant wishes to borrow. The \u0027Loan_Purpose\u0027 column categorizes the reason for the loan, such as debt consolidation or home improvement, providing insights into consumer financial behavior. The \u0027Loan_Length\u0027 specifies the duration of the loan in months, typically 36 or 60 months, which is crucial for understanding repayment timelines. Additionally, the \u0027Home_Ownership\u0027 status of the applicant, whether they own, mortgage, or rent their home, offers further context for evaluating their financial stability. This dataset can be instrumental in developing predictive models for loan approval processes, risk assessment, and market analysis.",
+  "shortDesc": "Loan requests dataset with details on amount, purpose, and home ownership.",
   "checklists": {
     "checklists": []
   },
@@ -63,11 +65,11 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"bigint"},
-      {"name":"Amount_Requested","type":"bigint"},
-      {"name":"Loan_Purpose","type":"string","maxLength":16777216},
-      {"name":"Loan_Length","type":"string","maxLength":16777216},
-      {"name":"Home_Ownership","type":"string","maxLength":16777216}
+      {"name":"id","type":"bigint","comment":"Unique identifier for each loan request, integer format.","isColumnEdited":true},
+      {"name":"Amount_Requested","type":"bigint","comment":"The financial amount requested by the applicant, in integer format.","isColumnEdited":true},
+      {"name":"Loan_Purpose","type":"string","comment":"Reason for the loan, such as debt consolidation or credit card.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Loan_Length","type":"string","comment":"Duration of the loan in months, typically 36 or 60.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Home_Ownership","type":"string","comment":"Applicant\u0027s home ownership status: own, mortgage, or rent.","isColumnEdited":true,"maxLength":16777216}
     ],
     "userModified": true
   },
