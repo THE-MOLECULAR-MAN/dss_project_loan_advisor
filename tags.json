@@ -15,7 +15,9 @@
     "Execution:Snowflake": {
       "color": "#a088bd"
     },
-    "recipe-editor": {},
+    "recipe-editor": {
+      "color": "#1ac2ab"
+    },
     "Execution:Dataiku": {
       "color": "#0ae6f5"
     },
