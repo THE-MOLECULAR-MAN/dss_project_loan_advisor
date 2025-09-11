@@ -2,6 +2,8 @@
   "type": "Snowflake",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027Customers_and_Loan_prepared\u0027 dataset provides a comprehensive view of customer profiles and their loan details. It includes demographic information such as age, date of birth, and state of residence, as well as financial data like monthly income, interest rates, and FICO scores. The dataset is particularly useful for financial institutions and analysts looking to assess creditworthiness, understand customer demographics, and evaluate loan performance. It includes key indicators such as debt-to-income ratio and loan purpose, which are critical for risk assessment and decision-making processes. The dataset\u0027s structure allows for detailed analysis of loan status, default rates, and the impact of various factors on loan acceptance. With its rich set of attributes, this dataset can be used for predictive modeling, customer segmentation, and financial forecasting. It is an invaluable resource for developing strategies to improve loan approval processes and enhance customer relationship management.",
+  "shortDesc": "Customer loan dataset with financial and demographic details.",
   "checklists": {
     "checklists": []
   },
@@ -63,22 +65,22 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"bigint"},
-      {"name":"Status","type":"string","maxLength":16777216},
-      {"name":"Date_Of_Birth_parsed","type":"date"},
-      {"name":"Age","type":"bigint"},
-      {"name":"Monthly_Income","type":"double"},
-      {"name":"State","type":"string","maxLength":16777216},
-      {"name":"Interest_Rate","type":"double"},
-      {"name":"FICO_Range","type":"string","maxLength":16777216},
-      {"name":"FICO_max","type":"bigint"},
-      {"name":"FICO_min","type":"bigint"},
-      {"name":"Default","type":"double"},
-      {"name":"Amount_Requested","type":"bigint"},
-      {"name":"Debt_to_Income_Ratio","type":"double"},
-      {"name":"Loan_Purpose","type":"string","maxLength":16777216},
-      {"name":"Loan_Length","type":"string","maxLength":16777216},
-      {"name":"Home_Ownership","type":"string","maxLength":16777216}
+      {"name":"id","type":"bigint","comment":"Unique customer identifier, bigint, key for records.","isColumnEdited":true},
+      {"name":"Status","type":"string","comment":"Loan application status, string, indicates approval.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Date_Of_Birth_parsed","type":"date","comment":"Customer\u0027s birth date, date, for age calculation.","isColumnEdited":true},
+      {"name":"Age","type":"bigint","comment":"Customer\u0027s age, bigint, derived from birth date.","isColumnEdited":true},
+      {"name":"Monthly_Income","type":"double","comment":"Customer\u0027s monthly income, double, financial capacity.","isColumnEdited":true},
+      {"name":"State","type":"string","comment":"Customer\u0027s US state, string, geographic location.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Interest_Rate","type":"double","comment":"Loan interest rate, double, cost of borrowing.","isColumnEdited":true},
+      {"name":"FICO_Range","type":"string","comment":"FICO score range, string, creditworthiness indicator.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"FICO_max","type":"bigint","comment":"Maximum FICO score, bigint, credit risk measure.","isColumnEdited":true},
+      {"name":"FICO_min","type":"bigint","comment":"Minimum FICO score, bigint, credit risk measure.","isColumnEdited":true},
+      {"name":"Default","type":"double","comment":"Loan default indicator, double, risk assessment.","isColumnEdited":true},
+      {"name":"Amount_Requested","type":"bigint","comment":"Loan amount requested, bigint, financial need.","isColumnEdited":true},
+      {"name":"Debt_to_Income_Ratio","type":"double","comment":"Debt-to-income ratio, double, financial stability.","isColumnEdited":true},
+      {"name":"Loan_Purpose","type":"string","comment":"Purpose of loan, string, reason for borrowing.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Loan_Length","type":"string","comment":"Loan term length, string, repayment period.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Home_Ownership","type":"string","comment":"Customer\u0027s home ownership status, string, asset indicator.","isColumnEdited":true,"maxLength":16777216}
     ],
     "userModified": true
   },
