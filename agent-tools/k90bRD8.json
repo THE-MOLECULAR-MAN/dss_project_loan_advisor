@@ -1,5 +1,5 @@
 {
-  "name": "KB_tool",
+  "name": "KB_tool (migrated)",
   "type": "VectorStoreSearch",
   "params": {
     "maxDocuments": 4,
