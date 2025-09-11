@@ -1,5 +1,5 @@
 {
-  "name": "Predict_Loan_Deafult",
+  "name": "Predict_Loan_Deafult (migrated)",
   "type": "ClassicalPredictionModelPredict",
   "params": {
     "smRef": "19qX6AHu"
