@@ -54,7 +54,7 @@
     "llm_responses_column": "llm_context",
     "log_level": "INFO"
   },
-  "name": "Agent Traces Explorer",
+  "name": "Agent Traces Explorer (migrated)",
   "apiKey": "e:AES:X2:biqSgQ8HyW384etgakjA/2jgagoJQkocE/bgR7InG0exYoH0NNaCqSWto7sCAxYrA46HZd2qW+tdVK9kJTGRo9fwd855RuYxuDZgVGt4aYfZyrjGZ27k",
   "creationTag": {
     "versionNumber": 0,
