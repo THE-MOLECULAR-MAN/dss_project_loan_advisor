@@ -25,6 +25,10 @@
     {
       "objectId": "Customers_and_Loan",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "x",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
