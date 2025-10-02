@@ -29,6 +29,10 @@
     {
       "objectId": "x",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_x",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
