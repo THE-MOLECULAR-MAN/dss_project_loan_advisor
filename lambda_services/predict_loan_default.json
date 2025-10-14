@@ -1,5 +1,6 @@
 {
   "name": "predict_loan_default",
+  "error": null,
   "endpoints": [
     {
       "modelRef": "19qX6AHu",
@@ -45,9 +46,11 @@
       "auditPostEnrichData": false,
       "id": "predict_loan_default",
       "type": "STD_PREDICTION",
+      "tags": [],
       "openAPI": {
         "title": "predict_loan_default",
         "content": "{\n  \"paths\" : {\n    \"/predict_loan_default/predict\" : {\n      \"post\" : {\n        \"summary\" : \"predict_loan_default endpoint\",\n        \"description\" : \"Prediction type: STD_PREDICTION\",\n        \"parameters\" : [ {\n          \"in\" : \"body\",\n          \"name\" : \"serviceInputPayload\",\n          \"description\" : \"The input payload for executing the real-time machine learning service.\",\n          \"required\" : true,\n          \"schema\" : {\n            \"$ref\" : \"#/definitions/predict_loan_default_EndpointInput\"\n          }\n        } ],\n        \"responses\" : {\n          \"200\" : {\n            \"description\" : \"The service processed the input correctly and provided a result prediction, if applicable.\",\n            \"schema\" : {\n              \"$ref\" : \"#/definitions/predict_loan_default_EndpointOutput\"\n            }\n          },\n          \"default\" : {\n            \"description\" : \"The service failed to execute due to an error.\",\n            \"schema\" : {\n              \"$ref\" : \"#/definitions/predict_loan_default_ErrorResponse\"\n            }\n          }\n        }\n      }\n    }\n  },\n  \"definitions\" : {\n    \"predict_loan_default_EndpointInput\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"features\" : {\n          \"type\" : \"object\",\n          \"properties\" : {\n            \"Amount_Requested\" : {\n              \"type\" : \"integer\",\n              \"format\" : \"int32\"\n            },\n            \"FICO_min\" : {\n              \"type\" : \"integer\",\n              \"format\" : \"int32\"\n            },\n            \"Home_Ownership\" : {\n              \"type\" : \"string\"\n            },\n            \"Monthly_Income\" : {\n              \"type\" : \"number\",\n              \"format\" : \"double\"\n            },\n            \"State\" : {\n              \"type\" : \"string\"\n            },\n            \"FICO_max\" : {\n              \"type\" : \"integer\",\n              \"format\" : \"int32\"\n            },\n            \"Interest_Rate\" : {\n              \"type\" : \"number\",\n              \"format\" : \"double\"\n            },\n            \"Loan_Purpose\" : {\n              \"type\" : \"string\"\n            },\n            \"Loan_Length\" : {\n              \"type\" : \"string\"\n            },\n            \"Age\" : {\n              \"type\" : \"integer\",\n              \"format\" : \"int32\"\n            }\n          }\n        }\n      }\n    },\n    \"predict_loan_default_EndpointOutput\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"result\" : {\n          \"type\" : \"object\",\n          \"properties\" : {\n            \"prediction\" : {\n              \"type\" : \"string\"\n            }\n          }\n        }\n      }\n    },\n    \"predict_loan_default_ErrorResponse\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"status_code\" : {\n          \"type\" : \"integer\",\n          \"format\" : \"int32\"\n        },\n        \"message\" : {\n          \"type\" : \"string\"\n        }\n      }\n    }\n  }\n}",
+        "description": null,
         "enabled": false,
         "isManual": false
       }
@@ -55,25 +58,43 @@
   ],
   "authMethod": "PUBLIC",
   "authRealm": {
+    "id": null,
     "queryKeys": []
   },
   "oauth2Config": {
+    "issuer": null,
     "keysFormat": "JWKS_URI",
+    "jwksUri": null,
     "jwkUriConnectTimeout": 500,
     "jwkUriReadTimeout": 500,
     "jwkUriSizeLimit": 51200,
     "disableSSLCertificatesCheck": false,
+    "jwksSet": null,
+    "audience": null,
+    "scope": null,
     "scopeClaimFormat": "STRING",
-    "scopeClaimKey": "scope"
+    "scopeClaimKey": "scope",
+    "clientIdClaimKey": null,
+    "jwkSetParsed": null
   },
   "deploymentMonitoring": [],
+  "typeBadges": {
+    "ML": [
+      "predict_loan_default"
+    ]
+  },
+  "releaseNotes": null,
+  "versionTag": null,
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1739374196116
+    "lastModifiedOn": 1739374196116,
+    "extendedProperties": null
   },
+  "description": null,
+  "shortDesc": null,
   "tags": [],
   "customFields": {},
   "checklists": {
