@@ -1,0 +1,15 @@
+{
+  "typeBadges": {
+    "LLM": [
+      "RECIPE:compute_LoanPolicies_embedded",
+      "WEB_APP:MykF6JQ"
+    ],
+    "ML": [
+      "SAVED_MODEL:19qX6AHu"
+    ],
+    "AGENT": [
+      "SAVED_MODEL:l1a6cEWm",
+      "WEB_APP:4ia32VE"
+    ]
+  }
+}
