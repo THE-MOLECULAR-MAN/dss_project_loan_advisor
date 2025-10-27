@@ -2,6 +2,8 @@
   "type": "UploadedFiles",
   "managed": false,
   "featureGroup": false,
+  "description": "The Customer_Info_file dataset provides a comprehensive view of customer financial and demographic information. It includes key data points such as customer ID, status, date of birth, monthly income, state of residence, interest rate, FICO credit score range, and default status. This dataset is particularly useful for financial institutions and analysts who need to assess creditworthiness, analyze customer demographics, or develop targeted financial products. The inclusion of FICO ranges and interest rates allows for detailed credit risk analysis, while the monthly income and state data can help in understanding regional economic conditions and customer segments. The dataset\u0027s structure supports various analyses, such as identifying trends in customer defaults, evaluating the impact of income on credit status, and exploring demographic patterns. Its detailed nature makes it suitable for machine learning models aimed at predicting customer behavior or credit risk. Overall, this dataset is a valuable resource for gaining insights into customer financial profiles and enhancing decision-making processes in financial services.",
+  "shortDesc": "Customer financial dataset with income, credit, and demographic details.",
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -90,14 +92,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"bigint"},
-      {"name":"Status","type":"string"},
-      {"name":"Date_Of_Birth","type":"string"},
-      {"name":"Monthly_Income","type":"double"},
-      {"name":"State","type":"string"},
-      {"name":"Interest_Rate","type":"double"},
-      {"name":"FICO_Range","type":"string"},
-      {"name":"Default","type":"double"}
+      {"name":"id","type":"bigint","comment":"Unique customer identifier, essential for tracking.","isColumnEdited":true},
+      {"name":"Status","type":"string","comment":"Current status of customer application, e.g., pending or accepted.","isColumnEdited":true},
+      {"name":"Date_Of_Birth","type":"string","comment":"Customer\u0027s birth date, crucial for age analysis.","isColumnEdited":true},
+      {"name":"Monthly_Income","type":"double","comment":"Customer\u0027s monthly earnings, key for financial assessment.","isColumnEdited":true},
+      {"name":"State","type":"string","comment":"US state of residence, important for regional analysis.","isColumnEdited":true},
+      {"name":"Interest_Rate","type":"double","comment":"Rate applied to customer loans, vital for cost analysis.","isColumnEdited":true},
+      {"name":"FICO_Range","type":"string","comment":"Customer\u0027s credit score range, critical for credit risk.","isColumnEdited":true},
+      {"name":"Default","type":"double","comment":"Indicates if customer has defaulted, important for risk assessment.","isColumnEdited":true}
     ],
     "userModified": true
   },
