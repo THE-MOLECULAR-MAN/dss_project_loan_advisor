@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027user_profiles\u0027 dataset is designed to store and manage information about users and their profiles, along with the last time their profile was updated. This dataset is particularly useful for applications that require tracking user information and changes over time, such as social media platforms, customer relationship management systems, or any service that maintains user accounts. The dataset includes three key columns: \u0027user\u0027, which identifies the user; \u0027profile\u0027, which contains details about the user\u0027s profile; and \u0027last_updated\u0027, which records the date and time of the most recent update to the profile. This structure allows for efficient querying and management of user data, enabling applications to quickly access and update user profiles as needed. The inclusion of a timestamp for the last update is crucial for maintaining data integrity and ensuring that the most current information is always available. Overall, this dataset provides a foundational structure for managing user-related data in various digital applications.",
+  "shortDesc": "User profiles dataset with user, profile, and update information.",
   "checklists": {
     "checklists": []
   },
@@ -62,9 +64,9 @@
   },
   "schema": {
     "columns": [
-      {"name":"user","type":"string"},
-      {"name":"profile","type":"string"},
-      {"name":"last_updated","type":"datetimenotz"}
+      {"name":"user","type":"string","comment":"Identifies the user; key for user data.","isColumnEdited":true},
+      {"name":"profile","type":"string","comment":"Contains details about the user\u0027s profile.","isColumnEdited":true},
+      {"name":"last_updated","type":"datetimenotz","comment":"Records the last profile update timestamp.","isColumnEdited":true}
     ],
     "userModified": true
   },
