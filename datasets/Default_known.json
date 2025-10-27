@@ -2,6 +2,8 @@
   "type": "Snowflake",
   "managed": true,
   "featureGroup": false,
+  "description": "The Default_known dataset provides comprehensive information on loan applications, focusing on customer demographics, financial status, and loan specifics. It includes unique identifiers for each customer, their age, income, and geographic location, as well as details about their creditworthiness, such as FICO scores and debt-to-income ratios. The dataset also captures the status of loan applications, the requested loan amounts, and the purpose of the loans. This dataset is particularly useful for financial institutions and researchers interested in analyzing loan approval processes, assessing credit risk, and understanding the factors influencing loan defaults. By examining variables like interest rates, home ownership status, and loan length, users can gain insights into the financial behaviors and stability of borrowers. The inclusion of both accepted and defaulted loans allows for a comprehensive analysis of risk factors and decision-making criteria in lending practices.",
+  "shortDesc": "Loan application dataset with customer demographics and financial details.",
   "checklists": {
     "checklists": []
   },
@@ -63,22 +65,22 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"bigint","comment":"Unique customer identifier, bigint, key for records."},
-      {"name":"Status","type":"string","comment":"Loan application status, string, indicates approval.","maxLength":16777216},
-      {"name":"Date_Of_Birth_parsed","type":"date","comment":"Customer\u0027s birth date, date, for age calculation."},
-      {"name":"Age","type":"bigint","comment":"Customer\u0027s age, bigint, derived from birth date."},
-      {"name":"Monthly_Income","type":"double","comment":"Customer\u0027s monthly income, double, financial capacity."},
-      {"name":"State","type":"string","comment":"Customer\u0027s US state, string, geographic location.","maxLength":16777216},
-      {"name":"Interest_Rate","type":"double","comment":"Loan interest rate, double, cost of borrowing."},
-      {"name":"FICO_Range","type":"string","comment":"FICO score range, string, creditworthiness indicator.","maxLength":16777216},
-      {"name":"FICO_max","type":"bigint","comment":"Maximum FICO score, bigint, credit risk measure."},
-      {"name":"FICO_min","type":"bigint","comment":"Minimum FICO score, bigint, credit risk measure."},
-      {"name":"Default","type":"double","comment":"Loan default indicator, double, risk assessment."},
-      {"name":"Amount_Requested","type":"bigint","comment":"Loan amount requested, bigint, financial need."},
-      {"name":"Debt_to_Income_Ratio","type":"double","comment":"Debt-to-income ratio, double, financial stability."},
-      {"name":"Loan_Purpose","type":"string","comment":"Purpose of loan, string, reason for borrowing.","maxLength":16777216},
-      {"name":"Loan_Length","type":"string","comment":"Loan term length, string, repayment period.","maxLength":16777216},
-      {"name":"Home_Ownership","type":"string","comment":"Customer\u0027s home ownership status, string, asset indicator.","maxLength":16777216}
+      {"name":"id","type":"bigint","comment":"Unique customer identifier, key for records.","isColumnEdited":true},
+      {"name":"Status","type":"string","comment":"Loan application status, indicates approval.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Date_Of_Birth_parsed","type":"date","comment":"Customer\u0027s birth date, for age calculation.","isColumnEdited":true},
+      {"name":"Age","type":"bigint","comment":"Customer\u0027s age, derived from birth date.","isColumnEdited":true},
+      {"name":"Monthly_Income","type":"double","comment":"Customer\u0027s monthly income, financial capacity.","isColumnEdited":true},
+      {"name":"State","type":"string","comment":"Customer\u0027s US state, geographic location.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Interest_Rate","type":"double","comment":"Loan interest rate, cost of borrowing.","isColumnEdited":true},
+      {"name":"FICO_Range","type":"string","comment":"FICO score range, creditworthiness indicator.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"FICO_max","type":"bigint","comment":"Maximum FICO score, credit risk measure.","isColumnEdited":true},
+      {"name":"FICO_min","type":"bigint","comment":"Minimum FICO score, credit risk measure.","isColumnEdited":true},
+      {"name":"Default","type":"double","comment":"Loan default indicator, risk assessment.","isColumnEdited":true},
+      {"name":"Amount_Requested","type":"bigint","comment":"Loan amount requested, financial need.","isColumnEdited":true},
+      {"name":"Debt_to_Income_Ratio","type":"double","comment":"Debt-to-income ratio, financial stability.","isColumnEdited":true},
+      {"name":"Loan_Purpose","type":"string","comment":"Purpose of loan, reason for borrowing.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Loan_Length","type":"string","comment":"Loan term length, repayment period.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Home_Ownership","type":"string","comment":"Customer\u0027s home ownership status, asset indicator.","isColumnEdited":true,"maxLength":16777216}
     ],
     "userModified": true
   },
