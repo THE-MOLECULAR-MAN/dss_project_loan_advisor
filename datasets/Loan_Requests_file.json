@@ -2,6 +2,8 @@
   "type": "UploadedFiles",
   "managed": false,
   "featureGroup": false,
+  "description": "The Loan_Requests_file dataset provides detailed information on individual loan requests, capturing essential data points such as the requested loan amount, the purpose of the loan, and the applicant\u0027s home ownership status. This dataset is particularly useful for financial institutions, researchers, and analysts interested in understanding borrowing patterns, assessing credit risk, or developing predictive models for loan approval processes. Each entry in the dataset is uniquely identified by an ID, ensuring that data can be accurately tracked and analyzed. The dataset includes a variety of loan purposes, ranging from debt consolidation to home improvement, which can help in segmenting the market and tailoring financial products. Additionally, the dataset records the length of the loan, providing insights into borrower preferences for short-term versus long-term financing. The home ownership status of applicants, whether they own, rent, or have a mortgage, offers further context for evaluating financial stability and risk. Overall, this dataset is a valuable resource for gaining insights into consumer lending behavior and enhancing decision-making in the financial sector.",
+  "shortDesc": "Loan requests dataset with details on amount, purpose, and home ownership.",
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -90,11 +92,11 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"bigint"},
-      {"name":"Amount_Requested","type":"bigint"},
-      {"name":"Loan_Purpose","type":"string"},
-      {"name":"Loan_Length","type":"string"},
-      {"name":"Home_Ownership","type":"string"}
+      {"name":"id","type":"bigint","comment":"Unique identifier for each loan request, ensuring data accuracy.","isColumnEdited":true},
+      {"name":"Amount_Requested","type":"bigint","comment":"The total loan amount requested by the applicant.","isColumnEdited":true},
+      {"name":"Loan_Purpose","type":"string","comment":"The reason for the loan, such as debt consolidation.","isColumnEdited":true},
+      {"name":"Loan_Length","type":"string","comment":"Duration of the loan, indicating short or long term.","isColumnEdited":true},
+      {"name":"Home_Ownership","type":"string","comment":"Applicant\u0027s home ownership status, e.g., rent or mortgage.","isColumnEdited":true}
     ],
     "userModified": true
   },
