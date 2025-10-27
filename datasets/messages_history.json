@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027messages_history\u0027 dataset is a comprehensive collection of data capturing interactions between users and language learning models (LLMs) across various platforms. It is designed to track and analyze the flow of conversations, including user queries, LLM responses, and additional metadata. This dataset is particularly useful for developers and researchers interested in understanding user behavior, improving LLM performance, and enhancing user experience. Each entry in the dataset includes a unique message identifier, user information, the platform used, and the specific LLM involved. It also records the user\u0027s query, the LLM\u0027s answer, any applied filters, and sources of information. Additional fields capture the context in which the LLM operated, any media generated during the interaction, and user feedback. The dataset also includes timestamps for when each message was created, conversation identifiers to group related messages, and the state of the conversation. This rich dataset can be used for various analyses, such as tracking conversation trends, evaluating LLM accuracy, and identifying areas for improvement in user interaction design.",
+  "shortDesc": "Dataset of message history with user interactions and LLM responses.",
   "checklists": {
     "checklists": []
   },
@@ -62,21 +64,21 @@
   },
   "schema": {
     "columns": [
-      {"name":"message_id","type":"string"},
-      {"name":"user","type":"string"},
-      {"name":"platform","type":"string"},
-      {"name":"llm_name","type":"string"},
-      {"name":"query","type":"string"},
-      {"name":"answer","type":"string"},
-      {"name":"filters","type":"string"},
-      {"name":"sources","type":"string"},
-      {"name":"created_at","type":"string"},
-      {"name":"llm_context","type":"string"},
-      {"name":"generated_media","type":"string"},
-      {"name":"feedback","type":"string"},
-      {"name":"conversation_id","type":"string"},
-      {"name":"state","type":"string"},
-      {"name":"history","type":"string"}
+      {"name":"message_id","type":"string","comment":"Unique identifier for each message, ensuring traceability.","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"Identifier for the user interacting with the LLM.","isColumnEdited":true},
+      {"name":"platform","type":"string","comment":"Platform where the interaction took place, e.g., web, mobile.","isColumnEdited":true},
+      {"name":"llm_name","type":"string","comment":"Name of the language learning model used.","isColumnEdited":true},
+      {"name":"query","type":"string","comment":"User\u0027s input or question to the LLM.","isColumnEdited":true},
+      {"name":"answer","type":"string","comment":"Response provided by the LLM to the query.","isColumnEdited":true},
+      {"name":"filters","type":"string","comment":"Filters applied during the LLM\u0027s response generation.","isColumnEdited":true},
+      {"name":"sources","type":"string","comment":"Sources of information used by the LLM.","isColumnEdited":true},
+      {"name":"created_at","type":"string","comment":"Timestamp when the message was created.","isColumnEdited":true},
+      {"name":"llm_context","type":"string","comment":"Contextual information for the LLM during interaction.","isColumnEdited":true},
+      {"name":"generated_media","type":"string","comment":"Media content generated during the interaction.","isColumnEdited":true},
+      {"name":"feedback","type":"string","comment":"User feedback on the LLM\u0027s response.","isColumnEdited":true},
+      {"name":"conversation_id","type":"string","comment":"Identifier for grouping related messages in a conversation.","isColumnEdited":true},
+      {"name":"state","type":"string","comment":"Current state of the conversation or interaction.","isColumnEdited":true},
+      {"name":"history","type":"string","comment":"Previous interactions or messages in the conversation.","isColumnEdited":true}
     ],
     "userModified": true
   },
