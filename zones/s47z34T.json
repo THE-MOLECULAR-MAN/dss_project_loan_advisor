@@ -34,6 +34,7 @@
     "width": 448.0,
     "height": 376.0
   },
+  "description": "This data processing flow involves two main datasets: one containing loan request details and the other containing customer financial information. The flow processes these datasets to produce two refined output datasets: \"Loan_Requests\" and \"Customer_Info.\"\n\nThe \"Loan_Requests\" dataset provides a structured view of loan applications, including the amount requested, the purpose of the loan, the loan duration, and the applicant\u0027s home ownership status. This dataset is crucial for understanding the demand for loans and the reasons behind them.\n\nThe \"Customer_Info\" dataset offers a comprehensive look at customer financial profiles, including their application status, birth date, monthly income, state of residence, interest rates on loans, FICO credit score range, and default status. This dataset is essential for assessing the financial health and creditworthiness of customers, as well as for conducting regional and demographic analyses.\n\nOverall, the flow ensures that both datasets are synchronized and refined, providing accurate and organized information for further analysis or decision-making processes related to loan approvals and customer financial assessments.",
   "tags": [],
   "customFields": {},
   "checklists": {
