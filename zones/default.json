@@ -9,6 +9,7 @@
     "width": 985.0,
     "height": 649.0
   },
+  "description": "This data processing flow is designed to enhance and transform a given dataset through a specific operation. The flow begins with an input dataset, which undergoes a transformation process aimed at embedding documents. This process involves converting the textual data into a format that can be more easily analyzed or used in machine learning models, typically by representing the text in a numerical form that captures its semantic meaning.\n\nThe output of this flow is a dataset that retains the same identifier as the input, indicating that the transformation is applied directly to the original data. The resulting dataset is enriched with embedded representations of the documents, making it more suitable for tasks such as natural language processing, information retrieval, or any application that benefits from understanding the semantic content of text data.",
   "tags": [],
   "customFields": {},
   "checklists": {
