@@ -41,6 +41,7 @@
   ],
   "shared": [],
   "position": {},
+  "description": "This data processing flow is designed to predict the likelihood of loan defaults based on customer demographics and financial details. It begins with a dataset containing information about customers and their loan applications, including details such as age, monthly income, loan amount requested, and FICO scores.\n\nThe first step in the flow involves preparing the data by calculating a new metric, the Debt-to-Income Ratio, which is derived from the loan amount requested and the customer\u0027s monthly income. This ratio is a crucial indicator of a customer\u0027s financial health and ability to repay the loan.\n\nThe flow then involves a machine learning component where a predictive model is trained using a dataset with known default outcomes. This model learns patterns and relationships between the input features and the default status.\n\nOnce the model is trained, it is used to score a separate dataset where the default status is unknown. The output of this scoring process is a dataset that includes the original customer and loan details, along with new columns indicating the probability of default and the predicted default status.\n\nThe final output dataset, \"Default_unknown_scored,\" provides a comprehensive view of each loan application, enriched with predictions about the likelihood of default. This information can be used by financial institutions to assess risk and make informed lending decisions.",
   "tags": [],
   "customFields": {},
   "checklists": {
