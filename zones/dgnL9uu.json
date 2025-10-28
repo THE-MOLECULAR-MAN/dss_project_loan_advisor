@@ -34,6 +34,7 @@
     "width": 899.0,
     "height": 376.0
   },
+  "description": "This data processing flow is designed to integrate and enhance customer and loan request information to create a comprehensive dataset for analysis. It begins with two input datasets: one containing customer financial and demographic details, and the other detailing loan requests.\n\nThe flow first processes the customer data by parsing and calculating the age from the date of birth, and extracting minimum and maximum FICO scores from a given range. This enriches the customer data with additional insights such as age and specific FICO score boundaries.\n\nSimultaneously, the loan request data is cleaned and standardized. This involves removing non-numeric characters from the loan length and correcting inconsistencies in home ownership status descriptions.\n\nThe final step involves merging the enriched customer data with the cleaned loan request data. This is done through a left join on the unique customer identifier, ensuring that all customer records are retained even if they do not have a corresponding loan request.\n\nThe output dataset, \"Customers_and_Loan,\" combines demographic, financial, and loan request information. It includes details such as customer age, income, FICO score range, loan amount requested, loan purpose, and home ownership status. This comprehensive dataset is ideal for further analysis, such as assessing loan eligibility, understanding customer demographics, and evaluating financial risk.",
   "tags": [],
   "customFields": {},
   "checklists": {
