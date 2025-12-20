@@ -25,7 +25,8 @@
         "similarityThreshold": 0.5,
         "retrievalColumns": [
             "DKU_TEXT_EMBEDDING_COLUMN"
-        ]
+        ],
+        "columnsDescriptions": []
     },
     "quickTestQuery": {
         "input": {
