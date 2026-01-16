@@ -22,7 +22,26 @@
   "hasSetupSection": false,
   "owner": "demo",
   "permissionsVersion": "V2",
-  "permissions": [],
+  "permissions": [
+    {
+      "group": "Abi_Tim",
+      "admin": false,
+      "editPermissions": false,
+      "readProjectContent": true,
+      "writeProjectContent": false,
+      "exportDatasetsData": true,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "publishToDataCollections": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    }
+  ],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -50,8 +69,8 @@
       "defaultRecipeHashPropagationBehavior": "ENABLED"
     },
     "sharingRequestsEnabled": "INHERIT",
-    "limitedVisibilityEnabled": "INHERIT",
-    "accessRequestsEnabled": "INHERIT",
+    "limitedVisibilityEnabled": "ENABLED",
+    "accessRequestsEnabled": "ENABLED",
     "limitsSettings": {
       "memSampleBytes": {
         "soft": -1,
