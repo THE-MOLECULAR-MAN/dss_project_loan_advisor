@@ -1,35 +1,26 @@
 {
-  "name": "Customer_Lookup (migrated)",
-  "type": "DatasetRowLookup",
-  "params": {
-    "datasetRef": "Customers_and_Loan_prepared",
-    "usableLookupColumns": [
-      "id"
-    ],
-    "retrievalMode": "SINGLE_RECORD"
-  },
-  "quickTestQuery": {
-    "input": {
-      "filter": {
-        "column": "id",
-        "value": "96536",
-        "operator": "EQUALS"
-      }
+    "name": "Customer_Lookup (migrated)",
+    "type": "DatasetRowLookup",
+    "params": {
+        "datasetRef": "Customers_and_Loan_prepared",
+        "usableLookupColumns": [
+            "id"
+        ],
+        "retrievalMode": "SINGLE_RECORD"
     },
-    "context": {}
-  },
-  "dkuProperties": [],
-  "additionalDescriptionForLLM": "This tool should be used to provide information about a customer when it\u0027s provided with the customer id. Status tells us whether the loan is approved or pending.  Prediction tells us 1 when the loan is predicted to default, 0 when the loan is predicted to not default.",
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
+    "dkuProperties": [],
+    "additionalDescriptionForLLM": "This tool should be used to provide information about a customer when it's provided with the customer id. Status tells us whether the loan is approved or pending.  Prediction tells us 1 when the loan is predicted to default, 0 when the loan is predicted to not default.",
+    "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "admin"
+        },
+        "lastModifiedOn": 1741980488328
     },
-    "lastModifiedOn": 1741980488328
-  },
-  "tags": [],
-  "customFields": {},
-  "checklists": {
-    "checklists": []
-  }
+    "tags": [],
+    "customFields": {},
+    "checklists": {
+        "checklists": []
+    },
+    "quickTestQueryStr": "{\n  \"input\": {\n    \"filter\": {\n      \"column\": \"id\",\n      \"value\": \"96536\",\n      \"operator\": \"EQUALS\"\n    }\n  },\n  \"context\": {}\n}"
 }

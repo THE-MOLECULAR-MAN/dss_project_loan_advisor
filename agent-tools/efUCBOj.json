@@ -1,44 +1,22 @@
 {
-  "name": "Predict_Loan_Deafult (migrated)",
-  "type": "ClassicalPredictionModelPredict",
-  "params": {
-    "smRef": "19qX6AHu"
-  },
-  "quickTestQuery": {
-    "input": {
-      "record": {
-        "id": 99592,
-        "Status": "accepted",
-        "Date_Of_Birth_parsed": "1983-03-07T00:00:00.000Z",
-        "Age": 41,
-        "Monthly_Income": 4583.33,
-        "State": "TX",
-        "Interest_Rate": 12.12,
-        "FICO_Range": "515-519",
-        "FICO_max": 519,
-        "FICO_min": 515,
-        "Default": 0,
-        "Amount_Requested": 19200,
-        "Debt_to_Income_Ratio": 1.3490911629753912,
-        "Loan_Purpose": "credit_card",
-        "Loan_Length": "36",
-        "Home_Ownership": "MORTGAGE"
-      }
+    "name": "Predict_Loan_Deafult (migrated)",
+    "type": "ClassicalPredictionModelPredict",
+    "params": {
+        "smRef": "19qX6AHu"
     },
-    "context": {}
-  },
-  "dkuProperties": [],
-  "additionalDescriptionForLLM": "Use this model to predict whether or not a customer will default on their request loan.",
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
+    "dkuProperties": [],
+    "additionalDescriptionForLLM": "Use this model to predict whether or not a customer will default on their request loan.",
+    "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "admin"
+        },
+        "lastModifiedOn": 1741980538395
     },
-    "lastModifiedOn": 1741980538395
-  },
-  "tags": [],
-  "customFields": {},
-  "checklists": {
-    "checklists": []
-  }
+    "tags": [],
+    "customFields": {},
+    "checklists": {
+        "checklists": []
+    },
+    "quickTestQueryStr": "{\n  \"input\": {\n    \"record\": {\n      \"id\": 99592,\n      \"Status\": \"accepted\",\n      \"Date_Of_Birth_parsed\": \"1983-03-07T00:00:00.000Z\",\n      \"Age\": 41,\n      \"Monthly_Income\": 4583.33,\n      \"State\": \"TX\",\n      \"Interest_Rate\": 12.12,\n      \"FICO_Range\": \"515-519\",\n      \"FICO_max\": 519,\n      \"FICO_min\": 515,\n      \"Default\": 0,\n      \"Amount_Requested\": 19200,\n      \"Debt_to_Income_Ratio\": 1.3490911629753912,\n      \"Loan_Purpose\": \"credit_card\",\n      \"Loan_Length\": \"36\",\n      \"Home_Ownership\": \"MORTGAGE\"\n    }\n  },\n  \"context\": {}\n}"
 }

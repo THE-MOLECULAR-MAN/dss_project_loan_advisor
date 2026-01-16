@@ -1,47 +1,39 @@
 {
-  "name": "Text2SQL",
-  "type": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
-  "params": {
-    "config": {
-      "datasets": [
-        "Customers_and_Loan_prepared"
-      ],
-      "connection": "Snowflake_Honker_Cloud_Personal3",
-      "llmId": "openai:OpenAI_Shared_SE:gpt-4o",
-      "additionalInformation": "Customer loan dataset with financial and demographic details.\n\nThe \u0027Customers_and_Loan_prepared\u0027 dataset provides a comprehensive view of customer profiles and their loan details. It includes demographic information such as age, date of birth, and state of residence, as well as financial data like monthly income, interest rates, and FICO scores. The dataset is particularly useful for financial institutions and analysts looking to assess creditworthiness, understand customer demographics, and evaluate loan performance. It includes key indicators such as debt-to-income ratio and loan purpose, which are critical for risk assessment and decision-making processes. The dataset\u0027s structure allows for detailed analysis of loan status, default rates, and the impact of various factors on loan acceptance. With its rich set of attributes, this dataset can be used for predictive modeling, customer segmentation, and financial forecasting. It is an invaluable resource for developing strategies to improve loan approval processes and enhance customer relationship management.",
-      "hard_sql_limit": 200,
-      "return_value_mode": "AUTO",
-      "max_records_for_artifact": -1,
-      "sample_values_strategy": "FROM_DATA",
-      "sample_values_from_data_cardinality_cutoff": 30,
-      "include_column_names_in_descriptor": true,
-      "include_column_descriptions_in_descriptor": true
+    "name": "Text2SQL",
+    "type": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
+    "params": {
+        "config": {
+            "datasets": [
+                "Customers_and_Loan_prepared"
+            ],
+            "connection": "Snowflake_Honker_Cloud_Personal3",
+            "llmId": "openai:OpenAI_Shared_SE:gpt-4o",
+            "additionalInformation": "Customer loan dataset with financial and demographic details.\n\nThe 'Customers_and_Loan_prepared' dataset provides a comprehensive view of customer profiles and their loan details. It includes demographic information such as age, date of birth, and state of residence, as well as financial data like monthly income, interest rates, and FICO scores. The dataset is particularly useful for financial institutions and analysts looking to assess creditworthiness, understand customer demographics, and evaluate loan performance. It includes key indicators such as debt-to-income ratio and loan purpose, which are critical for risk assessment and decision-making processes. The dataset's structure allows for detailed analysis of loan status, default rates, and the impact of various factors on loan acceptance. With its rich set of attributes, this dataset can be used for predictive modeling, customer segmentation, and financial forecasting. It is an invaluable resource for developing strategies to improve loan approval processes and enhance customer relationship management.",
+            "hard_sql_limit": 200,
+            "return_value_mode": "AUTO",
+            "max_records_for_artifact": -1,
+            "sample_values_strategy": "FROM_DATA",
+            "sample_values_from_data_cardinality_cutoff": 30,
+            "include_column_names_in_descriptor": true,
+            "include_column_descriptions_in_descriptor": true
+        },
+        "containerExecSelection": {
+            "containerMode": "INHERIT"
+        }
     },
-    "containerExecSelection": {
-      "containerMode": "INHERIT"
-    }
-  },
-  "quickTestQuery": {
-    "input": {
-      "question": {
-        "type": "string",
-        "description": "Count the number of rows in the the table Customers_and_Loan_prepared"
-      }
+    "dkuProperties": [],
+    "additionalDescriptionForLLM": "This tool answers questions related to the dataset named \"Customers_and_Loan_prepared\". This tool generates SQL to answer questions about customers and loans. It returns result of the SQL query in plain English. Use this tool when you need information about loans or customers.",
+    "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "admin"
+        },
+        "lastModifiedOn": 1741980615680
     },
-    "context": {}
-  },
-  "dkuProperties": [],
-  "additionalDescriptionForLLM": "This tool answers questions related to the dataset named \"Customers_and_Loan_prepared\". This tool generates SQL to answer questions about customers and loans. It returns result of the SQL query in plain English. Use this tool when you need information about loans or customers.",
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
+    "tags": [],
+    "customFields": {},
+    "checklists": {
+        "checklists": []
     },
-    "lastModifiedOn": 1741980615680
-  },
-  "tags": [],
-  "customFields": {},
-  "checklists": {
-    "checklists": []
-  }
+    "quickTestQueryStr": "{\n  \"input\": {\n    \"question\": {\n      \"type\": \"string\",\n      \"description\": \"Count the number of rows in the the table Customers_and_Loan_prepared\"\n    }\n  },\n  \"context\": {}\n}"
 }
