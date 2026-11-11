@@ -1,6 +1,52 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "id"
+      },
+      {
+        "d": true,
+        "name": "Status"
+      },
+      {
+        "d": true,
+        "name": "Date_Of_Birth_parsed"
+      },
+      {
+        "d": true,
+        "name": "Age"
+      },
+      {
+        "d": true,
+        "name": "Monthly_Income"
+      },
+      {
+        "d": true,
+        "name": "State"
+      },
+      {
+        "d": true,
+        "name": "Interest_Rate"
+      },
+      {
+        "d": true,
+        "name": "FICO_Range"
+      },
+      {
+        "d": true,
+        "name": "FICO_max"
+      },
+      {
+        "d": true,
+        "name": "FICO_min"
+      },
+      {
+        "d": true,
+        "name": "Default"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -28,6 +74,7 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
+  "columnOrder": [],
   "columnUseScientificNotationByName": {},
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
@@ -57,7 +104,11 @@
             ],
             "timezone_id": "UTC",
             "appliesTo": "SINGLE_COLUMN",
-            "lang": "auto"
+            "lang": "auto",
+            "outType": {
+              "name": "out",
+              "type": "date"
+            }
           },
           "alwaysShowComment": false
         },
@@ -68,8 +119,12 @@
           "type": "DateDifference",
           "params": {
             "output": "Age",
+            "excludeHolidays": false,
+            "excludeWeekends": false,
+            "calendar_id": "FR",
             "outputUnit": "YEARS",
             "input1": "Date_Of_Birth_parsed",
+            "timezone_id": "use_preferred_timezone",
             "compareTo": "NOW",
             "reverse": false
           },
@@ -108,7 +163,8 @@
           "type": "CreateColumnWithGREL",
           "params": {
             "expression": "substring(val(\"FICO_Range\"), 0, 3)",
-            "column": "FICO_min"
+            "column": "FICO_min",
+            "errorColumn": ""
           },
           "alwaysShowComment": false
         }
@@ -131,7 +187,8 @@
           "type": "CreateColumnWithGREL",
           "params": {
             "expression": "substring(val(\"FICO_Range\"), -3)",
-            "column": "FICO_max"
+            "column": "FICO_max",
+            "errorColumn": ""
           },
           "alwaysShowComment": false
         }
@@ -166,6 +223,7 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
+  "flagNumericValues": true,
   "columnWidthsByName": {
     "Status": 100,
     "Monthly_Income": 134,
@@ -187,6 +245,7 @@
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
+    "coloringGroups": [],
     "valueColoringMode": "HASH",
     "individualColumnsRules": []
   }

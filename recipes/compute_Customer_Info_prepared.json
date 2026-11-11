@@ -16,7 +16,7 @@
         "useGlobalMetastore": false,
         "useNativeProcessors": true,
         "sparkConfig": {
-          "inheritConf": "default",
+          "inheritConf": "spark-k8s",
           "conf": []
         },
         "executionEngine": "SPARK_SUBMIT",
