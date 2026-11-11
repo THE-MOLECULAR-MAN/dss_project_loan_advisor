@@ -128,7 +128,7 @@
       }
     },
     "container": {
-      "containerMode": "NONE"
+      "containerMode": "INHERIT"
     },
     "containerForVisualRecipesWorkloads": {
       "containerMode": "NONE"
