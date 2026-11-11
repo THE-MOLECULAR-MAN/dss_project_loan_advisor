@@ -12,6 +12,7 @@
     },
     "nbProcesses": 1,
     "backendAPIAccessEnabled": false,
+    "backendFramework": "FLASK",
     "libraries": [
       "jquery",
       "dataiku",
@@ -55,7 +56,7 @@
     "log_level": "INFO"
   },
   "name": "Agent Traces Explorer (migrated)",
-  "apiKey": "e:AES:X2:biqSgQ8HyW384etgakjA/2jgagoJQkocE/bgR7InG0exYoH0NNaCqSWto7sCAxYrA46HZd2qW+tdVK9kJTGRo9fwd855RuYxuDZgVGt4aYfZyrjGZ27k",
+  "apiKey": "e:AES:X3:iK7tU7uNzddN7XVtBpgVsoouEYDAh+g/K7LLpfFLnPcDY/Qn+EYLmK5B2hMB3gLRIxJkb0cLW8VP+ivoeMBtvsjzdQ\u003d\u003d",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {

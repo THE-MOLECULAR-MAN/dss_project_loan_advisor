@@ -12,6 +12,7 @@
     },
     "nbProcesses": 1,
     "backendAPIAccessEnabled": false,
+    "backendFramework": "FLASK",
     "libraries": [
       "jquery",
       "dataiku",
@@ -211,7 +212,7 @@
     "sql_retrieval_connection": "Snowflake_Honker_Cloud_Personal3"
   },
   "name": "Loan Advisor - Dataiku Answers version (migrated)",
-  "apiKey": "e:AES:X2:rmXKmdTsNXik3giBHXSbfvwkUAHUthQpdxW+Aq4znnUT54yKQhk8CoPp//7O40DcummkyqS+UGsVGPX30j71uX3xbpNv9TCDB++nMWLuPd4Uga1lWaY/",
+  "apiKey": "e:AES:X3:PzImlvnUEhjZDVNw7bzqEUrj9gN09eZwCu5wLWUznN5qvZF1vPuWsCU7Zf0U46FecVFL5tG/kZmtEAnF0zainQmDKg\u003d\u003d",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
