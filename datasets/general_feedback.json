@@ -1,5 +1,5 @@
 {
-  "type": "PostgreSQL",
+  "type": "Snowflake",
   "managed": true,
   "featureGroup": false,
   "description": "The \u0027general_feedback\u0027 dataset is designed to capture and analyze user interactions and feedback related to a knowledge bank and a language learning model (LLM). This dataset is particularly useful for understanding user behavior, preferences, and the effectiveness of the LLM in providing information or assistance. Each entry in the dataset includes a timestamp, the user identifier, the message content, and references to both the knowledge bank and the LLM. This structure allows for detailed analysis of how users interact with the system, what types of queries are most common, and how effectively the LLM responds to these queries. Potential use cases include improving the LLM\u0027s response accuracy, enhancing the knowledge bank\u0027s content, and tailoring user experiences based on feedback trends. The dataset\u0027s unique feature is its focus on capturing real-time user feedback in conjunction with LLM interactions, providing a comprehensive view of the user experience.",
@@ -40,16 +40,19 @@
   },
   "tags": [],
   "params": {
-    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "postgres_localhost",
+    "connection": "SEDEMO",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "${projectKey}_general_feedback",
+    "catalog": "SEDEMO",
+    "table": "${projectKey}_GENERAL_FEEDBACK",
+    "schema": "HONKER",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": false,
+    "writeDatasetDescriptionAsSQLComment": "ENABLED",
+    "writeColumnDescriptionsAsSQLComment": "ENABLED",
     "noDropOnSchemaMismatch": false,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "datetimenotzReadMode": "AS_IS",
@@ -64,11 +67,11 @@
   },
   "schema": {
     "columns": [
-      {"name":"date","type":"string","comment":"Timestamp of the feedback entry, indicating when it was recorded.","isColumnEdited":true},
-      {"name":"user","type":"string","comment":"Identifier for the user providing feedback, ensuring traceability.","isColumnEdited":true},
-      {"name":"message","type":"string","comment":"Content of the user\u0027s feedback message, detailing their input.","isColumnEdited":true},
-      {"name":"knowledgebank","type":"string","comment":"Reference to the knowledge bank used during the interaction.","isColumnEdited":true},
-      {"name":"llm","type":"string","comment":"Reference to the language learning model involved in the interaction.","isColumnEdited":true}
+      {"name":"date","type":"string","comment":"Timestamp of the feedback entry, indicating when it was recorded.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"user","type":"string","comment":"Identifier for the user providing feedback, ensuring traceability.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"message","type":"string","comment":"Content of the user\u0027s feedback message, detailing their input.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"knowledgebank","type":"string","comment":"Reference to the knowledge bank used during the interaction.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"llm","type":"string","comment":"Reference to the language learning model involved in the interaction.","isColumnEdited":true,"maxLength":16777216}
     ],
     "userModified": true
   },
