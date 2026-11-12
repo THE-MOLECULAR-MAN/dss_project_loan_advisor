@@ -1,0 +1,36 @@
+{
+  "rawQueryOutputMode": "RAW_WITHOUT_FULL_IMAGES",
+  "passContext": false,
+  "context": {
+    "mode": "KEY_VALUE",
+    "jsonField": {
+      "fromColumn": false,
+      "value": "{}"
+    },
+    "fields": []
+  },
+  "completionSettings": {
+    "stopSequences": []
+  },
+  "rawResponseOutputMode": "RAW_WITHOUT_TRACES",
+  "llmId": "agent:l1a6cEWm",
+  "prompt": {
+    "guardrailsPipelineSettings": {
+      "guardrails": []
+    },
+    "promptTemplateInputs": [],
+    "resultValidation": {
+      "requiredJSONObjectKeys": [],
+      "expectedFormat": "NONE",
+      "forbiddenTerms": []
+    },
+    "promptTemplateQueriesSource": "DATASET",
+    "streamingDisabled": false,
+    "chatMessages": {},
+    "structuredPromptExamples": [],
+    "textPromptTemplateInputs": [],
+    "debugEventsEnabled": false,
+    "promptMode": "PROMPT_TEMPLATE_STRUCTURED"
+  },
+  "performFiltering": false
+}

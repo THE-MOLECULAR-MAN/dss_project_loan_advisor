@@ -1,0 +1,58 @@
+{
+  "type": "prompt",
+  "neverRecomputeExistingPartitions": false,
+  "params": {
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "hashPropagationBehavior": "INHERIT",
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "loan_advisor_visual_agent_test_questions",
+          "deps": []
+        }
+      ]
+    },
+    "model": {
+      "items": [
+        {
+          "ref": "l1a6cEWm",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "loan_advisor_visual_agent_test_answers",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1794515082484
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
