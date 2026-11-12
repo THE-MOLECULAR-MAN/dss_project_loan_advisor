@@ -2,7 +2,8 @@
   "typeBadges": {
     "LLM": [
       "RECIPE:compute_LoanPolicies_embedded",
-      "WEB_APP:MykF6JQ"
+      "WEB_APP:MykF6JQ",
+      "RECIPE:compute_loan_advisor_visual_agent_test_answers"
     ],
     "ML": [
       "SAVED_MODEL:19qX6AHu"
