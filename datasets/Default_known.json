@@ -162,7 +162,27 @@
   },
   "metricsChecks": {
     "monitor": false,
-    "checks": [],
+    "checks": [
+      {
+        "type": "ValuesInRangeRule",
+        "columns": [
+          "Amount_Requested"
+        ],
+        "minimum": 0.0,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "adaxiugB",
+        "displayName": "Amount_Requested is 0 or more",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }
