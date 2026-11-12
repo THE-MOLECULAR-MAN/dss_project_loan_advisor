@@ -1,5 +1,5 @@
 {
-  "actualToolCallsColumnName": "dku_llm_mesh_raw_response",
+  "actualToolCallsColumnName": "llm_raw_response",
   "conversationIdColumnName": "conversation_id",
   "conversationSortingKeyColumnName": "begin_time",
   "hasConversations": false,
@@ -33,9 +33,9 @@
       "description": "Evaluates the User\u0027s overall satisfaction with the Assistant\u0027s performance."
     }
   ],
-  "inputFormat": "AGENT_INTERACTION_LOGS",
-  "inputColumnName": "dku_llm_mesh_raw_query",
-  "outputColumnName": "dku_llm_mesh_raw_response",
+  "inputFormat": "PROMPT_RECIPE",
+  "inputColumnName": "llm_raw_query",
+  "outputColumnName": "llm_raw_response",
   "selection": {
     "useMemTable": false,
     "filter": {
@@ -56,22 +56,26 @@
     "maxReadUncompressedBytes": -1,
     "seed": 1337
   },
+  "embeddingLLMId": "openai:OpenAI_Connection1:text-embedding-3-small",
   "embeddingSettings": {
     "documentSplittingMode": "CHARACTERS_BASED",
     "chunkSizeCharacters": 0,
     "chunkOverlapCharacters": 0
   },
+  "completionLLMId": "openai:OpenAI_Connection1:gpt-5.6-terra",
   "completionSettings": {
     "stopSequences": []
   },
   "failOnErrors": true,
   "bertScoreModelType": "bert-base-uncased",
-  "metrics": [],
+  "metrics": [
+    "agentGoalAccuracyWithoutReference"
+  ],
   "customMetrics": [],
   "customTraits": [
     {
       "prompt": "The Output is concise: it provides only the requested information in as few words as possible, avoiding unneeded repetitions, pleasantries or explanations.",
-      "enabled": false,
+      "enabled": true,
       "isBuiltin": true,
       "isConversation": false,
       "type": "TRAIT",
@@ -80,7 +84,7 @@
     },
     {
       "prompt": "The tool calls made by the Assistant are justified given the User\u0027s input and the current conversation state.\nIn order to be justified, a tool call needs to:\n- be helpful in achieving the User\u0027s goal or task (whether explicitly stated or inferred from context)\n- contain all the parameters needed for the call to be useful\nFocus your evaluation on practicality. As long as it is likely to help the User\u0027s goal, a tool call should be considered justified even if not strictly optimal.\n",
-      "enabled": false,
+      "enabled": true,
       "isBuiltin": true,
       "isConversation": false,
       "type": "TRAIT",
@@ -88,5 +92,16 @@
       "description": "Evaluates the Assistant\u0027s ability to select appropriate tools given the User\u0027s input and the current conversation state"
     }
   ],
-  "labels": []
+  "labels": [
+    {
+      "secret": false,
+      "key": "agent",
+      "value": "Loan Advisor - Visual Agent v1"
+    },
+    {
+      "secret": false,
+      "key": "questions",
+      "value": "review tests"
+    }
+  ]
 }
