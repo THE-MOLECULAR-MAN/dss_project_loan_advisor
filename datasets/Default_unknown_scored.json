@@ -197,6 +197,25 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ValuesInRangeRule",
+        "columns": [
+          "proba_1.0"
+        ],
+        "minimum": 0.0,
+        "minimumEnabled": true,
+        "maximum": 1.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "3qEqPKRa",
+        "displayName": "proba_1.0 between 0 and 1",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
