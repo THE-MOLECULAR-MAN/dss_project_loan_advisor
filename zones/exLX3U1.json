@@ -11,7 +11,7 @@
       "objectType": "MODEL_EVALUATION_STORE"
     },
     {
-      "objectId": "loan_advisor_visual_agent_evaluation_metrics",
+      "objectId": "loan_advisor_visual_agent_evaluation_rows",
       "objectType": "DATASET"
     },
     {
@@ -19,7 +19,7 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "loan_advisor_visual_agent_evaluation_rows",
+      "objectId": "loan_advisor_visual_agent_evaluation_metrics",
       "objectType": "DATASET"
     },
     {
