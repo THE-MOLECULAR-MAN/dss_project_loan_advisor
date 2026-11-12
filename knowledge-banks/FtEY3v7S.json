@@ -25,7 +25,7 @@
     "containerMode": "NONE",
     "containerConf": "eks-default"
   },
-  "managedFolderId": "FINAIADVISORSTARTER.k3nLwl8i",
+  "managedFolderId": "LOAN_ADVISOR_AGENT_POLISHED.k3nLwl8i",
   "multimodalColumn": "DKU_MULTIMODAL_CONTENT",
   "creationTag": {
     "versionNumber": 0,
