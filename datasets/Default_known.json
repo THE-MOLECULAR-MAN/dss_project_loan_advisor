@@ -210,6 +210,24 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ColumnNotEmptyRule",
+        "columns": [
+          "Status",
+          "Date_Of_Birth_parsed",
+          "Age"
+        ],
+        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "XQuBiZmu",
+        "displayName": "Status, Date_Of_Birth_parsed, Age not empty",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
