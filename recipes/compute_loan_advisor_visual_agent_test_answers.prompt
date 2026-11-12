@@ -1,4 +1,12 @@
 {
+  "filter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": []
+    },
+    "distinct": false,
+    "enabled": false
+  },
   "rawQueryOutputMode": "RAW_WITHOUT_FULL_IMAGES",
   "passContext": false,
   "context": {
@@ -10,15 +18,22 @@
     "fields": []
   },
   "completionSettings": {
-    "stopSequences": []
+    "stopSequences": [],
+    "tools": []
   },
-  "rawResponseOutputMode": "RAW_WITHOUT_TRACES",
+  "rawResponseOutputMode": "RAW",
   "llmId": "agent:l1a6cEWm",
   "prompt": {
     "guardrailsPipelineSettings": {
       "guardrails": []
     },
-    "promptTemplateInputs": [],
+    "promptTemplateInputs": [
+      {
+        "datasetColumnName": "query",
+        "name": "question",
+        "type": "TEXT"
+      }
+    ],
     "resultValidation": {
       "requiredJSONObjectKeys": [],
       "expectedFormat": "NONE",
@@ -30,7 +45,8 @@
     "structuredPromptExamples": [],
     "textPromptTemplateInputs": [],
     "debugEventsEnabled": false,
-    "promptMode": "PROMPT_TEMPLATE_STRUCTURED"
+    "promptMode": "PROMPT_TEMPLATE_STRUCTURED",
+    "structuredPromptPrefix": "Answer the user\u0027s question."
   },
   "performFiltering": false
 }
