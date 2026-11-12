@@ -11,22 +11,6 @@
       "objectType": "MODEL_EVALUATION_STORE"
     },
     {
-      "objectId": "loan_advisor_visual_agent_evaluation_rows",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "evaluate_loan_advisor_visual_agent",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "loan_advisor_visual_agent_evaluation_metrics",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "AaNt78oW",
-      "objectType": "MODEL_EVALUATION_STORE"
-    },
-    {
       "objectId": "loan_advisor_visual_agent_test_questions",
       "objectType": "DATASET"
     },
@@ -37,6 +21,22 @@
     {
       "objectId": "loan_advisor_visual_agent_test_answers",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "evaluate_loan_advisor_visual_agent",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "loan_advisor_visual_agent_evaluation_rows",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "loan_advisor_visual_agent_evaluation_metrics",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "AaNt78oW",
+      "objectType": "MODEL_EVALUATION_STORE"
     }
   ],
   "shared": [],
