@@ -1,6 +1,9 @@
 {
   "name": "Loan advisor review",
+  "agentSmartId": "l1a6cEWm",
+  "agentVersion": "v1",
   "owner": "demo",
+  "helperLLMId": "openai:OpenAI_Connection1:gpt-5.6-terra",
   "creationTimestamp": 1794514415219,
   "nbExecutions": 3,
   "hitlValidationPolicy": "REJECT",
