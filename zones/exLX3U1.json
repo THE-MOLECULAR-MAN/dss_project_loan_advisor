@@ -25,6 +25,14 @@
     {
       "objectId": "AaNt78oW",
       "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "loan_advisor_visual_agent_test_answers",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_loan_advisor_visual_agent_test_answers",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
