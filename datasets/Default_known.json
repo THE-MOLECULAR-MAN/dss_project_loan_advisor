@@ -162,7 +162,24 @@
   },
   "metricsChecks": {
     "monitor": false,
-    "checks": [],
+    "checks": [
+      {
+        "type": "ColumnUniqueValuesRule",
+        "columns": [
+          "id"
+        ],
+        "thresholdType": "ENTIRE_COLUMN",
+        "minimum": 0.0,
+        "minimumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "id": "bSCwFps1",
+        "displayName": "id is unique",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }
