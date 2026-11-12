@@ -33,6 +33,10 @@
     {
       "objectId": "compute_loan_advisor_visual_agent_test_answers",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "loan_advisor_visual_agent_test_questions",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
