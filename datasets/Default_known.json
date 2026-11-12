@@ -230,24 +230,6 @@
         "enabled": true
       },
       {
-        "type": "ColumnNotEmptyRule",
-        "columns": [
-          "Monthly_Income",
-          "State",
-          "Interest_Rate"
-        ],
-        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
-        "maximum": 0.0,
-        "maximumEnabled": false,
-        "softMaximum": 0.0,
-        "softMaximumEnabled": false,
-        "id": "hU86HHnJ",
-        "displayName": "Monthly_Income, State, Interest_Rate not empty",
-        "computeOnBuildMode": "PARTITION",
-        "autoRun": true,
-        "enabled": true
-      },
-      {
         "type": "ValuesInRangeRule",
         "columns": [
           "Age"
