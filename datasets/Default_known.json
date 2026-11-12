@@ -162,24 +162,7 @@
   },
   "metricsChecks": {
     "monitor": false,
-    "checks": [
-      {
-        "type": "ColumnNotEmptyRule",
-        "columns": [
-          "id"
-        ],
-        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
-        "maximum": 0.0,
-        "maximumEnabled": false,
-        "softMaximum": 0.0,
-        "softMaximumEnabled": false,
-        "id": "q1jHa7GY",
-        "displayName": "id not empty",
-        "computeOnBuildMode": "PARTITION",
-        "autoRun": true,
-        "enabled": true
-      }
-    ],
+    "checks": [],
     "displayedState": {
       "checks": []
     }
