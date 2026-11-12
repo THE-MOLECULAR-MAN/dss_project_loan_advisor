@@ -169,22 +169,6 @@
       {
         "type": "ColumnUniqueValuesRule",
         "columns": [
-          "conversation_id"
-        ],
-        "thresholdType": "ENTIRE_COLUMN",
-        "minimum": 0.0,
-        "minimumEnabled": false,
-        "softMinimum": 0.0,
-        "softMinimumEnabled": false,
-        "id": "NzmDwRU3",
-        "displayName": "conversation_id is unique",
-        "computeOnBuildMode": "PARTITION",
-        "autoRun": true,
-        "enabled": true
-      },
-      {
-        "type": "ColumnUniqueValuesRule",
-        "columns": [
           "knowledge_bank_id"
         ],
         "thresholdType": "ENTIRE_COLUMN",
