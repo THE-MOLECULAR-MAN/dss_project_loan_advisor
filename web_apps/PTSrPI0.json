@@ -1,11 +1,11 @@
 {
-  "type": "STANDARD",
+  "type": "webapp_agent-hub_agent-hub",
   "hasLegacyBackendURL": false,
   "params": {
-    "backendEnabled": false,
-    "enableJavascriptModules": false,
-    "autoStartBackend": false,
-    "hideJSSecurityPanel": false,
+    "backendEnabled": true,
+    "enableJavascriptModules": true,
+    "autoStartBackend": true,
+    "hideJSSecurityPanel": true,
     "hideWebAppConfig": false,
     "envSelection": {
       "envMode": "INHERIT"
@@ -14,9 +14,9 @@
     "backendAPIAccessEnabled": false,
     "backendFramework": "FLASK",
     "libraries": [
-      "jquery",
       "dataiku"
     ],
+    "runAs": "demo",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -48,7 +48,10 @@
     },
     "forceAuthentication": false
   },
-  "config": {},
+  "config": {
+    "storage_type": "LOCAL",
+    "log_level": "INFO"
+  },
   "name": "Loan Advisor - Visual Agent hub",
   "apiKey": "e:AES:X3:0OqARjEhAWAr0y4ZQA8xCILVp6Q3/JoH/voxo/9UXteIkQHR0ob8B6OxFWOrr5xRqYZF02rCVcVrShkiLNfoy3eQ4g\u003d\u003d",
   "creationTag": {
