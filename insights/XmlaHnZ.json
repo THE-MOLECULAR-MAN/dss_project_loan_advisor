@@ -1,0 +1,23 @@
+{
+  "type": "web_app",
+  "params": {
+    "webAppSmartId": "PTSrPI0",
+    "webAppType": "webapp_agent-hub_agent-hub"
+  },
+  "owner": "demo",
+  "listed": false,
+  "name": "Loan Advisor chat",
+  "dashboardCreationId": "D96Ngmk",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1794516128207
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
