@@ -8,7 +8,28 @@
   "nbExecutions": 3,
   "hitlValidationPolicy": "REJECT",
   "hitlMaxValidationTurns": 5,
-  "traits": [],
+  "traits": [
+    {
+      "id": "TCmVRtlZmX",
+      "name": "Reference",
+      "description": "Compare the correctness of the answer to the reference, given the query",
+      "llmId": "openai:OpenAI_Connection1:gpt-5.6-terra",
+      "criteria": "The Agent\u0027s Answer conveys the same meaning as the Reference Answer.\nOnly semantic equivalence or near-equivalence is acceptable.\nAny contradiction, significant omission, or added meaning results in outcome \u003d false.\nDo not judge correctness or quality beyond this comparison.\n",
+      "enabled": false,
+      "needsReference": true,
+      "needsExpectations": false
+    },
+    {
+      "id": "VtlYEdjcAM",
+      "name": "Expectations",
+      "description": "The answer matches the expectations",
+      "llmId": "openai:OpenAI_Connection1:gpt-5.6-terra",
+      "criteria": "The Agent\u0027s execution (Answer and Trajectory combined) satisfies the defined Expectations.\nEach expected element must be present in the answer, either explicitly or through clear paraphrase.\nNo expected element may be missing.\nAdditional information is acceptable only if it does not alter or go beyond the Expectations.\nDo not judge factual correctness or answer quality beyond checking alignment with the Expectations.\n",
+      "enabled": true,
+      "needsReference": false,
+      "needsExpectations": true
+    }
+  ],
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
