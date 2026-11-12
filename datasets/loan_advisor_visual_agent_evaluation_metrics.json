@@ -86,7 +86,18 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"date","type":"date"},
+      {"name":"sampleRowCount","type":"int"},
+      {"name":"averageToolExecutionsPerRow","type":"double"},
+      {"name":"averageFailedToolExecutionsPerRow","type":"double"},
+      {"name":"averageToolExecutionTimeSecondsPerRow","type":"double"},
+      {"name":"p95TotalAgentCallExecutionTimeSecondsPerRow","type":"double"},
+      {"name":"averageTotalTokensPerRow","type":"float"},
+      {"name":"averageEstimatedCostDollarsPerRow","type":"float"},
+      {"name":"sumTotalTokensPerRow","type":"float"},
+      {"name":"sumEstimatedCostDollarsPerRow","type":"float"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",

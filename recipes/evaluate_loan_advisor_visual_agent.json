@@ -1,0 +1,69 @@
+{
+  "type": "nlp_agent_evaluation",
+  "neverRecomputeExistingPartitions": false,
+  "params": {
+    "envSelection": {
+      "envMode": "INHERIT"
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "hashPropagationBehavior": "INHERIT",
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "loan_advisor_visual_agent_test_answers",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "loan_advisor_visual_agent_evaluation_rows",
+          "appendMode": false
+        }
+      ]
+    },
+    "metrics": {
+      "items": [
+        {
+          "ref": "loan_advisor_visual_agent_evaluation_metrics",
+          "appendMode": true
+        }
+      ]
+    },
+    "evaluationStore": {
+      "items": [
+        {
+          "ref": "AaNt78oW",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1794515103053
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

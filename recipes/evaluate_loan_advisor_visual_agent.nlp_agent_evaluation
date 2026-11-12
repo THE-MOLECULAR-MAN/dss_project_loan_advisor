@@ -1,0 +1,92 @@
+{
+  "actualToolCallsColumnName": "dku_llm_mesh_raw_response",
+  "conversationIdColumnName": "conversation_id",
+  "conversationSortingKeyColumnName": "begin_time",
+  "hasConversations": false,
+  "customConversationMetrics": [],
+  "customConversationTraits": [
+    {
+      "prompt": "The conversation is concise: all the turns taken between the User and the Assistant are required for the User\u0027s task. There is no unnecessary back and forth, no turns are taken up by unneeded pleasantries, introductions or parting messages.",
+      "enabled": false,
+      "isBuiltin": true,
+      "isConversation": true,
+      "type": "TRAIT",
+      "name": "Conversational Conciseness",
+      "description": "Evaluates the conciseness of the conversation as a whole, taking into account all the turns between the User and the Assistant."
+    },
+    {
+      "prompt": "The conversation between the User and the Assistant completed successfully. Consider the conversation successful if:\n- The Assistant correctly identified each of User\u0027s requested goals or tasks, and the User received satisfactory outcomes for each of them\n- For each goal or task requiring external information or action, the Assistant selected relevant tools if they were available to it, providing the correct inputs and correctly retrieving the outputs\n",
+      "enabled": false,
+      "isBuiltin": true,
+      "isConversation": true,
+      "type": "TRAIT",
+      "name": "Goal Success Rate",
+      "description": "Evaluates the Agent\u0027s ability to successfully identify and achieve the User\u0027s goals throughout the conversation."
+    },
+    {
+      "prompt": "The User is satisfied by their interaction with the Agent.\nConsider the User to be satisfied if they:\n- Express gratitude at the solution provided by the Assistant\n- Confirm their problem was resolved or their question answered\n- End the conversation on a positive or neutral note after receiving an appropriate response\nConsider the user to not be satisfied if they:\n- Express frustration, annoyance or anger\n- Repeatedly ask the same question because the Assistant failed to understand their question or to properly answer it\n- Explicitly state that the AI is wrong, unhelpful or hallucinating\n- Abandon the conversation abruptly after a clear failure by the Assistant to help\n",
+      "enabled": false,
+      "isBuiltin": true,
+      "isConversation": true,
+      "type": "TRAIT",
+      "name": "Customer Satisfaction",
+      "description": "Evaluates the User\u0027s overall satisfaction with the Assistant\u0027s performance."
+    }
+  ],
+  "inputFormat": "AGENT_INTERACTION_LOGS",
+  "inputColumnName": "dku_llm_mesh_raw_query",
+  "outputColumnName": "dku_llm_mesh_raw_response",
+  "selection": {
+    "useMemTable": false,
+    "filter": {
+      "distinct": false,
+      "enabled": false
+    },
+    "partitionSelectionMethod": "ALL",
+    "latestPartitionsN": 1,
+    "ordering": {
+      "enabled": false,
+      "rules": []
+    },
+    "samplingMethod": "FULL",
+    "maxRecords": 10000,
+    "targetRatio": 0.02,
+    "ascending": true,
+    "withinFirstN": -1,
+    "maxReadUncompressedBytes": -1,
+    "seed": 1337
+  },
+  "embeddingSettings": {
+    "documentSplittingMode": "CHARACTERS_BASED",
+    "chunkSizeCharacters": 0,
+    "chunkOverlapCharacters": 0
+  },
+  "completionSettings": {
+    "stopSequences": []
+  },
+  "failOnErrors": true,
+  "bertScoreModelType": "bert-base-uncased",
+  "metrics": [],
+  "customMetrics": [],
+  "customTraits": [
+    {
+      "prompt": "The Output is concise: it provides only the requested information in as few words as possible, avoiding unneeded repetitions, pleasantries or explanations.",
+      "enabled": false,
+      "isBuiltin": true,
+      "isConversation": false,
+      "type": "TRAIT",
+      "name": "Single-turn Conciseness",
+      "description": "Evaluates the conciseness of each individual turn in the conversation."
+    },
+    {
+      "prompt": "The tool calls made by the Assistant are justified given the User\u0027s input and the current conversation state.\nIn order to be justified, a tool call needs to:\n- be helpful in achieving the User\u0027s goal or task (whether explicitly stated or inferred from context)\n- contain all the parameters needed for the call to be useful\nFocus your evaluation on practicality. As long as it is likely to help the User\u0027s goal, a tool call should be considered justified even if not strictly optimal.\n",
+      "enabled": false,
+      "isBuiltin": true,
+      "isConversation": false,
+      "type": "TRAIT",
+      "name": "Tool Selection Accuracy",
+      "description": "Evaluates the Assistant\u0027s ability to select appropriate tools given the User\u0027s input and the current conversation state"
+    }
+  ],
+  "labels": []
+}

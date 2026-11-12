@@ -86,7 +86,30 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"mode","type":"string"},
+      {"name":"query","type":"string"},
+      {"name":"reference_answer","type":"string"},
+      {"name":"expectations","type":"string"},
+      {"name":"hitl_validation_policy","type":"string"},
+      {"name":"conversation_guidance","type":"string"},
+      {"name":"max_turns","type":"int"},
+      {"name":"llm_output","type":"string"},
+      {"name":"llm_validation_status","type":"string"},
+      {"name":"llm_raw_response","type":"string"},
+      {"name":"llm_error_message","type":"string"},
+      {"name":"llm_raw_query","type":"string"},
+      {"name":"totalToolExecutions","type":"int"},
+      {"name":"totalFailedToolExecutions","type":"int"},
+      {"name":"totalToolExecutionTimeSeconds","type":"double"},
+      {"name":"totalAgentCallExecutionTimeSeconds","type":"double"},
+      {"name":"totalTokens","type":"float"},
+      {"name":"estimatedCostDollars","type":"float"},
+      {"name":"dkuReconstructedInput","type":"string"},
+      {"name":"dkuParsedOutput","type":"string"},
+      {"name":"dkuParsedToolCalls","type":"string"},
+      {"name":"dkuParsedTrajectory","type":"string"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
