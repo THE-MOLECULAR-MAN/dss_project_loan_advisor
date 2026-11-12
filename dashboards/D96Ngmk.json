@@ -5,15 +5,48 @@
       "grid": {
         "tiles": [
           {
-            "id": "ff3f0466-88f1-4378-a02a-b2fcc40197ec",
-            "tileType": "TEXT",
+            "id": "title-tile-2",
+            "tileType": "TITLE",
             "tileParams": {
-              "text": "Loan applications at a glance. Pending applications are scored by the default model; the scores support a loan officer\u0027s decision and never replace it.",
-              "textAlign": "LEFT"
+              "textAlign": "CENTER",
+              "verticalAlign": "CENTER"
             },
             "box": {
               "left": 0,
               "top": 0,
+              "width": 36,
+              "height": 2
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "titleOptions": {
+              "showTitle": "NO",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 0
+            },
+            "backgroundColor": "#ffffff",
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": true,
+            "isDisplacing": true
+          },
+          {
+            "id": "ff3f0466-88f1-4378-a02a-b2fcc40197ec",
+            "tileType": "TEXT",
+            "tileParams": {
+              "text": "Loan applications at a glance. Pending applications are scored by the default model; the scores support a loan officer\u0027s decision and never replace it.",
+              "textAlign": "LEFT",
+              "verticalAlign": "TOP"
+            },
+            "box": {
+              "left": 0,
+              "top": 2,
               "width": 36,
               "height": 7
             },
@@ -59,7 +92,7 @@
             },
             "box": {
               "left": 0,
-              "top": 7,
+              "top": 9,
               "width": 18,
               "height": 12
             },
@@ -108,7 +141,7 @@
             },
             "box": {
               "left": 18,
-              "top": 7,
+              "top": 9,
               "width": 18,
               "height": 12
             },
@@ -157,7 +190,7 @@
             },
             "box": {
               "left": 0,
-              "top": 19,
+              "top": 21,
               "width": 18,
               "height": 12
             },
@@ -206,7 +239,7 @@
             },
             "box": {
               "left": 18,
-              "top": 19,
+              "top": 21,
               "width": 18,
               "height": 12
             },
@@ -253,15 +286,48 @@
       "grid": {
         "tiles": [
           {
-            "id": "1ae9854f-d1ae-4840-81e5-bb960e6396af",
-            "tileType": "TEXT",
+            "id": "title-tile-4",
+            "tileType": "TITLE",
             "tileParams": {
-              "text": "Ask Loan Advisor - Visual Agent about: the status of an application by id; whether a pending application is likely to default; what the loan and credit policies say; and how many applications are pending. It never approves or rejects a loan.",
-              "textAlign": "LEFT"
+              "textAlign": "CENTER",
+              "verticalAlign": "CENTER"
             },
             "box": {
               "left": 0,
               "top": 0,
+              "width": 36,
+              "height": 2
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "titleOptions": {
+              "showTitle": "NO",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 0
+            },
+            "backgroundColor": "#ffffff",
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": true,
+            "isDisplacing": true
+          },
+          {
+            "id": "1ae9854f-d1ae-4840-81e5-bb960e6396af",
+            "tileType": "TEXT",
+            "tileParams": {
+              "text": "Ask Loan Advisor - Visual Agent about: the status of an application by id; whether a pending application is likely to default; what the loan and credit policies say; and how many applications are pending. It never approves or rejects a loan.",
+              "textAlign": "LEFT",
+              "verticalAlign": "TOP"
+            },
+            "box": {
+              "left": 0,
+              "top": 2,
               "width": 36,
               "height": 12
             },
@@ -283,6 +349,42 @@
             "autoLoad": true,
             "locked": false,
             "isDisplacing": false
+          },
+          {
+            "displayMode": "INSIGHT",
+            "clickAction": "DO_NOTHING",
+            "resizeImageMode": "FIT_SIZE",
+            "id": "5c4e31fd-aeda-46a2-895c-e4139863829a",
+            "tileType": "INSIGHT",
+            "tileParams": {
+              "loadTimeoutInSeconds": 0
+            },
+            "box": {
+              "left": 0,
+              "top": 14,
+              "width": 18,
+              "height": 12
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "titleOptions": {
+              "showTitle": "NO",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "backgroundColor": "#ffffff",
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false,
+            "insightId": "XmlaHnZ",
+            "insightType": "web_app"
           }
         ]
       },
