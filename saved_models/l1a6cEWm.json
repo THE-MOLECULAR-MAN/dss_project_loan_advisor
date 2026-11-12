@@ -243,6 +243,243 @@
       "guardrailsPipelineSettings": {
         "guardrails": []
       }
+    },
+    {
+      "versionId": "v2",
+      "versionTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+          "login": "demo"
+        },
+        "lastModifiedOn": 1794524533576
+      },
+      "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+          "login": "demo"
+        },
+        "lastModifiedOn": 1794524533576
+      },
+      "pythonAgentSettings": {
+        "codeEnvSelection": {
+          "envMode": "INHERIT"
+        },
+        "dependencies": [],
+        "supportsImageInputs": false,
+        "canBeBlockedByCostLimiting": true,
+        "dkuProperties": [],
+        "containerExecSelection": {
+          "containerMode": "INHERIT"
+        },
+        "singleInstance": false,
+        "interactionLoggingSelection": {
+          "mode": "INHERIT",
+          "explicitSettings": {
+            "flushEveryBytes": 10000000,
+            "flushEveryS": 900,
+            "contentMode": "NO_LOGS_NO_TRACE"
+          }
+        }
+      },
+      "pluginAgentSettings": {
+        "canBeBlockedByCostLimiting": true,
+        "dkuProperties": [],
+        "containerExecSelection": {
+          "containerMode": "INHERIT"
+        },
+        "singleInstance": false,
+        "interactionLoggingSelection": {
+          "mode": "INHERIT",
+          "explicitSettings": {
+            "flushEveryBytes": 10000000,
+            "flushEveryS": 900,
+            "contentMode": "NO_LOGS_NO_TRACE"
+          }
+        }
+      },
+      "toolsUsingAgentSettings": {
+        "tools": [
+          {
+            "toolRef": "l4JUkVF",
+            "additionalDescription": "Use this tool to get information on a customer based on their id.  The returned information should tell us whether their loan is already approved or if it\u0027s pending, and any other demographic information we have on them.",
+            "disabled": false
+          },
+          {
+            "toolRef": "k90bRD8",
+            "additionalDescription": "Use this tool to see whether a prospective customer adheres to our loan and credit score policies.  You may need to ask the prospective customer for more information to ascertain adherence.",
+            "disabled": false
+          },
+          {
+            "toolRef": "efUCBOj",
+            "additionalDescription": "Use this tool to see whether a prospective customer or a customer with a pending application would be likely to default on a loan.  You will need to ask the prospective customer for the right information to score them with this model.  You should be able to look up a customer with a pending application and use the model to determine whether they are likely to default.",
+            "disabled": false
+          },
+          {
+            "toolRef": "7ECpori",
+            "additionalDescription": "Use this tool to get information on a customer based on their id.  The returned information should tell us whether their loan is already approved or if it\u0027s pending.  This tool should also be able to answer questions about the dataset that could be answered with SQL.",
+            "disabled": false
+          }
+        ],
+        "llmId": "openai:OpenAI_Connection1:gpt-5.6-terra",
+        "systemPromptAppend": "This agent should:\n1. act as an expert on our loan and credit scoring policies. \n2. act as an expert on our loan applicants by being able to query a related dataset. \n3. be able to predict whether a prospective loan applicant or a loan applicant with a pending loan  should be approved for a loan by using a predictive model.\n\nRules for every answer:\n4. You support a loan officer; you never approve, reject, decline or recommend declining a loan. When asked to approve or reject, say plainly that you cannot approve or reject loans and that a loan officer decides, then give the relevant facts (status, policy checks, model score) to support the decision.\n5. Whenever you quote the default model, say it is a prediction that supports a human decision and does not approve or reject the loan.\n6. Whenever you answer from the loan and credit policy documents, name the policy document you found it in (for example \"according to the Loan Policy Guide\").\n7. For questions about a specific application, always look it up with the customer lookup tool first and quote the figures it returns.\n8. Never state names or home addresses: they are not in the data; say so if asked.",
+        "completionSettings": {
+          "stopSequences": [],
+          "outputTrajectory": true
+        },
+        "shortTermMemoryEnabled": false,
+        "allowAgentsAsLLM": false,
+        "imageSupportMode": "AUTOMATIC",
+        "skillRefs": [],
+        "dkuProperties": [],
+        "containerExecSelection": {
+          "containerMode": "INHERIT",
+          "containerConf": "eks-default"
+        },
+        "singleInstance": false,
+        "interactionLoggingSelection": {
+          "mode": "INHERIT",
+          "explicitSettings": {
+            "flushEveryBytes": 10000000,
+            "flushEveryS": 900,
+            "contentMode": "NO_LOGS_NO_TRACE"
+          }
+        }
+      },
+      "structuredAgentSettings": {
+        "dependencies": [],
+        "blocks": [],
+        "nextTurnBehaviour": "STARTING_BLOCK",
+        "codeEnvSelection": {
+          "envMode": "USE_BUILTIN_MODE"
+        },
+        "newLineAfterBlockOutput": true,
+        "includeScratchpadInSubBlocks": true,
+        "nextTurnSmartModeCompletionSettings": {
+          "stopSequences": [],
+          "outputTrajectory": true
+        },
+        "shortTermMemoryEnabled": false,
+        "allowAgentsAsLLM": false,
+        "imageSupportMode": "AUTOMATIC",
+        "skillRefs": [],
+        "dkuProperties": [],
+        "containerExecSelection": {
+          "containerMode": "NONE"
+        },
+        "singleInstance": false,
+        "interactionLoggingSelection": {
+          "mode": "INHERIT",
+          "explicitSettings": {
+            "flushEveryBytes": 10000000,
+            "flushEveryS": 900,
+            "contentMode": "NO_LOGS_NO_TRACE"
+          }
+        }
+      },
+      "externalAgentSettings": {
+        "dkuProperties": [],
+        "containerExecSelection": {
+          "containerMode": "NONE"
+        },
+        "singleInstance": false,
+        "interactionLoggingSelection": {
+          "mode": "INHERIT",
+          "explicitSettings": {
+            "flushEveryBytes": 10000000,
+            "flushEveryS": 900,
+            "contentMode": "NO_LOGS_NO_TRACE"
+          }
+        }
+      },
+      "ragllmSettings": {
+        "printSources": true,
+        "includeContentInSources": true,
+        "outputFormat": "SEPARATED",
+        "searchInputStrategySettings": {
+          "strategy": "RAW_QUERY",
+          "rewritePrompt": "When a message requires document retrieval, rewrite it to optimize retrieval from the vector store.\nFocus on clarity, disambiguation, and extracting the core intent.\nOutput only the rewritten query. Do not include comments or tips."
+        },
+        "retrievalSource": "EMBEDDING",
+        "ragSpecificGuardrails": {
+          "faithfulnessSettings": {
+            "answerOverwrite": "Could not come up with a factual enough answer.",
+            "enabled": false,
+            "threshold": 0.8,
+            "handling": "FAIL"
+          },
+          "relevancySettings": {
+            "answerOverwrite": "Could not come up with a relevant enough answer.",
+            "enabled": false,
+            "threshold": 0.8,
+            "handling": "FAIL"
+          },
+          "multimodalFaithfulnessSettings": {
+            "answerOverwrite": "Could not come up with a factual enough answer.",
+            "enabled": false,
+            "threshold": 0.8,
+            "handling": "FAIL"
+          },
+          "multimodalRelevancySettings": {
+            "answerOverwrite": "Could not come up with a relevant enough answer.",
+            "enabled": false,
+            "threshold": 0.8,
+            "handling": "FAIL"
+          }
+        },
+        "guardrailsPipelineSettings": {
+          "guardrails": []
+        },
+        "completionSettings": {
+          "stopSequences": [],
+          "outputTrajectory": true
+        },
+        "interactionLoggingSelection": {
+          "mode": "INHERIT",
+          "explicitSettings": {
+            "flushEveryBytes": 10000000,
+            "flushEveryS": 900,
+            "contentMode": "NO_LOGS_NO_TRACE"
+          }
+        },
+        "noSourcesStrategy": "CONTINUE",
+        "dkuProperties": [],
+        "contextMessage": "Use the following pieces of context to answer the question at the end.\nIf you do not know the answer, just say that you do not know, do not try to make up an answer.",
+        "enforceDocumentLevelSecurity": false,
+        "performFiltering": false,
+        "allowAgentInferredFiltering": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "columnsDescriptions": [],
+        "retrievalColumns": [
+          "DKU_TEXT_EMBEDDING_COLUMN"
+        ],
+        "searchType": "SIMILARITY",
+        "similarityThreshold": 0.5,
+        "maxDocuments": 4,
+        "mmrK": 20,
+        "mmrDiversity": 0.25,
+        "useAdvancedReranking": false,
+        "rrfRankConstant": 60,
+        "rrfRankWindowSize": 4,
+        "includeScore": false,
+        "allowEmptyQuery": false,
+        "maxResultSizeMB": -1,
+        "reranking": {
+          "enabled": false,
+          "maxDocuments": 5
+        },
+        "sourcesSettings": {
+          "snippetFormat": "TEXT",
+          "metadataInSources": []
+        },
+        "augmentationFallbackStrategy": "USE_EMBEDDING"
+      },
+      "quickTestQueryStr": "{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Tell me everything you can about customer 96536.\"\n    }\n  ],\n  \"context\": {}\n}",
+      "guardrailsPipelineSettings": {
+        "guardrails": []
+      }
     }
   ],
   "conditionalOutputs": [],
@@ -321,9 +558,9 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "demo"
     },
-    "lastModifiedOn": 1741980409527
+    "lastModifiedOn": 1794524533576
   },
   "tags": [],
   "customFields": {},
