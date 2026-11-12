@@ -1,7 +1,16 @@
 {
   "name": "Extensions",
   "color": "#2ab1ac",
-  "items": [],
+  "items": [
+    {
+      "objectId": "9l2QesyF",
+      "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "Default_model_monitoring",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],

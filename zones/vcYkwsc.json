@@ -37,10 +37,6 @@
     {
       "objectId": "compute_Customers_and_Loan_prepared",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "Default_model_monitoring",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
