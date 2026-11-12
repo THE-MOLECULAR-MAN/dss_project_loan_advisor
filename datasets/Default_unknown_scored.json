@@ -250,6 +250,24 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ColumnNotEmptyRule",
+        "columns": [
+          "Monthly_Income",
+          "State",
+          "Interest_Rate"
+        ],
+        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "P6Lg5j9R",
+        "displayName": "Monthly_Income, State, Interest_Rate not empty",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
