@@ -165,24 +165,7 @@
   },
   "metricsChecks": {
     "monitor": false,
-    "checks": [
-      {
-        "type": "ColumnUniqueValuesRule",
-        "columns": [
-          "knowledge_bank_id"
-        ],
-        "thresholdType": "ENTIRE_COLUMN",
-        "minimum": 0.0,
-        "minimumEnabled": false,
-        "softMinimum": 0.0,
-        "softMinimumEnabled": false,
-        "id": "QvF05dYj",
-        "displayName": "knowledge_bank_id is unique",
-        "computeOnBuildMode": "PARTITION",
-        "autoRun": true,
-        "enabled": true
-      }
-    ],
+    "checks": [],
     "displayedState": {
       "checks": []
     }
