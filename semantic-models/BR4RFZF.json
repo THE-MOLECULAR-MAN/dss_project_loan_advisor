@@ -1,6 +1,423 @@
 {
   "name": "Loan applications",
-  "versions": [],
+  "versions": [
+    {
+      "id": "v1",
+      "description": "Business view of loan applications and of the default model\u0027s risk scores for pending ones, for questions in plain language.",
+      "created": {},
+      "entities": [
+        {
+          "name": "Loan application",
+          "description": "One loan application with the applicant\u0027s finances and the requested loan. Applications with a known outcome carry Defaulted (1 or 0); pending ones have none.",
+          "tags": [],
+          "type": "DATASET",
+          "datasetRef": "LOAN_ADVISOR_AGENT_POLISHED.Customers_and_Loan_prepared",
+          "attributes": [
+            {
+              "name": "Application ID",
+              "description": "Identifier of the application and applicant.",
+              "dssType": "bigint",
+              "type": "COLUMN",
+              "column": "id",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Status",
+              "description": "Application status.",
+              "dssType": "string",
+              "type": "COLUMN",
+              "column": "Status",
+              "distinctValuesHandlingMode": "MANUAL",
+              "manualValues": [
+                "accepted",
+                "pending"
+              ],
+              "indexDistinctValues": true,
+              "resolveInUserRequests": true,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "State",
+              "description": "US state of the applicant.",
+              "dssType": "string",
+              "type": "COLUMN",
+              "column": "State",
+              "distinctValuesHandlingMode": "MANUAL",
+              "manualValues": [
+                "CA",
+                "NY",
+                "TX",
+                "FL",
+                "IL",
+                "GA",
+                "NJ",
+                "MA",
+                "OH",
+                "MD"
+              ],
+              "indexDistinctValues": true,
+              "resolveInUserRequests": true,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Age",
+              "description": "Applicant age in years.",
+              "dssType": "bigint",
+              "type": "COLUMN",
+              "column": "Age",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Monthly income",
+              "description": "Applicant monthly income.",
+              "dssType": "double",
+              "type": "COLUMN",
+              "column": "Monthly_Income",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Interest rate",
+              "description": "Interest rate of the loan, in percent.",
+              "dssType": "double",
+              "type": "COLUMN",
+              "column": "Interest_Rate",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "FICO score (top of range)",
+              "description": "Upper end of the applicant\u0027s FICO credit score range.",
+              "dssType": "bigint",
+              "type": "COLUMN",
+              "column": "FICO_max",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Amount requested",
+              "description": "Loan amount requested.",
+              "dssType": "bigint",
+              "type": "COLUMN",
+              "column": "Amount_Requested",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Debt-to-income ratio",
+              "description": "Requested amount relative to income.",
+              "dssType": "double",
+              "type": "COLUMN",
+              "column": "Debt_to_Income_Ratio",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Loan purpose",
+              "description": "Why the applicant wants the loan.",
+              "dssType": "string",
+              "type": "COLUMN",
+              "column": "Loan_Purpose",
+              "distinctValuesHandlingMode": "MANUAL",
+              "manualValues": [
+                "debt_consolidation",
+                "credit_card",
+                "other",
+                "home_improvement",
+                "major_purchase",
+                "small_business"
+              ],
+              "indexDistinctValues": true,
+              "resolveInUserRequests": true,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Loan length",
+              "description": "Loan term in months.",
+              "dssType": "string",
+              "type": "COLUMN",
+              "column": "Loan_Length",
+              "distinctValuesHandlingMode": "MANUAL",
+              "manualValues": [
+                "36",
+                "60"
+              ],
+              "indexDistinctValues": true,
+              "resolveInUserRequests": true,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Home ownership",
+              "description": "Home ownership status.",
+              "dssType": "string",
+              "type": "COLUMN",
+              "column": "Home_Ownership",
+              "distinctValuesHandlingMode": "MANUAL",
+              "manualValues": [
+                "MORTGAGE",
+                "RENT",
+                "OWN",
+                "OTHER",
+                "NONE"
+              ],
+              "indexDistinctValues": true,
+              "resolveInUserRequests": true,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Defaulted",
+              "description": "1 if the loan defaulted, 0 if it was repaid, empty while pending.",
+              "dssType": "double",
+              "type": "COLUMN",
+              "column": "Default",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            }
+          ],
+          "metrics": [
+            {
+              "name": "Applications",
+              "description": "Number of applications.",
+              "pseudoSQLExpression": "COUNT(id)",
+              "created": {}
+            },
+            {
+              "name": "Amount requested (total)",
+              "description": "Total loan amount requested.",
+              "pseudoSQLExpression": "SUM(Amount_Requested)",
+              "created": {}
+            },
+            {
+              "name": "Average amount requested",
+              "description": "Average loan amount requested.",
+              "pseudoSQLExpression": "AVG(Amount_Requested)",
+              "created": {}
+            },
+            {
+              "name": "Average interest rate",
+              "description": "Average interest rate in percent.",
+              "pseudoSQLExpression": "AVG(Interest_Rate)",
+              "created": {}
+            },
+            {
+              "name": "Default rate",
+              "description": "Share of loans with a known outcome that defaulted.",
+              "pseudoSQLExpression": "AVG(Default)",
+              "created": {}
+            }
+          ],
+          "filters": [
+            {
+              "name": "Pending applications",
+              "description": "Applications still waiting for a decision.",
+              "pseudoSQLExpression": "Status \u003d \u0027pending\u0027",
+              "created": {}
+            },
+            {
+              "name": "Defaulted loans",
+              "description": "Loans that defaulted.",
+              "pseudoSQLExpression": "Default \u003d 1",
+              "created": {}
+            }
+          ],
+          "primaryKey": {
+            "attributes": [
+              "Application ID"
+            ]
+          },
+          "foreignKeys": []
+        },
+        {
+          "name": "Predicted default risk",
+          "description": "Pending applications scored by the default model: probability of default and the predicted outcome.",
+          "tags": [],
+          "type": "DATASET",
+          "datasetRef": "LOAN_ADVISOR_AGENT_POLISHED.Default_unknown_scored",
+          "attributes": [
+            {
+              "name": "Application ID",
+              "description": "Identifier of the pending application.",
+              "dssType": "bigint",
+              "type": "COLUMN",
+              "column": "id",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "State",
+              "description": "US state of the applicant.",
+              "dssType": "string",
+              "type": "COLUMN",
+              "column": "State",
+              "distinctValuesHandlingMode": "MANUAL",
+              "manualValues": [
+                "CA",
+                "NY",
+                "FL",
+                "TX",
+                "NJ",
+                "MA"
+              ],
+              "indexDistinctValues": true,
+              "resolveInUserRequests": true,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Amount requested",
+              "description": "Loan amount requested.",
+              "dssType": "bigint",
+              "type": "COLUMN",
+              "column": "Amount_Requested",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Debt-to-income ratio",
+              "description": "Requested amount relative to income.",
+              "dssType": "double",
+              "type": "COLUMN",
+              "column": "Debt_to_Income_Ratio",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Loan purpose",
+              "description": "Why the applicant wants the loan.",
+              "dssType": "string",
+              "type": "COLUMN",
+              "column": "Loan_Purpose",
+              "distinctValuesHandlingMode": "MANUAL",
+              "manualValues": [
+                "debt_consolidation",
+                "credit_card",
+                "other",
+                "home_improvement",
+                "small_business",
+                "major_purchase"
+              ],
+              "indexDistinctValues": true,
+              "resolveInUserRequests": true,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Probability of default",
+              "description": "Model probability that the loan defaults, from 0 to 1.",
+              "dssType": "double",
+              "type": "COLUMN",
+              "column": "proba_1.0",
+              "distinctValuesHandlingMode": "NONE",
+              "manualValues": [],
+              "indexDistinctValues": false,
+              "resolveInUserRequests": false,
+              "sqlGenerationConfig": {}
+            },
+            {
+              "name": "Predicted default",
+              "description": "1.0 if the model predicts a default, 0.0 if not.",
+              "dssType": "string",
+              "type": "COLUMN",
+              "column": "prediction",
+              "distinctValuesHandlingMode": "MANUAL",
+              "manualValues": [
+                "0.0",
+                "1.0"
+              ],
+              "indexDistinctValues": true,
+              "resolveInUserRequests": true,
+              "sqlGenerationConfig": {}
+            }
+          ],
+          "metrics": [
+            {
+              "name": "Pending applications scored",
+              "description": "Number of scored pending applications.",
+              "pseudoSQLExpression": "COUNT(id)",
+              "created": {}
+            },
+            {
+              "name": "Average probability of default",
+              "description": "Average model probability of default.",
+              "pseudoSQLExpression": "AVG(\"proba_1.0\")",
+              "created": {}
+            },
+            {
+              "name": "Predicted defaults",
+              "description": "Applications the model predicts will default.",
+              "pseudoSQLExpression": "SUM(CASE WHEN prediction \u003d \u00271.0\u0027 THEN 1 ELSE 0 END)",
+              "created": {}
+            },
+            {
+              "name": "Amount at risk",
+              "description": "Total amount requested by applications predicted to default.",
+              "pseudoSQLExpression": "SUM(CASE WHEN prediction \u003d \u00271.0\u0027 THEN Amount_Requested ELSE 0 END)",
+              "created": {}
+            }
+          ],
+          "filters": [
+            {
+              "name": "Predicted to default",
+              "description": "Applications the model predicts will default.",
+              "pseudoSQLExpression": "prediction \u003d \u00271.0\u0027",
+              "created": {}
+            }
+          ],
+          "primaryKey": {
+            "attributes": [
+              "Application ID"
+            ]
+          },
+          "foreignKeys": []
+        }
+      ],
+      "relationships": [],
+      "goldenQueries": [],
+      "glossaryTerms": [],
+      "glossaryBindings": [],
+      "indexingSettings": {
+        "maxDistinctValuesPerAttribute": 1000,
+        "maxScannedRowsForSQLDatasets": -1,
+        "maxScannedRowsForNonSQLDatasets": 1000000
+      },
+      "crossEntityMetrics": [],
+      "privateEditorData": {},
+      "sqlGenerationConfig": {}
+    }
+  ],
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
