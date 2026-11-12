@@ -2,6 +2,8 @@
   "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
+  "description": "One row per test question with the Loan Advisor - Visual Agent agent\u0027s answer (llm_output) and its full response including the tools it called (llm_raw_response). Made by the Prompt recipe; input of the agent evaluation recipe.",
+  "shortDesc": "The agent\u0027s answers to its test questions",
   "formatType": "csv",
   "checklists": {
     "checklists": []
