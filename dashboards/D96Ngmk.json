@@ -3,10 +3,292 @@
     {
       "id": "FwXyS8r",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "id": "ff3f0466-88f1-4378-a02a-b2fcc40197ec",
+            "tileType": "TEXT",
+            "tileParams": {
+              "text": "Loan applications at a glance. Pending applications are scored by the default model; the scores support a loan officer\u0027s decision and never replace it.",
+              "textAlign": "LEFT"
+            },
+            "box": {
+              "left": 0,
+              "top": 0,
+              "width": 36,
+              "height": 7
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "titleOptions": {
+              "showTitle": "NO",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "backgroundColor": "#ffffff",
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false
+          },
+          {
+            "displayMode": "INSIGHT",
+            "clickAction": "DO_NOTHING",
+            "resizeImageMode": "FIT_SIZE",
+            "id": "17cdfc46-7063-4944-8128-a847fc75f5e6",
+            "tileType": "INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showXAxisTitle": true,
+              "showYAxis": true,
+              "showYAxisTitle": true,
+              "showLegend": false,
+              "showBrush": false,
+              "showBreadcrumb": true,
+              "inheritLegendPlacement": true,
+              "legendPlacement": "OUTER_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true,
+              "disableHierarchyDrillDown": false,
+              "useInsightTheme": false
+            },
+            "box": {
+              "left": 0,
+              "top": 7,
+              "width": 18,
+              "height": 12
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "titleOptions": {
+              "showTitle": "YES",
+              "title": "Applications by purpose",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "backgroundColor": "#ffffff",
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false,
+            "insightId": "oIy5GFs",
+            "insightType": "chart"
+          },
+          {
+            "displayMode": "INSIGHT",
+            "clickAction": "DO_NOTHING",
+            "resizeImageMode": "FIT_SIZE",
+            "id": "c678cb17-666b-412c-a036-8700f35ad9dc",
+            "tileType": "INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showXAxisTitle": true,
+              "showYAxis": true,
+              "showYAxisTitle": true,
+              "showLegend": false,
+              "showBrush": false,
+              "showBreadcrumb": true,
+              "inheritLegendPlacement": true,
+              "legendPlacement": "OUTER_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true,
+              "disableHierarchyDrillDown": false,
+              "useInsightTheme": false
+            },
+            "box": {
+              "left": 18,
+              "top": 7,
+              "width": 18,
+              "height": 12
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "titleOptions": {
+              "showTitle": "YES",
+              "title": "Average interest rate by FICO range",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "backgroundColor": "#ffffff",
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false,
+            "insightId": "151hcoI",
+            "insightType": "chart"
+          },
+          {
+            "displayMode": "INSIGHT",
+            "clickAction": "DO_NOTHING",
+            "resizeImageMode": "FIT_SIZE",
+            "id": "f5a2fa18-bcd1-4c24-a9b0-f21f0de0b06c",
+            "tileType": "INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showXAxisTitle": true,
+              "showYAxis": true,
+              "showYAxisTitle": true,
+              "showLegend": false,
+              "showBrush": false,
+              "showBreadcrumb": true,
+              "inheritLegendPlacement": true,
+              "legendPlacement": "OUTER_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true,
+              "disableHierarchyDrillDown": false,
+              "useInsightTheme": false
+            },
+            "box": {
+              "left": 0,
+              "top": 19,
+              "width": 18,
+              "height": 12
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "titleOptions": {
+              "showTitle": "YES",
+              "title": "Pending applications by prediction",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "backgroundColor": "#ffffff",
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false,
+            "insightId": "n8i46RF",
+            "insightType": "chart"
+          },
+          {
+            "displayMode": "INSIGHT",
+            "clickAction": "DO_NOTHING",
+            "resizeImageMode": "FIT_SIZE",
+            "id": "595781b8-4be5-4963-94c3-df985e13f84a",
+            "tileType": "INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showXAxisTitle": true,
+              "showYAxis": true,
+              "showYAxisTitle": true,
+              "showLegend": false,
+              "showBrush": false,
+              "showBreadcrumb": true,
+              "inheritLegendPlacement": true,
+              "legendPlacement": "OUTER_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true,
+              "disableHierarchyDrillDown": false,
+              "useInsightTheme": false
+            },
+            "box": {
+              "left": 18,
+              "top": 19,
+              "width": 18,
+              "height": 12
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "titleOptions": {
+              "showTitle": "YES",
+              "title": "Probability distribution",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "backgroundColor": "#ffffff",
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false,
+            "insightId": "DzZuiNu",
+            "insightType": "chart"
+          }
+        ]
       },
+      "title": "Loan applications",
       "show": true,
-      "showTitle": false,
+      "showTitle": true,
+      "titleAlign": "CENTER",
+      "titleFontColor": "#444444",
+      "titleFontSize": 28,
+      "enableCrossFilters": true,
+      "backgroundColor": "#FFFFFF",
+      "showFilterPanel": true,
+      "filtersParams": {
+        "panelPosition": "TOP",
+        "engineType": "LINO"
+      }
+    },
+    {
+      "id": "AskTheLoanAdvisor",
+      "grid": {
+        "tiles": [
+          {
+            "id": "1ae9854f-d1ae-4840-81e5-bb960e6396af",
+            "tileType": "TEXT",
+            "tileParams": {
+              "text": "Ask Loan Advisor - Visual Agent about: the status of an application by id; whether a pending application is likely to default; what the loan and credit policies say; and how many applications are pending. It never approves or rejects a loan.",
+              "textAlign": "LEFT"
+            },
+            "box": {
+              "left": 0,
+              "top": 0,
+              "width": 36,
+              "height": 12
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "titleOptions": {
+              "showTitle": "NO",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "backgroundColor": "#ffffff",
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false
+          }
+        ]
+      },
+      "title": "Ask the Loan Advisor",
+      "show": true,
+      "showTitle": true,
       "titleAlign": "CENTER",
       "titleFontColor": "#444444",
       "titleFontSize": 28,
