@@ -1,7 +1,13 @@
 {
   "displayName": "Loan advisor versions",
   "modelTaskType": "AGENT",
-  "comparedModels": [],
+  "comparedModels": [
+    {
+      "smartId": "ME-*-AaNt78oW-5W8X2ZTPuiI9",
+      "isSelected": true,
+      "isChampion": false
+    }
+  ],
   "displayParams": {
     "pinnedMetrics": [],
     "yLabels": [],
