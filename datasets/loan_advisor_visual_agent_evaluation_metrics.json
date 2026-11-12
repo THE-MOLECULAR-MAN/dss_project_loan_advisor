@@ -89,6 +89,9 @@
     "columns": [
       {"name":"date","type":"date"},
       {"name":"sampleRowCount","type":"int"},
+      {"name":"agentGoalAccuracyWithoutReference","type":"double"},
+      {"name":"Single-turn Conciseness","type":"double"},
+      {"name":"Tool Selection Accuracy","type":"double"},
       {"name":"averageToolExecutionsPerRow","type":"double"},
       {"name":"averageFailedToolExecutionsPerRow","type":"double"},
       {"name":"averageToolExecutionTimeSecondsPerRow","type":"double"},
