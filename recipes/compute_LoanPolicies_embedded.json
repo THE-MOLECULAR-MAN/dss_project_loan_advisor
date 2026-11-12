@@ -3,7 +3,8 @@
   "neverRecomputeExistingPartitions": false,
   "params": {
     "extractionMode": "CUSTOM_RULES",
-    "defaultVlmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-4o-mini",
+    "defaultVlmId": "openai:OpenAI_Connection1:gpt-5.6-terra",
+    "defaultImageHandlingMode": "OCR_SCANNED",
     "rules": [
       {
         "filter": {
@@ -41,12 +42,12 @@
         },
         "actionToPerform": "VLM",
         "vlmSettings": {
-          "splitUnit": "PAGE",
           "customNbPages": 1,
           "customPagesOverlap": 0,
-          "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-4o-mini",
+          "llmId": "openai:OpenAI_Connection1:gpt-5.6-terra",
           "useCustomPrompt": false,
-          "customPrompt": "Generate a concise summary, up to 500 words, derived from the screenshot(s) of document page(s) provided. \nBegin with a brief overview and highlight crucial words, facts, or concepts to enhance both semantic and keyword searchability.\nOmit any references to the original source.\n"
+          "customPrompt": "Generate a concise summary, up to 500 words, derived from the screenshot(s) of document page(s) provided. \nBegin with a brief overview and highlight crucial words, facts, or concepts to enhance both semantic and keyword searchability.\nOmit any references to the original source.\n",
+          "splitUnit": "PAGE"
         },
         "splittingSettings": {
           "chunkSizeCharacters": 3000,
@@ -83,8 +84,15 @@
         },
         "actionToPerform": "STRUCTURED",
         "structuredSettings": {
-          "splitUnit": "SECTION",
-          "maxSectionDepth": 6
+          "maxSectionDepth": 6,
+          "imageHandlingMode": "IGNORE",
+          "ocrEngine": "AUTO",
+          "ocrLanguages": "en",
+          "llmId": "",
+          "useCustomVLMPrompt": false,
+          "customVLMPrompt": " You are analysing a document image to extract structured information for downstream processing and retrieval (RAG). Your goal is to extract all meaningful, reusable content in a markdown format up to 3000 characters.\n Instructions:\n 1. Classify the image type: diagram, chart, table, handwriting, printed text, or mixed.\n 2. Extract and describe based on type:\n - Diagram or Chart: Provide a detailed description of the structure, relationships, labels, axes, values, legends, and overall meaning. Convert all meaningful content into text. Summarize insights if relevant.\n - Handwritten or Printed Text: Transcribe all visible text accurately. Preserve formatting and structure. Use markdown headings, bullets, or code blocks as appropriate.\n - Tables: Reconstruct the table as markdown. Ensure all rows and columns are preserved. Retain headings and numerical precision.\n - Mixed Content: Separate and extract each part individually (e.g., transcribe text, describe chart, and format table).\n 3. Preserve structure and context: Use markdown to reflect hierarchy, formatting, and clarity.\n 4. Avoid assumptions or hallucinations. If any part is unclear, describe it as such.\n 5. Ensure each section is a reusable, standalone chunk.\n If the image is a logo, signature, or QR code, don\u0027t describe it and return an empty string.\n",
+          "enableImageClassificationFiltering": true,
+          "splitUnit": "SECTION"
         },
         "splittingSettings": {
           "chunkSizeCharacters": 3000,
@@ -97,8 +105,15 @@
     "allOtherRule": {
       "actionToPerform": "DONOTEXTRACT",
       "structuredSettings": {
-        "splitUnit": "SECTION",
-        "maxSectionDepth": 6
+        "maxSectionDepth": 6,
+        "imageHandlingMode": "IGNORE",
+        "ocrEngine": "AUTO",
+        "ocrLanguages": "en",
+        "llmId": "",
+        "useCustomVLMPrompt": false,
+        "customVLMPrompt": " You are analysing a document image to extract structured information for downstream processing and retrieval (RAG). Your goal is to extract all meaningful, reusable content in a markdown format up to 3000 characters.\n Instructions:\n 1. Classify the image type: diagram, chart, table, handwriting, printed text, or mixed.\n 2. Extract and describe based on type:\n - Diagram or Chart: Provide a detailed description of the structure, relationships, labels, axes, values, legends, and overall meaning. Convert all meaningful content into text. Summarize insights if relevant.\n - Handwritten or Printed Text: Transcribe all visible text accurately. Preserve formatting and structure. Use markdown headings, bullets, or code blocks as appropriate.\n - Tables: Reconstruct the table as markdown. Ensure all rows and columns are preserved. Retain headings and numerical precision.\n - Mixed Content: Separate and extract each part individually (e.g., transcribe text, describe chart, and format table).\n 3. Preserve structure and context: Use markdown to reflect hierarchy, formatting, and clarity.\n 4. Avoid assumptions or hallucinations. If any part is unclear, describe it as such.\n 5. Ensure each section is a reusable, standalone chunk.\n If the image is a logo, signature, or QR code, don\u0027t describe it and return an empty string.\n",
+        "enableImageClassificationFiltering": true,
+        "splitUnit": "SECTION"
       },
       "splittingSettings": {
         "chunkSizeCharacters": 3000,
