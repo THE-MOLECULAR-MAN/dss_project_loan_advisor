@@ -67,14 +67,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"bigint","comment":"Unique customer identifier, integer format, bigint type.","isColumnEdited":true},
-      {"name":"Status","type":"string","comment":"Customer application status, text format, string type.","isColumnEdited":true,"maxLength":16777216},
-      {"name":"Date_Of_Birth","type":"string","comment":"Customer\u0027s birth date, date format, string type.","isColumnEdited":true,"maxLength":16777216},
-      {"name":"Monthly_Income","type":"double","comment":"Customer\u0027s monthly income, decimal format, double type.","isColumnEdited":true},
-      {"name":"State","type":"string","comment":"Customer\u0027s US state of residence, text format, string type.","isColumnEdited":true,"maxLength":16777216},
-      {"name":"Interest_Rate","type":"double","comment":"Interest rate applicable, decimal format, double type.","isColumnEdited":true},
-      {"name":"FICO_Range","type":"string","comment":"Customer\u0027s FICO score range, text format, string type.","isColumnEdited":true,"maxLength":16777216},
-      {"name":"Default","type":"double","comment":"Default status indicator, decimal format, double type.","isColumnEdited":true}
+      {"name":"id","type":"bigint","comment":"Unique customer identifier, essential for tracking.","isColumnEdited":true},
+      {"name":"Status","type":"string","comment":"Current status of customer application, e.g., pending or accepted.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Date_Of_Birth","type":"string","comment":"Customer\u0027s birth date, crucial for age analysis.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Monthly_Income","type":"double","comment":"Customer\u0027s monthly earnings, key for financial assessment.","isColumnEdited":true},
+      {"name":"State","type":"string","comment":"US state of residence, important for regional analysis.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Interest_Rate","type":"double","comment":"Rate applied to customer loans, vital for cost analysis.","isColumnEdited":true},
+      {"name":"FICO_Range","type":"string","comment":"Customer\u0027s credit score range, critical for credit risk.","isColumnEdited":true,"maxLength":16777216},
+      {"name":"Default","type":"double","comment":"Indicates if customer has defaulted, important for risk assessment.","isColumnEdited":true}
     ],
     "userModified": true
   },
