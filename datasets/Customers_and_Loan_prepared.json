@@ -213,6 +213,25 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ValuesInRangeRule",
+        "columns": [
+          "FICO_max"
+        ],
+        "minimum": 300.0,
+        "minimumEnabled": true,
+        "maximum": 850.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "XAovxTUp",
+        "displayName": "FICO_max between 300 and 850",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
