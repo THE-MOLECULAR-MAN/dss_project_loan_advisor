@@ -1,6 +1,217 @@
 {
   "name": "Loan Advisor prompts",
-  "prompts": [],
+  "prompts": [
+    {
+      "id": "tk3ji3bu0e",
+      "prompt": {
+        "promptMode": "PROMPT_TEMPLATE_STRUCTURED",
+        "promptTemplateInputs": [
+          {
+            "name": "question",
+            "type": "TEXT"
+          }
+        ],
+        "structuredPromptPrefix": "You support loan officers who review loan applications.\n\nUse only the project\u0027s data and the lending policy documents returned by your tools. Look an application up by its id before answering about it, quote the numbers you use, and say so plainly when the data does not answer the question.\n\nA default probability is a model prediction that supports a person\u0027s decision, never the decision itself: you cannot approve, reject or recommend declining an application. Name the policy document when you quote a policy. Never state an applicant\u0027s name, address or other personal details; if asked, reply in a full sentence that you do not have them.",
+        "structuredPromptExamples": [],
+        "textPromptTemplateInputs": [],
+        "streamingDisabled": false,
+        "debugEventsEnabled": false,
+        "guardrailsPipelineSettings": {
+          "guardrails": []
+        },
+        "resultValidation": {
+          "expectedFormat": "NONE",
+          "requiredJSONObjectKeys": [],
+          "forbiddenTerms": []
+        },
+        "promptTemplateQueriesSource": "INLINE"
+      },
+      "llmId": "agent:l1a6cEWm",
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "llmSettings": {
+        "stopSequences": [],
+        "tools": []
+      },
+      "nbRows": 8,
+      "inlinePromptTemplateQueries": [
+        {
+          "data": {
+            "question": "What is the status of application 60968 and what loan did the applicant request?"
+          },
+          "singleInputData": ""
+        },
+        {
+          "data": {
+            "question": "Is application 60968 likely to default?"
+          },
+          "singleInputData": ""
+        },
+        {
+          "data": {
+            "question": "How many pending applications are there?"
+          },
+          "singleInputData": ""
+        }
+      ],
+      "tags": [],
+      "starred": false
+    },
+    {
+      "id": "6pgy4fue4f",
+      "prompt": {
+        "promptMode": "PROMPT_TEMPLATE_STRUCTURED",
+        "promptTemplateInputs": [
+          {
+            "name": "question",
+            "type": "TEXT"
+          }
+        ],
+        "structuredPromptPrefix": "You help loan officers. Answer only from the project\u0027s data and policy documents, quote the numbers you use, treat a default probability as a prediction for a person to weigh, and never approve or decline an application.",
+        "structuredPromptExamples": [],
+        "textPromptTemplateInputs": [],
+        "streamingDisabled": false,
+        "debugEventsEnabled": false,
+        "guardrailsPipelineSettings": {
+          "guardrails": []
+        },
+        "resultValidation": {
+          "expectedFormat": "NONE",
+          "requiredJSONObjectKeys": [],
+          "forbiddenTerms": []
+        },
+        "promptTemplateQueriesSource": "INLINE"
+      },
+      "llmId": "agent:l1a6cEWm",
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "llmSettings": {
+        "stopSequences": [],
+        "tools": []
+      },
+      "nbRows": 8,
+      "inlinePromptTemplateQueries": [
+        {
+          "data": {
+            "question": "What is the status of application 60968 and what loan did the applicant request?"
+          },
+          "singleInputData": ""
+        },
+        {
+          "data": {
+            "question": "Is application 60968 likely to default?"
+          },
+          "singleInputData": ""
+        }
+      ],
+      "tags": [],
+      "starred": false
+    },
+    {
+      "id": "ucngztllzg",
+      "prompt": {
+        "promptMode": "PROMPT_TEMPLATE_STRUCTURED",
+        "promptTemplateInputs": [
+          {
+            "name": "application id",
+            "datasetColumnName": "id",
+            "type": "TEXT"
+          },
+          {
+            "name": "amount requested",
+            "datasetColumnName": "Amount_Requested",
+            "type": "TEXT"
+          },
+          {
+            "name": "loan length in months",
+            "datasetColumnName": "Loan_Length",
+            "type": "TEXT"
+          },
+          {
+            "name": "loan purpose",
+            "datasetColumnName": "Loan_Purpose",
+            "type": "TEXT"
+          },
+          {
+            "name": "FICO range",
+            "datasetColumnName": "FICO_Range",
+            "type": "TEXT"
+          },
+          {
+            "name": "debt to income ratio",
+            "datasetColumnName": "Debt_to_Income_Ratio",
+            "type": "TEXT"
+          },
+          {
+            "name": "default probability",
+            "datasetColumnName": "proba_1.0",
+            "type": "TEXT"
+          },
+          {
+            "name": "model prediction",
+            "datasetColumnName": "prediction",
+            "type": "TEXT"
+          }
+        ],
+        "structuredPromptPrefix": "Summarise this pending loan application for a loan officer in two or three plain sentences: the amount, length and purpose, the FICO range and debt-to-income ratio, and the model\u0027s default probability. Say clearly that the probability is a prediction that supports a person\u0027s decision and never recommend approving or declining. End with one thing the officer could check, phrased as a question.",
+        "structuredPromptExamples": [
+          {
+            "inputs": [
+              "69741",
+              "6000",
+              "36",
+              "credit_card",
+              "690-694",
+              "0.1905",
+              "0.6805",
+              "1.0"
+            ],
+            "output": "Application 69741 asks for 6,000 US dollars over 36 months for a credit card payoff, with a FICO range of 690-694 and a debt-to-income ratio of 0.19. The model puts the default probability at 0.68, a prediction that supports the officer\u0027s decision rather than making it. The officer could ask whether the income documents support the monthly payment."
+          },
+          {
+            "inputs": [
+              "41569",
+              "13250",
+              "36",
+              "credit_card",
+              "700-704",
+              "0.3313",
+              "0.119",
+              "0.0"
+            ],
+            "output": "Application 41569 asks for 13,250 US dollars over 36 months for credit card refinancing, with a FICO range of 700-704 and a debt-to-income ratio of 0.33. The model puts the default probability at 0.12, which is a prediction for a person to weigh. The officer could ask whether the higher debt-to-income ratio matches the applicant\u0027s other obligations."
+          }
+        ],
+        "textPromptTemplateInputs": [],
+        "streamingDisabled": false,
+        "debugEventsEnabled": false,
+        "guardrailsPipelineSettings": {
+          "guardrails": []
+        },
+        "resultValidation": {
+          "expectedFormat": "NONE",
+          "requiredJSONObjectKeys": [],
+          "forbiddenTerms": []
+        },
+        "promptTemplateQueriesSource": "DATASET"
+      },
+      "llmId": "agent:l1a6cEWm",
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "llmSettings": {
+        "stopSequences": [],
+        "tools": []
+      },
+      "dataset": "Default_unknown_scored",
+      "nbRows": 8,
+      "inlinePromptTemplateQueries": [],
+      "tags": [],
+      "starred": false
+    }
+  ],
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
