@@ -1,0 +1,6 @@
+{
+  "report_recipient": "lending-ops@example.com",
+  "value_applications_per_month": 2000,
+  "value_minutes_saved_per_application": 8,
+  "value_months_per_year": 12
+}
