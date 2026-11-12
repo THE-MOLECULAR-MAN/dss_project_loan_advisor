@@ -181,6 +181,24 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ColumnNotEmptyRule",
+        "columns": [
+          "conversation_id",
+          "knowledge_bank_id",
+          "message_id"
+        ],
+        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "0wraBw0s",
+        "displayName": "conversation_id, knowledge_bank_id, message_id not empty",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
