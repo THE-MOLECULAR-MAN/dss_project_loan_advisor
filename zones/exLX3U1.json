@@ -18,6 +18,7 @@
   "shared": [],
   "position": {},
   "description": "This flow evaluates the loan application dataset to assess the quality and usability of its customer, credit, and financial-risk information.\n\nIt reviews key fields such as applicant age, income, state, requested loan amount, debt-to-income ratio, credit-score ranges, interest rate, loan purpose, home-ownership status, and default outcome. The resulting evaluation provides visibility into whether these data elements are complete, consistent, valid, and suitable for downstream lending-risk analysis or predictive modeling.\n\nFrom a business perspective, this helps lending and risk teams determine whether the available data can reliably support activities such as:\n\n- Identifying factors associated with loan default.\n- Segmenting applicants by financial capacity and creditworthiness.\n- Validating the quality of approval and default reporting.\n- Detecting data issues that could weaken risk models, portfolio reporting, or lending decisions.\n- Establishing confidence in the dataset before using it for credit-risk monitoring, underwriting analysis, or default prediction.\n\nThe output is therefore a data-quality assessment of the loan portfolio data, helping ensure that business decisions and analytical models are based on trustworthy applicant and loan information.",
+  "shortDesc": "This zone evaluates the loan application dataset to assess the quality and usability of its customer, credit, and financial-risk information.",
   "tags": [],
   "customFields": {},
   "checklists": {
