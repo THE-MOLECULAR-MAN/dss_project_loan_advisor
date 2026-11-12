@@ -3,12 +3,12 @@
   "color": "#2ab1ac",
   "items": [
     {
-      "objectId": "9l2QesyF",
-      "objectType": "MODEL_EVALUATION_STORE"
-    },
-    {
       "objectId": "Default_model_monitoring",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "9l2QesyF",
+      "objectType": "MODEL_EVALUATION_STORE"
     }
   ],
   "shared": [],
