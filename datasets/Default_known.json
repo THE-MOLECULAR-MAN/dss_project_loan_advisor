@@ -246,6 +246,25 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ValuesInRangeRule",
+        "columns": [
+          "Age"
+        ],
+        "minimum": 0.0,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "PM1DPJ7T",
+        "displayName": "Age is 0 or more",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
