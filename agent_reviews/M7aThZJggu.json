@@ -1,0 +1,21 @@
+{
+  "name": "Loan advisor review",
+  "owner": "demo",
+  "creationTimestamp": 1794514415219,
+  "nbExecutions": 3,
+  "hitlValidationPolicy": "REJECT",
+  "hitlMaxValidationTurns": 5,
+  "traits": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1794514415219
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
