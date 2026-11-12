@@ -202,6 +202,25 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ValuesInRangeRule",
+        "columns": [
+          "Monthly_Income"
+        ],
+        "minimum": 0.0,
+        "minimumEnabled": true,
+        "maximum": 1000000.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "Wt2Q0Vga",
+        "displayName": "Monthly_Income between 0 and 1000000",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
