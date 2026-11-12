@@ -1,11 +1,21 @@
 {
   "name": "LoanPolicies_embedded",
+  "managed": true,
   "retrieverType": "VECTOR_STORE_BACKED",
   "rebuildBehavior": "EXPLICIT",
   "vectorStoreType": "CHROMA",
-  "embeddingLLMId": "openai:OpenAI_Dataiku_SE_Shared:text-embedding-3-small",
+  "embeddingLLMId": "openai:OpenAI_Connection1:text-embedding-3-small",
+  "distanceMetric": "DEFAULT",
+  "vectorIndexType": "DEFAULT",
   "metadataColumnsSchema": [
-    {"name":"dku_file_path","type":"string"}
+    {
+      "filterable": true,
+      "name": "dku_file_path",
+      "type": "string",
+      "isColumnEdited": false,
+      "timestampNoTzAsDate": false,
+      "maxLength": -1
+    }
   ],
   "envSelection": {
     "envMode": "EXPLICIT_ENV",
