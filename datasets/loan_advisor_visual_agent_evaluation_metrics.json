@@ -2,6 +2,8 @@
   "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
+  "description": "One row per evaluation run of the Loan Advisor - Visual Agent agent: average goal accuracy, conciseness, tool selection, tool calls, tokens and estimated cost. Made by the agent evaluation recipe.",
+  "shortDesc": "Agent evaluation metrics, one row per run",
   "formatType": "csv",
   "checklists": {
     "checklists": []
