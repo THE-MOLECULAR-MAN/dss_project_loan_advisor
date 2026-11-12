@@ -2,6 +2,8 @@
   "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
+  "description": "One row per test question with the judge model\u0027s scores for the Loan Advisor - Visual Agent agent\u0027s answer (goal accuracy, conciseness, tool selection). Made by the agent evaluation recipe, which also writes to the agent\u0027s evaluation store.",
+  "shortDesc": "Agent evaluation, row by row",
   "formatType": "csv",
   "checklists": {
     "checklists": []
