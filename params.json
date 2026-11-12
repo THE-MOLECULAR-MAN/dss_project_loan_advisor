@@ -72,7 +72,7 @@
       "zonesGraphForJobs": true,
       "respectTraversalOrder": false,
       "zonesManualPositioning": false,
-      "showFlowZoneDescriptions": false
+      "showFlowZoneDescriptions": true
     },
     "gitCommitMode": "AUTO",
     "useRemoteGit": true,
