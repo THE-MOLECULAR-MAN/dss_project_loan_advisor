@@ -1,5 +1,6 @@
 {
   "name": "Loan applications",
+  "activeVersionId": "v1",
   "versions": [
     {
       "id": "v1",
