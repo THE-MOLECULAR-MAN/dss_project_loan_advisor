@@ -11,6 +11,15 @@
           "READ",
           "DISCOVER"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "Default_unknown_scored",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
