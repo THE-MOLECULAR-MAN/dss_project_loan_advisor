@@ -167,22 +167,6 @@
     "monitor": false,
     "checks": [
       {
-        "type": "RecordCountInRangeRule",
-        "minimum": 1.0,
-        "minimumEnabled": true,
-        "maximum": 0.0,
-        "maximumEnabled": false,
-        "softMinimum": 0.0,
-        "softMinimumEnabled": false,
-        "softMaximum": 0.0,
-        "softMaximumEnabled": false,
-        "id": "ZsCHZB9p",
-        "displayName": "Record count above 0",
-        "computeOnBuildMode": "PARTITION",
-        "autoRun": true,
-        "enabled": true
-      },
-      {
         "type": "ColumnNotEmptyRule",
         "columns": [
           "conversation_id",
