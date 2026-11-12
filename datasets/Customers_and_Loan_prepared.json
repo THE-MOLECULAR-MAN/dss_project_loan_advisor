@@ -194,6 +194,25 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ValuesInRangeRule",
+        "columns": [
+          "Age"
+        ],
+        "minimum": 18.0,
+        "minimumEnabled": true,
+        "maximum": 100.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "Z445kTBB",
+        "displayName": "Age between 18 and 100",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
