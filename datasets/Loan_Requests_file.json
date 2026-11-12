@@ -30,7 +30,7 @@
   "formatParams": {
     "style": "excel",
     "charset": "utf-8",
-    "separator": "|",
+    "separator": ",",
     "quoteChar": "\"",
     "escapeChar": "\\",
     "maxRowChars": 100000000,
