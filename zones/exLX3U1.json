@@ -27,7 +27,7 @@
       "objectType": "MODEL_EVALUATION_STORE"
     },
     {
-      "objectId": "loan_advisor_visual_agent_test_answers",
+      "objectId": "loan_advisor_visual_agent_test_questions",
       "objectType": "DATASET"
     },
     {
@@ -35,7 +35,7 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "loan_advisor_visual_agent_test_questions",
+      "objectId": "loan_advisor_visual_agent_test_answers",
       "objectType": "DATASET"
     }
   ],
